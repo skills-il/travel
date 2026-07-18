@@ -1,0 +1,161 @@
+{
+  "skill_slug": "israeli-abroad-trip-planner",
+  "schemaVersion": "1.0",
+  "generated_at": "2026-07-18",
+  "notes": "Anti-fabrication skill: it routes users to live official sources rather than asserting volatile visa/warning facts. Most claims below are (a) verified official source URLs the skill cites, and (b) stable institutional facts. Several gov.il pages (NSC travel warnings, MFA travel recommendations, MoH vaccination, biometric passport) return HTTP 403 to automated WebFetch but resolve normally in a browser; for those, the raw_snippet is the verbatim page/link title returned by search indexing of the same URL.",
+  "claims": [
+    {
+      "id": "url_nsc_travel_warnings",
+      "claim": "The National Security Council travel-warnings page for Israelis lives at gov.il/he/departments/dynamiccollectors/travel-warnings-nsc",
+      "claim_type": "url",
+      "source_url": "https://www.gov.il/he/departments/dynamiccollectors/travel-warnings-nsc",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "אזהרות מסע | המטה לביטחון לאומי",
+      "confidence": "high"
+    },
+    {
+      "id": "fact_nsc_issues_warnings",
+      "claim": "Israeli travel warnings (אזהרות מסע) are issued by the National Security Council (המטה לביטחון לאומי / המל\"ל)",
+      "claim_type": "company",
+      "source_url": "https://www.gov.il/he/departments/dynamiccollectors/travel-warnings-nsc",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "אזהרות מסע | המטה לביטחון לאומי",
+      "confidence": "high"
+    },
+    {
+      "id": "url_mfa_travel_recommendations",
+      "claim": "The Ministry of Foreign Affairs publishes travel recommendations (המלצות מסע) for Israelis abroad",
+      "claim_type": "url",
+      "source_url": "https://www.gov.il/he/departments/dynamiccollectors/travel_warnings",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "המלצות מסע | משרד החוץ",
+      "confidence": "high"
+    },
+    {
+      "id": "fact_israeli_doc_mandatory",
+      "claim": "Israeli citizens must use Israeli travel documentation to enter or leave Israel, even with dual citizenship",
+      "claim_type": "law",
+      "source_url": "https://www.nbn.org.il/life-in-israel/government-services/obtaining-an-israeli-passport/",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "It is mandatory for all Israeli citizens, regardless of dual citizenship with another country, to use Israeli travel documentation when entering or leaving Israel.",
+      "confidence": "high"
+    },
+    {
+      "id": "fact_passport_authority",
+      "claim": "The Israeli passport is issued by the Population and Immigration Authority (רשות האוכלוסין וההגירה)",
+      "claim_type": "company",
+      "source_url": "https://www.nbn.org.il/life-in-israel/government-services/obtaining-an-israeli-passport/",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "Book an appointment at The Population and Immigration Authority for EACH person who needs a passport.",
+      "confidence": "high"
+    },
+    {
+      "id": "fact_emergency_passport_bengurion",
+      "claim": "An emergency passport can be issued at the Ben Gurion airport emergency passport center, which is open long hours including 24 hours Sun-Thu",
+      "claim_type": "feature",
+      "source_url": "https://www.nbn.org.il/life-in-israel/government-services/obtaining-an-israeli-passport/",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "Emergency passport center at the airport is open 24 hours Sun-Thur, until 14:00 on Fridays, and from 21:00 on Saturday night.",
+      "confidence": "high"
+    },
+    {
+      "id": "url_govil_passport_service",
+      "claim": "Israeli passport applications and renewals are handled via the Population and Immigration Authority passport service on gov.il",
+      "claim_type": "url",
+      "source_url": "https://www.gov.il/he/service/application_for_biometric_passport2",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "בקשה לדרכון | רשות האוכלוסין וההגירה",
+      "confidence": "high"
+    },
+    {
+      "id": "fact_clalit_travel_clinic_timing",
+      "claim": "Clalit recommends booking the first travel-clinic appointment about a month and a half before travel",
+      "claim_type": "threshold",
+      "source_url": "https://www.clalit.co.il/he/myrights/vaccines/Pages/travel-vaccines.aspx",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "מומלץ לקבוע את התור הראשון במרפאה חודש וחצי לפני הנסיעה",
+      "confidence": "high"
+    },
+    {
+      "id": "fact_clalit_travel_clinic_access",
+      "claim": "Clalit members access travel vaccines by contacting a travel clinic in arrangement with Clalit Mushlam to book a consultation and vaccination",
+      "claim_type": "feature",
+      "source_url": "https://www.clalit.co.il/he/myrights/vaccines/Pages/travel-vaccines.aspx",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "יש ליצור קשר עם מרפאת המטיילים שבהסדר עם כללית מושלם לצורך קביעת תור לייעוץ ולחיסון",
+      "confidence": "high"
+    },
+    {
+      "id": "url_moh_vaccination_abroad",
+      "claim": "The Ministry of Health publishes vaccination guidance for travelers abroad (חיסונים לנוסעים לחוץ לארץ)",
+      "claim_type": "url",
+      "source_url": "https://www.gov.il/he/service/vaccination_abroad",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "חיסונים לנוסעים לחוץ לארץ | משרד הבריאות",
+      "confidence": "high"
+    },
+    {
+      "id": "url_chabad_locator",
+      "claim": "Chabad.org hosts a worldwide Chabad center locator / synagogue directory travelers can use to find a Chabad house near them",
+      "claim_type": "url",
+      "source_url": "https://www.chabad.org/centers/default_cdo/jewish/Centers.htm",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "Chabad Centers and Synagogue Directory",
+      "confidence": "high"
+    },
+    {
+      "id": "url_elal",
+      "claim": "El Al is an Israeli airline operating flights between Israel (Tel Aviv) and destinations abroad; its official site is elal.com",
+      "claim_type": "company",
+      "source_url": "https://www.elal.com/en",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "Flights to Israel: Non-Stop & Flexible Flights to Tel Aviv | EL AL",
+      "confidence": "high"
+    },
+    {
+      "id": "url_iata_travel_centre",
+      "claim": "IATA Travel Centre provides passport, visa and health documentation requirements personalised by the traveler's nationality and destination",
+      "claim_type": "url",
+      "source_url": "https://www.iatatravelcentre.com/",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "IATA - Personalised Passport, Visa & Health travel documentation advice",
+      "confidence": "high"
+    },
+    {
+      "id": "mcp_ben_gurion_flights",
+      "claim": "The ben-gurion-flights MCP server provides real-time flight data from Ben Gurion airport: flight status, search by airline or destination, and airport activity tracking (status, not booking)",
+      "claim_type": "feature",
+      "source_url": "https://agentskills.co.il/he/mcp/ben-gurion-flights",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "שרת MCP לנתוני טיסות בזמן אמת מנמל התעופה בן גוריון. תבדקו סטטוס של טיסה, תחפשו לפי חברת תעופה או יעד ותעקבו אחרי פעילות שדה התעופה.",
+      "confidence": "high"
+    },
+    {
+      "id": "fact_minor_passport_validity",
+      "claim": "An adult Israeli passport is valid 10 years, but a minor's passport (under 16) is valid only 5 years",
+      "claim_type": "threshold",
+      "source_url": "https://www.kolzchut.org.il/he/הוצאת_דרכון_ביומטרי",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "תוקף הדרכון הוא ל-10 שנים. תוקף דרכון של קטין מתחת לגיל 16 הוא ל-5 שנים",
+      "confidence": "high"
+    },
+    {
+      "id": "fact_minor_both_parents_consent",
+      "claim": "Issuing a travel document for a minor whose parents are divorced, separated, common-law or unmarried requires written consent from both parents",
+      "claim_type": "law",
+      "source_url": "https://www.gov.il/he/service/issuing_and_extending_travel_documents",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "במקרה של הורים גרושים, פרודים, ידועים בציבור או רווקים, נדרשת הסכמה בכתב של שני ההורים.",
+      "confidence": "high"
+    },
+    {
+      "id": "fact_lost_passport_abroad_travel_document",
+      "claim": "If an Israeli travel document is lost, stolen or damaged abroad, the nearest Israeli mission issues a new travel document; Israeli missions abroad cannot issue a biometric passport (so it is a laissez-passer / teudat maavar)",
+      "claim_type": "feature",
+      "source_url": "https://www.gov.il/he/service/issuing_and_extending_travel_documents",
+      "source_fetched_at": "2026-07-18T00:00:00Z",
+      "raw_snippet": "מסמך נסיעה חדש בעקבות אובדן, גניבה, השחתה או בלאי של מסמך הנסיעה הקודם. ... לא ניתן להנפיק מסמך נסיעה ביומטרי בנציגויות ישראל בחוץ לארץ.",
+      "confidence": "high"
+    }
+  ]
+}

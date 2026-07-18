@@ -1,0 +1,22 @@
+{
+  "display_name": {"he": "מתכנן טיול לחו״ל", "en": "Israeli Abroad Trip Planner"},
+  "display_description": {
+    "he": "מתכנן לישראלים טיול מלא לחו״ל: מסלול, מלונות ואטרקציות לפי התקציב והסגנון שלכם, עם הרובד הישראלי בליבה. השתמשו בו כשאתם מתכננים חופשה או טיול לחו״ל וצריכים גם לבדוק ויזה לדרכון ישראלי, אזהרות מסע, תוקף וחידוש דרכון, ובריאות וביטוח דרך הקופה. הוא בודק ויזה ואזהרות בזמן אמת במקורות הרשמיים במקום לנחש, כי אלה דברים שמשתנים כל הזמן ויכולים להחזיר אתכם מהגבול. לא מיועד לטיולים בתוך ישראל (השתמשו ב-israeli-travel-planner) או להשוואת מחירי טיסה (השתמשו ב-israeli-flight-finder).",
+    "en": "Plans a full trip abroad for Israelis: route, hotels and attractions matched to your budget and style, with the Israel-specific layer at its core. Use it when planning a vacation or trip abroad and you also need to check visa rules for an Israeli passport, travel warnings, passport validity and renewal, and health and insurance through your kupat cholim. It checks visa status and warnings live against official sources instead of guessing, because these change constantly and can get you turned away at the border. Do NOT use it for domestic travel inside Israel (use israeli-travel-planner) or for flight price comparison (use israeli-flight-finder)."
+  },
+  "tags": {
+    "he": ["טיול לחול", "דרכון ישראלי", "ויזה", "אזהרות מסע", "ביטוח נסיעות", "מרפאת מטייל", "בתי חבד", "תכנון טיול"],
+    "en": ["travel abroad", "israeli passport", "visa", "travel warnings", "travel insurance", "travel clinic", "chabad houses", "trip planning"]
+  },
+  "author": "skills-il",
+  "version": "1.0.0",
+  "category": "travel",
+  "supported_agents": ["claude-code", "cursor", "github-copilot", "windsurf", "opencode", "codex", "openclaw", "antigravity", "gemini-cli", "chatgpt", "claude-ai", "claude-desktop", "manus"],
+  "openclaw": true,
+  "volatility": "legislative",
+  "authoritative_sources": [
+    {"url": "https://www.gov.il/he/departments/dynamiccollectors/travel-warnings-nsc", "type": "regulator", "language": "he"},
+    {"url": "https://www.gov.il/he/service/application_for_biometric_passport2", "type": "government", "language": "he"}
+  ],
+  "domain_checklist_version": 1
+}
