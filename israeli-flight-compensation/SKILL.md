@@ -20,7 +20,7 @@ compatibility: >-
 
 ## Problem
 
-Israeli passengers are owed real money when a flight to or from Israel is cancelled, badly delayed, or overbooked, but most people never claim it, and those who do often hand 20 to 35 percent of the payout to a claim-handling service for a letter they could send themselves. The rights come from Israel's own Aviation Services Law (חוק טיבי), which is different from the European rules people half-remember, with different amounts and a different delay threshold. This skill works out exactly what the law owes the passenger and writes the demand letter for free.
+Israeli passengers are owed real money when a flight to or from Israel is cancelled, badly delayed, or overbooked, but most people never claim it, and those who do often hand a large success fee to a claim-handling service for a letter they could send themselves. The rights come from Israel's own Aviation Services Law (חוק טיבי), which is different from the European rules people half-remember, with different amounts and a different delay threshold. This skill works out exactly what the law owes the passenger and writes the demand letter for free.
 
 ## Instructions
 
@@ -69,7 +69,7 @@ The monetary amount is set by distance band (2026 figures): up to 2,000 km, then
 
 **Then add the head most claims leave on the table: exemplary damages (פיצויים לדוגמה) under section 11.** The court may award up to 12,240 NIS per passenger (the 10,000 NIS in the statute, indexed for 2026), with NO proof of harm, where it finds the airline KNOWINGLY failed to give the benefits owed under sections 5, 6, 7, 8, 9(b) or 10. This is often larger than the band amount itself and is a major reason airlines settle, so state it explicitly in the demand letter and in any statement of claim rather than treating the band figure as the whole claim. It is discretionary, so present it as claimed, not guaranteed.
 
-Separately from the money, explain the assistance the airline owed during the wait (food and communication after 2 hours; accommodation and transport, or a refund-or-alternative choice, after 5 hours). Assistance is owed even when an exemption removes the monetary compensation. This ladder applies to DOMESTIC flights too: section 18 applies the whole law to domestic passengers with the necessary changes and carves out only the monetary compensation, which is what the separate regulations set. So a domestic passenger delayed 4 hours is owed the same care, even though their money figure comes from the domestic schedule.
+Separately from the money, explain the assistance the airline owed during the wait (food and communication after 2 hours; from 5 to under 8 hours, the passenger's CHOICE of a refund or an alternative flight, and accommodation plus ground transport only where they accepted an alternative departing the next day). Assistance is owed even when an exemption removes the monetary compensation. This ladder applies to DOMESTIC flights too: section 18 applies the whole law to domestic passengers with the necessary changes and carves out only the monetary compensation, which is what the separate regulations set. So a domestic passenger delayed 4 hours is owed the same care, even though their money figure comes from the domestic schedule.
 
 ### Step 5: Check exemptions before promising money
 
@@ -123,7 +123,7 @@ If the airline refuses or ignores the demand, the realistic next step is a small
 Set expectations on the regulator honestly: the Aviation Services Law contains no enforcement chapter and designates no regulator to order payment to a passenger. The Civil Aviation Authority handles licensing, airworthiness and safety, not individual compensation claims, so a complaint there will not get the money paid. The Israeli Consumer Council is useful for guidance and pressure, but it also cannot order payment. Do not send the passenger to a regulator instead of to court.
 
 Two practical points for the filing:
-- The small claims ceiling is about 39,900 NIS (2026, CPI-updated), and a plaintiff is limited to 5 claims per year in the same court. A family claim that stacks band amounts plus section 11 exemplary damages plus consequential losses can exceed the ceiling, in which case it must be trimmed or filed in the magistrates court instead.
+- The small claims ceiling is about 39,900 NIS (2026, CPI-updated),. A family claim that stacks band amounts plus section 11 exemplary damages plus consequential losses can exceed the ceiling, in which case it must be trimmed or filed in the magistrates court instead.
 - Suing a foreign airline requires serving its Israeli representative for service of court documents; the Civil Aviation Authority publishes that register, which is the one genuinely useful thing it offers here.
 
 Remind the user that the limitation period is 4 years from the disruption.

@@ -1,7 +1,7 @@
 {
   "skill_slug": "israeli-flight-compensation",
   "schemaVersion": "1.0",
-  "generated_at": "2026-07-26T16:43:21Z",
+  "generated_at": "2026-07-26T16:56:25Z",
   "claims": [
     {
       "id": "amount-band-1-2026",
@@ -68,11 +68,11 @@
     },
     {
       "id": "delay-5h-accommodation",
-      "claim": "A delay of more than 5 hours and under 8 hours adds accommodation and ground transport, or a choice of refund or alternative flight",
+      "claim": "A delay of 5 hours and under 8 hours entitles the passenger to a refund or an alternative ticket at their choice; lodging and ground transport are owed only where the passenger was offered and accepted an alternative flight departing the following day. Where the delay was caused by a protected strike or lockout the entitlement is a refund plus food and communication services.",
       "claim_type": "threshold",
-      "source_url": "https://www.elal.com/SiteCollectionDocuments/About-ELAL/Passengers-Rights/Aviation-Services-Law-HE-200918.pdf",
-      "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "אם העיכוב בטיסה נמשך יותר מחמש שעות ופחות משמונה שעות הנך זכאי בנוסף תהא זכאי גם לסידורי לינה ותחבורה יבשתית",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:56:25Z",
+      "raw_snippet": "נוסע שהונפק לו כרטיס טיסה לטיסה שהמריאה באיחור של חמש שעות ופחות משמונה שעות מהמועד הנקוב בכרטיס הטיסה זכאי להשבת תמורה או לכרטיס טיסה חלופי, לפי בחירתו; נוסע שהוצע לו כרטיס טיסה חלופי לטיסה שאמורה להמריא ביום שלמחרת ובחר לקבלו, זכאי לקבל גם שירותי לינה ושירותי הסעה",
       "confidence": "high"
     },
     {
@@ -209,15 +209,6 @@
       "source_fetched_at": "2026-06-23T00:00:00Z",
       "raw_snippet": "נוסע שהונפק לו כרטיס טיסה לטיסה שמועד המראתה הוקדם ביותר מחמש שעות ולא יותר משמונה שעות, וקיבל הודעה על כך ממפעיל הטיסה פחות מ-14 ימים לפני מועד הטיסה הנקוב בכרטיס הטיסה, יהיה זכאי להשבת תמורה או לכרטיס טיסה חלופי, לפי בחירתו",
       "confidence": "high"
-    },
-    {
-      "id": "regulator-caa",
-      "claim": "The Civil Aviation Authority of Israel is the authority that enforces the Aviation Services Law and receives passenger complaints",
-      "claim_type": "law",
-      "source_url": "https://www.gov.il/he/departments/civil_aviation_authority_of_israel",
-      "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "רשות התעופה האזרחית אחראית על יישום חוק שירותי תעופה",
-      "confidence": "medium"
     },
     {
       "id": "consumer-council-source",
@@ -377,6 +368,86 @@
       "source_fetched_at": "2026-07-26T16:43:21Z",
       "raw_snippet": "תקרת תביעה תביעות קטנות עד 39,900 ₪",
       "note": "Ceiling is CPI-updated each January; the skill instructs the user to confirm before filing.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "id": "no-regulator-enforcement",
+      "claim": "The Aviation Services Law contains no enforcement chapter and designates no regulator empowered to order an airline to pay a passenger; the passenger's route is a civil claim, and the limitation period is four years.",
+      "claim_type": "legal-reference",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:56:25Z",
+      "raw_snippet": "19. התיישנות תקופת ההתיישנות של תביעה בשל הפרת הוראות חוק זה היא ארבע שנים מיום שנוצרה עילה מזכה.",
+      "note": "Verified by enumerating all sections of the statute: there is no עיצום כספי, no קנס, and no supervisory authority provision. The Civil Aviation Authority's remit is licensing, airworthiness and safety.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ]
+    },
+    {
+      "id": "notice-carveouts-s6c",
+      "claim": "Where the airline gave 7 to 14 days notice, no monetary compensation is owed if the alternative departs no more than 2 hours early and arrives no more than 4 hours after the original; where it gave less than 7 days notice, the equivalent limits are 1 hour early and 2 hours late.",
+      "claim_type": "threshold",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:56:25Z",
+      "raw_snippet": "סעיף 6(ג) לחוק שירותי תעופה: פסקאות (2) ו-(3) קובעות את חלונות הזמן של הכרטיס החלופי שבהם לא תקום זכאות לפיצוי כספי, לפי תקופת ההודעה מראש",
+      "verified_via": "browser",
+      "verified_at": "2026-07-26T16:56:25Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "downgrade-21-days-s3b2",
+      "claim": "Downgrade compensation under the Second Schedule is paid within 21 days of the flight date.",
+      "claim_type": "threshold",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:56:25Z",
+      "raw_snippet": "בתוך 21 ימים ממועד הטיסה",
+      "appears_in": [
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "written-statement-s14b",
+      "claim": "A passenger is entitled to receive from the operator or organizer a document detailing their right to benefits, and the burden of proving that notice of a cancellation was given to the passenger rests on the operator or organizer.",
+      "claim_type": "legal-reference",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:56:25Z",
+      "raw_snippet": "חובת ההוכחה בדבר מתן ההודעה לנוסע על טיסה שבוטלה תחול על מפעיל הטיסה או על המארגן",
+      "appears_in": [
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "eu261-scope-and-amounts",
+      "claim": "EU Regulation 261/2004 provides compensation of 250, 400 or 600 EUR by distance with a delay threshold of 3 hours, and applies to any flight departing an airport in the EU regardless of carrier, and to a flight from a third country to the EU operated by a Community carrier. A Tel Aviv to Paris flight is about 3,284 km, which falls in the 400 EUR band.",
+      "claim_type": "regulation",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A4%D7%99%D7%A6%D7%95%D7%99_%D7%91%D7%9E%D7%A7%D7%A8%D7%94_%D7%A9%D7%9C_%D7%98%D7%99%D7%A1%D7%94_%D7%A9%D7%94%D7%AA%D7%91%D7%98%D7%9C%D7%94",
+      "source_fetched_at": "2026-07-26T16:56:25Z",
+      "raw_snippet": "תקנה אירופית 261/2004: פיצוי של 250, 400 או 600 אירו לפי מרחק הטיסה, בעיכוב של מעל 3 שעות",
+      "note": "Cross-checked distance: TLV-CDG great circle is about 3,284 km, inside the 1,500-3,500 km band.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "caa-not-compensation-regulator",
+      "claim": "The Civil Aviation Authority of Israel's published remit covers licensing, aircraft registration, aviation law and safety policy, not adjudication of passenger compensation claims. It does publish the register of Israeli representatives for service of court documents on foreign carriers.",
+      "claim_type": "regulator",
+      "source_url": "https://www.gov.il/he/departments/civil_aviation_authority_of_israel",
+      "source_fetched_at": "2026-07-26T16:56:47Z",
+      "raw_snippet": "רשות התעופה האזרחית ... שירותים, מידע משפטי, מדיניות ונהלים, רישום כלי טיס",
+      "verified_via": "browser",
+      "verified_at": "2026-07-26T16:56:47Z",
+      "note": "Rendered in a browser (gov.il returns 403 to plain fetchers). No passenger-compensation service or complaint adjudication appears on the page.",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"

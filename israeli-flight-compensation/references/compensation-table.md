@@ -120,7 +120,7 @@ Assistance (שירותי סיוע) is a SEPARATE entitlement from the monetary c
 | Delay at the airport | The airline must provide |
 |---|---|
 | More than 2 hours | Food and beverages reasonable to the wait, plus communication services (up to 2 phone calls and one fax or email, the passenger's choice) |
-| More than 5 hours | The above, plus hotel accommodation and ground transport when an overnight or long wait applies, OR the passenger's choice of a full refund or an alternative flight |
+| 5 to under 8 hours | The above, plus the passenger's CHOICE of a full refund or an alternative flight. Hotel accommodation and ground transport are owed only where the passenger accepted an alternative flight departing the NEXT DAY (s.7(b)). Where the delay was caused by a protected strike, the entitlement is the refund plus food and communication only |
 | 8 hours or more | Treated as a cancellation: the monetary compensation above is added on top of the assistance |
 
 The passenger always has the right to CHOOSE between a full refund of the ticket and an alternative flight (rebooking) when the trigger applies.

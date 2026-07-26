@@ -157,6 +157,12 @@ def assess(distance_km, event, delay_hours, notice_days, domestic,
     amount = base if eligible else 0
 
     # 50% reduction for an accepted alternative arriving within the window.
+    if eligible and alternative_accepted and band.get("alt_window_hours") is None:
+        notes.append(
+            "You passed --alternative-accepted on a DOMESTIC flight. The 2/3/4-hour reduction "
+            "windows are set by distance band and have no domestic equivalent in the "
+            "regulations, so no reduction was applied here. Confirm against the domestic "
+            "regulations before telling the passenger the full amount is safe.")
     if eligible and alternative_accepted and band.get("alt_window_hours") is not None:
         window = band["alt_window_hours"]
         if alternative_arrival_delay_hours is not None and alternative_arrival_delay_hours <= window:
