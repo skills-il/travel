@@ -2,7 +2,13 @@
 
 All figures are the in-force amounts as of 2026. The Aviation Services Law amounts are updated every January 1 by the change in the Consumer Price Index and rounded to the nearest 10 NIS, so always confirm the current-year figure before quoting it to a user.
 
-This is Israel's own law (חוק שירותי תעופה, 2012, "חוק טיבי"). It is NOT EU Regulation 261/2004. Never use EU261 amounts (250 / 400 / 600 EUR) or the EU261 3-hour delay threshold for an Israel-nexus flight.
+This is Israel's own law (חוק שירותי תעופה, 2012, "חוק טיבי"). It is NOT EU Regulation 261/2004,
+so never quote EU261 amounts (250 / 400 / 600 EUR) or the EU261 3-hour threshold AS the Israeli
+entitlement. But the two regimes overlap: EU261 also covers any flight departing an EU airport,
+and a third-country-to-EU flight on an EU carrier, which includes many Israel routes. Where both
+apply, work out which pays more for the specific disruption and claim that one FIRST, because
+section 20 disqualifies an Israeli benefit of the same type once a foreign-law benefit has been
+received.
 
 ## Monetary compensation by flight distance (2026)
 
@@ -15,9 +21,55 @@ Distance is measured from the origin to the final destination (for a connecting 
 | Over 4,500 km | 3,670 NIS |
 
 Rough distance guide from Tel Aviv (confirm the exact great-circle distance for borderline cases):
-- Up to 2,000 km: most of Europe's east and south (Athens, Larnaca, Istanbul, Bucharest, Rome, Vienna).
-- 2,000 to 4,500 km: western and northern Europe (London, Paris, Berlin, Amsterdam, Madrid), and nearby.
-- Over 4,500 km: North America, the Far East, southern Africa, Australia (New York, Bangkok, Johannesburg).
+- Up to 2,000 km: Cyprus, Greece, Turkey and the near south-east (Larnaca ~400, Athens ~1,200, Istanbul ~1,100, Bucharest ~1,500).
+- 2,000 to 4,500 km: most of the rest of Europe (Rome ~2,270, Vienna ~2,300, Berlin ~2,900, Paris ~3,300, London ~3,600, Madrid ~3,600).
+- Over 4,500 km: North America, the Far East, southern Africa, Australia (New York ~9,100, Bangkok ~7,000, Johannesburg ~6,500).
+
+Watch the boundary cases. Rome and Vienna FEEL like short hops but both sit just above the
+2,000 km line, so they pay the middle band, not the first. Always compute the great-circle
+distance rather than judging by intuition; getting this wrong understates a Rome claim by
+920 NIS.
+
+## Domestic flights: a separate schedule (do NOT use the distance bands)
+
+Section 18 of the law defers domestic monetary compensation to its own regulations
+(תקנות ... (טיסות פנים-ארציות), התשע"ג-2013), which set their own amounts and their own
+CPI clock. A domestic flight is one whose origin and final destination are both in Israel,
+and it counts as cancelled if it did not operate or departed at least 3 hours late.
+
+| Domestic route | Compensation (2026) |
+|---|---|
+| Tel Aviv (Sde Dov), Ben Gurion or Haifa to/from Eilat | 300 NIS |
+| Tel Aviv (Sde Dov) to/from Ein Yahav or Rosh Pina (Mahanayim) | 180 NIS |
+| Any other domestic route | 240 NIS |
+
+Quoting an international band figure (1,530 / 2,450 / 3,670) for a domestic flight overstates
+the claim roughly fivefold.
+
+## Exemplary damages (section 11): the head most claims miss
+
+Separately from the band amount, the court MAY award פיצויים לדוגמה of up to 12,240 NIS per
+passenger (10,000 NIS as written in the statute, indexed for 2026), with NO proof of harm,
+where it finds the airline KNOWINGLY failed to provide the benefits owed under sections 5, 6,
+7, 8, 9(b) or 10. It is discretionary, not automatic, but it is frequently awarded and is often
+larger than the compensation itself, which is a major reason airlines settle. Always claim it
+expressly in the demand letter and in the statement of claim.
+
+Note section 14(b): the airline or organizer must hand the passenger a written statement of
+their rights. A breach of section 14 is not itself a section 11 head, but its absence helps
+establish the "knowingly" element and undercuts the carrier's notice defence (the burden of
+proving notice is on the carrier under section 6(g)). Ask for that document and record if it
+was never provided.
+
+## Ticket-type eligibility gate (section 2(b)(2))
+
+Before any amount applies, check how the ticket was obtained. A passenger is NOT entitled to
+any benefit if the ticket was received free of charge, or bought at a special fare not
+available to the public directly or indirectly (staff, industry-discount, negotiated
+non-public fares). The exception, which is the common case: a ticket issued by virtue of
+membership in a frequent-flyer or benefits programme IS covered, so an award ticket bought
+with points carries a full claim. Entitlement also requires the passenger to have been issued
+a ticket at all, so a lap infant without their own ticket has no claim.
 
 ## When monetary compensation is owed
 
@@ -44,13 +96,22 @@ When the passenger is moved to a lower class than booked, the compensation is a 
 
 If the passenger accepted an alternative flight the airline offered, the airline may pay only half the monetary amount, provided the alternative arrives within this window of the original arrival:
 
-| Flight distance | Alternative arrives within |
-|---|---|
-| Up to 2,000 km | 2 hours |
-| 2,000 to 4,500 km | 3 hours |
-| Over 4,500 km | 4 hours |
+| Flight distance | Alternative arrives within | Reduced amount (2026) |
+|---|---|---|
+| Up to 2,000 km | 2 hours | 765 NIS |
+| 2,000 to 4,500 km | 3 hours | 1,225 NIS |
+| Over 4,500 km | 4 hours | 1,835 NIS |
 
-There is also a no-compensation carve-out: if the airline gave 7 to 14 days notice and offered an alternative departing no more than 2 hours early and arriving no more than 4 hours after the original, no monetary compensation is owed (assistance and the refund/alternative choice still stand).
+(The third column is the reduced amount, half of the band figure, for 2026.)
+
+There are also no-compensation carve-outs based on how much notice the airline gave and how close the alternative runs to the original:
+
+| Notice given | No compensation if the alternative departs / arrives within |
+|---|---|
+| 7 to 14 days before departure | Departs no more than 2 hours early AND arrives no more than 4 hours late |
+| Less than 7 days before departure | Departs no more than 1 hour early AND arrives no more than 2 hours late |
+
+Assistance and the refund/alternative choice still stand in both cases.
 
 ## Assistance obligations (owed even when money is exempt)
 
@@ -66,10 +127,39 @@ The passenger always has the right to CHOOSE between a full refund of the ticket
 
 ## Exemptions (no monetary compensation)
 
-- Extraordinary circumstances beyond the airline's control, provided the airline did everything it could to operate the flight anyway. Note: Israel's law and case law read this category more narrowly than airlines claim; a routine technical fault is usually NOT an exemption.
-- Iron Swords (Amendment 2): airlines are statutorily exempt from the MONETARY compensation for flights in specific defined war-period date ranges. Assistance, refund, and the alternative-flight choice are still owed. If the flight date falls in a war-period window, check whether it is one of the exempted ranges before promising the money.
+Section 6(e) provides exactly THREE grounds, and the burden of proof is expressly on the
+carrier ("הוכיח"), not on the passenger:
+
+1. Extraordinary circumstances beyond the airline's control, provided it did everything it could to operate the flight anyway. Israel's law and case law read this more narrowly than airlines claim; a routine technical fault is usually NOT an exemption.
+2. A protected strike or lockout (שביתה או השבתה מוגנות). Standalone ground, not a sub-case of the first. An UNPROTECTED strike is not a ground.
+3. Cancellation to avoid desecration of Shabbat or a holiday (חילול שבת או חג).
+
+Asymmetry worth knowing: section 8(b)(1) (early departure of more than 8 hours) cross-references
+only grounds (1) and (2), so ground (3) does not defeat an early-departure claim.
+- Iron Swords (Amendment No. 2, 2025): a CLOSED, retroactive exemption from the MONETARY compensation, applying only to flights whose ticketed date falls in these fixed windows:
+  - 07.10.2023 to 30.11.2023
+  - 01.12.2023 to 29.02.2024 (exempt only if the airline proves it gave at least 3 days notice)
+  - 12.04.2024 to 18.04.2024
+  - 03.08.2024 to 08.08.2024
+  - 01.10.2024 to 05.10.2024
+
+  There is no sunset and no rolling war exemption: **no 2025 or 2026 flight falls in these windows**. Outside them the airline must rely on the general extraordinary-circumstances defence. Assistance, refund, and the alternative-flight choice remain owed even inside a window, and the exemption does not reopen judgments given before the amendment took effect.
+- Standing emergency orders (Section 9א): where a declared special situation has lasted more than 14 days, the Minister of Transport may, with Knesset Economy Committee approval, issue an order reducing accommodation (minimum two nights), altering the alternative-ticket entitlement, shortening the 14-day notice period (minimum three days), or negating the monetary compensation. Maximum duration 60 days, or 45 days where compensation is negated, and it lapses with the emergency declaration. Check whether such an order covered the disruption date before applying the default rules.
+- While the October 2023 home-front special-situation declaration remains in force, an operator that halted ALL of its flights to and from Israel must offer an alternative ticket from a different origin or to a different destination, subject to the passenger's written consent.
 
 When an exemption applies to the money, the passenger still keeps the assistance and the refund/alternative-flight rights.
+
+## Third Schedule: deemed ticket price for package and charter tickets
+
+Downgrade compensation is a percentage of the ticket price the passenger paid. On a package
+tour or charter there is often no separable ticket price, so section 3(b)(3) deems it from the
+Third Schedule unless a different amount is proved. 2026 figures by one-way distance:
+
+| Flight and class | Up to 2,000 km | Up to 4,500 km | Over 4,500 km |
+|---|---|---|---|
+| Charter, or scheduled economy | 920 NIS | 1,840 NIS | 3,060 NIS |
+| Scheduled business | 2,450 NIS | 4,280 NIS | 7,650 NIS |
+| Scheduled first | 4,900 NIS | 8,570 NIS | 15,300 NIS |
 
 ## Scope: when the law applies at all
 

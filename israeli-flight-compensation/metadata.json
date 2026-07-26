@@ -1,10 +1,24 @@
 {
   "author": "skills-il",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "category": "legal-tech",
   "tags": {
-    "he": ["פיצוי טיסה", "חוק טיבי", "ביטול טיסה", "זכויות נוסעים", "תביעה קטנה", "ישראל"],
-    "en": ["flight compensation", "tibi law", "flight cancellation", "passenger rights", "small claims", "israel"]
+    "he": [
+      "פיצוי טיסה",
+      "חוק טיבי",
+      "ביטול טיסה",
+      "זכויות נוסעים",
+      "תביעה קטנה",
+      "ישראל"
+    ],
+    "en": [
+      "flight compensation",
+      "tibi law",
+      "flight cancellation",
+      "passenger rights",
+      "small claims",
+      "israel"
+    ]
   },
   "display_name": {
     "he": "פיצוי על טיסות בישראל",
@@ -29,9 +43,21 @@
   ],
   "volatility": "legislative",
   "authoritative_sources": [
-    { "url": "https://www.nevo.co.il/law_html/law00/119611.htm", "type": "statute", "language": "he" },
-    { "url": "https://www.gov.il/he/departments/civil_aviation_authority_of_israel", "type": "regulator", "language": "he" },
-    { "url": "https://www.consumers.org.il/category/aviation-law-benefits", "type": "consumer-body", "language": "he" }
+    {
+      "url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "type": "statute",
+      "language": "he"
+    },
+    {
+      "url": "https://www.gov.il/he/departments/civil_aviation_authority_of_israel",
+      "type": "regulator",
+      "language": "he"
+    },
+    {
+      "url": "https://www.consumers.org.il/category/aviation-law-benefits",
+      "type": "consumer-body",
+      "language": "he"
+    }
   ],
   "domain_checklist_version": 1
 }

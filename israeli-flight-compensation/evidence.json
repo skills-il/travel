@@ -1,7 +1,7 @@
 {
   "skill_slug": "israeli-flight-compensation",
   "schemaVersion": "1.0",
-  "generated_at": "2026-06-23",
+  "generated_at": "2026-07-26T16:43:21Z",
   "claims": [
     {
       "id": "amount-band-1-2026",
@@ -236,6 +236,151 @@
       "source_fetched_at": "2026-06-23T00:00:00Z",
       "raw_snippet": "https://www.iaa.gov.il/",
       "confidence": "medium"
+    },
+    {
+      "id": "domestic-amounts-2026",
+      "claim": "Domestic Israeli flight compensation is set by separate regulations, not the international distance bands: 300 NIS on the Tel Aviv (Sde Dov) / Ben Gurion / Haifa to Eilat routes, 180 NIS on Sde Dov to Ein Yahav or Rosh Pina (Mahanayim), and 240 NIS on any other domestic route (2026 indexed figures).",
+      "claim_type": "currency",
+      "source_url": "https://he.wikisource.org/wiki/תקנות_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)_(טיסות_פנים-ארציות)",
+      "source_fetched_at": "2026-07-26T16:41:23Z",
+      "raw_snippet": "(1) בקו שבין תל אביב (שדה דב), נמל התעופה בן גוריון או חיפה לבין אילת – 250 שקלים חדשים (מתואם לשנת 2013; בשנת 2026, 300 ש\"ח) ; (2) בקו שבין תל אביב (שדה דב) לבין עין יהב או ראש פינה (מחניים) – 150 שקלים חדשים (מתואם לשנת 2013; בשנת 2026, 180 ש\"ח) ; (3) בכל קו אחר – 200 שקלים חדשים (מתואם לשנת 2013; בשנת 2026, 240 ש\"ח)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ]
+    },
+    {
+      "id": "domestic-cancellation-3h",
+      "claim": "A domestic flight counts as cancelled if it did not operate, or departed at least 3 hours after the time on the ticket.",
+      "claim_type": "threshold",
+      "source_url": "https://he.wikisource.org/wiki/תקנות_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)_(טיסות_פנים-ארציות)",
+      "source_fetched_at": "2026-07-26T16:41:23Z",
+      "raw_snippet": "(2) טיסה שהמריאה באיחור של שלוש שעות לפחות מהמועד הנקוב בכרטיס הטיסה",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "exemplary-damages-s11",
+      "claim": "Section 11 (סעיף 11): Under section 11 the court may award exemplary damages independent of harm, up to 10,000 NIS (10,000 ש\"ח) as written in the statute and 12,240 NIS as indexed for 2026, where it finds a knowing breach of sections 5, 6, 7, 8, 9(b) or 10. בעברית: סעיף 11 לחוק. The heads are Section 5 (denied boarding), Section 6 (cancellation), Section 7 (delay), Section 8 (early departure), Section 9(b) (downgrade) and Section 10.",
+      "claim_type": "currency",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:41:23Z",
+      "raw_snippet": "בית המשפט רשאי לפסוק לנוסע שהונפק לו כרטיס טיסה פיצויים שאינם תלויים בנזק (בסעיף זה – פיצויים לדוגמה), בסכום שלא יעלה על 10,000 שקלים חדשים (מתואם לשנת 2012; בשנת 2026, 12,240 ש\"ח) , אם מצא כי נעשה ביודעין אחד מאלה",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ]
+    },
+    {
+      "id": "ticket-type-exclusion-s2b2",
+      "claim": "A passenger is not entitled to benefits if the ticket was received without payment or bought at a special fare not available to the public directly or indirectly, unless it was issued by virtue of membership in an operator's or organizer's benefits programme. בעברית: סעיף 2(ב)(2) לחוק.",
+      "claim_type": "eligibility",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:41:23Z",
+      "raw_snippet": "אם קיבל את כרטיס הטיסה בלא תשלום או אם כרטיס הטיסה נרכש בתעריף מיוחד שלא ניתן לציבור במישרין או בעקיפין, אלא אם כן הכרטיס הונפק לו מתוקף חברותו בתכנית למתן הטבות של מפעיל טיסה או מארגן",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "three-exemption-grounds-s6e",
+      "claim": "Section 6(e) gives the carrier three exemption grounds from the monetary compensation, and the carrier bears the burden of proving one: extraordinary circumstances outside its control that it could not have prevented, a protected strike or lockout, or cancellation to avoid desecration of Shabbat or a holiday. בעברית: סעיף 6(ה) לחוק, וההפניה בסעיף 8(ב)(1). Section 8(b)(1), which governs early departure of more than eight hours, cross-references only grounds (1) and (2), so ground (3) does not defeat an early-departure claim.",
+      "claim_type": "legal-reference",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:41:23Z",
+      "raw_snippet": "נוסע שטיסתו בוטלה לא יהיה זכאי לפיצוי כספי כאמור בתוספת הראשונה , אם מפעיל הטיסה או המארגן הוכיח כי התקיים אחד מאלה: (1) הטיסה בוטלה בשל נסיבות מיוחדות שלא היו בשליטתו, וגם אם היה עושה כל אשר ביכולתו – לא היה יכול למנוע את ביטולה בשל אותן נסיבות; (2) הטיסה בוטלה בשל שביתה או השבתה מוגנות; (3) הטיסה בוטלה כדי להימנע מחילול שבת או חג.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ]
+    },
+    {
+      "id": "foreign-law-interaction-s16-s20",
+      "claim": "Section 16 and Section 20 (סעיף 16, סעיף 20): Section 16 preserves a passenger's rights under any other law, and section 20 provides that a passenger who received a benefit under foreign law is not entitled to a benefit of the same type under this law. בעברית: סעיף 16 וסעיף 20 לחוק.",
+      "claim_type": "legal-reference",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:41:23Z",
+      "raw_snippet": "16. שמירת דינים אין בהוראות חוק זה כדי לגרוע מהוראות כל דין, ובכלל זה מזכותו של נוסע לפיצוי לפי כל דין. ... 20. סייג לזכאות בשל קבלת הטבה לפי דין זר נוסע שקיבל הטבה לפי דין זר בשל נסיבות המקימות עילה מזכה, לא יהיה זכאי להטבות לפי חוק זה מאותו סוג שקיבל כאמור.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "domestic-deferred-to-regulations-s18",
+      "claim": "Section 18 applies the law to domestic flights with necessary changes, but provides that monetary compensation for a domestic passenger is given only under regulations set by the Minister. בעברית: סעיף 18 לחוק.",
+      "claim_type": "legal-reference",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:41:23Z",
+      "raw_snippet": "הוראות חוק זה יחולו, בשינויים המחויבים, גם על נוסע בטיסה שנקודת המוצא והיעד הסופי שלה נמצאים בשטח מדינת ישראל, ואולם לא יינתן פיצוי כספי לנוסע כאמור אלא לפי הוראות שקבע השר",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "third-schedule-package-prices",
+      "claim": "The Third Schedule sets the deemed ticket price for a ticket issued as part of a package tour, by distance band and class. Charter or scheduled economy: 920 NIS, 1,840 NIS, 3,060 NIS. Scheduled business: 2,450 NIS, 4,280 NIS, 7,650 NIS. Scheduled first class: 4,900 NIS, 8,570 NIS, 15,300 NIS.",
+      "claim_type": "currency",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-07-26T16:41:23Z",
+      "raw_snippet": "תוספת שלישית (סעיף 3(ב)(3)) מחיר כרטיס טיסה שהונפק כחלק מחבילת תיור ... טיסת שכר או טיסה סדירה במחלקת תיירים 920 1,840 3,060 טיסה סדירה במחלקת עסקים 2,450 4,280 7,650 טיסה סדירה במחלקה ראשונה 4,900 8,570 15,300",
+      "verified_via": "browser",
+      "verified_at": "2026-07-26T16:41:23Z",
+      "appears_in": [
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "emergency-order-s9a",
+      "claim": "Section 9א lets the Minister of Transport, where a special situation has been declared and in force more than 14 days, and after consulting the Minister of Economy and with Knesset Economy Committee approval, issue an order that limits lodging to no fewer than two nights, alters the alternative-ticket entitlement including a ticket from a different origin or to a different destination, shortens the advance-notice period to less than 14 days but not less than three days, or negates the monetary compensation. The determining period may not exceed 60 days, or 45 days where compensation is negated, and it ends if the declaration is cancelled or lapses. בעברית: סעיף 9א לחוק.",
+      "claim_type": "legal-reference",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:42:07Z",
+      "raw_snippet": "9א. שינוי ההטבות לנוסע בשל מצב מיוחד ... (א) הוכרז על מצב מיוחד וההכרזה עמדה בתוקפה יותר מ־14 ימים, רשאי השר, לאחר התייעצות עם שר הכלכלה והתעשייה ובאישור ועדת הכלכלה של הכנסת, לקבוע, בצו ... (1) כי שירותי הלינה ... יוגבלו למספר לילות שיקבע השר ושלא יפחת משניים ... תהיה פחות מ־14 ימים ולא פחות משלושה ימים ... (2) היא לא תעלה על 60 ימים, ולעניין שלילת פיצוי לפי סעיף קטן (א)(3)(ב) – לא תעלה על 45 ימים",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "fifty-percent-reduced-amounts",
+      "claim": "Where the 50% reduction applies because the passenger accepted a qualifying alternative flight, the reduced 2026 amounts are half of each band: 765 NIS for up to 2,000 km, 1,225 NIS for 2,000 to 4,500 km, and 1,835 NIS for over 4,500 km.",
+      "claim_type": "currency",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:42:31Z",
+      "raw_snippet": "רשאי להפחית במחצית את סכום הפיצוי הכספי",
+      "note": "The reduced figures are arithmetically half of the First Schedule 2026 amounts (1,530 / 2,450 / 3,670), which are evidenced separately.",
+      "appears_in": [
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "small-claims-ceiling-2026",
+      "claim": "The maximum amount that may be claimed in the Israeli small claims court is 39,900 NIS (39,900 ש\"ח) as of 1 January 2026, updated annually by the Consumer Price Index.",
+      "claim_type": "currency",
+      "source_url": "https://pelleg-law.co.il/%D7%AA%D7%A7%D7%A8%D7%AA-%D7%AA%D7%91%D7%99%D7%A2%D7%95%D7%AA-%D7%A7%D7%98%D7%A0%D7%95%D7%AA-2026/",
+      "source_fetched_at": "2026-07-26T16:43:21Z",
+      "raw_snippet": "תקרת תביעה תביעות קטנות עד 39,900 ₪",
+      "note": "Ceiling is CPI-updated each January; the skill instructs the user to confirm before filing.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     }
   ]
 }
