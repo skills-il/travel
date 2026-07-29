@@ -28,12 +28,18 @@ Scope: helping a traveler in Israel find and compare the cheapest international 
 - **Disruption protection**: refundable fares / insurance covering airspace closure (2026 TLV risk).
 - **Recommended MCP**: Ben Gurion Flights (live TLV arrivals/departures, flight status, not prices).
 
+## Must cover (added 2026-07-29)
+
+- **Currency normalization** - every figure entering the NIS comparison table (Israir/Arkia USD and EUR baggage tables, any USD-quoting search MCP) must be converted using a rate read in-session, with the ~3% Israeli card foreign-currency conversion fee included in the ranked total. Source: max.co.il abroad-commissions.
+- **Third-party flight-search MCP governance** - when a non-skills-il MCP supplies prices, the skill must state the source per row, disclose single-source results rather than implying full market coverage, prefer the offer's own baggage data, and forbid both the booking tool and referral to that vendor as a purchase venue.
+- **Foreign-seller consumer exposure** - surfacing a foreign reseller's fare must flag that Israeli consumer-protection cancellation rules and a clearly identifiable billing counterparty may not be available.
+
 ## Out of scope (explicit)
 
 - **Domestic travel within Israel** - handled by `israeli-travel-planner`.
 - **Train schedules** - handled by `railil`.
 - **Hotel-only bookings** - not a flight-comparison task.
-- **Actual booking / payment execution** - the skill compares and links out; the traveler books on the platform.
+- **Actual booking / payment execution** - the skill compares and links out; the traveler books on the platform. Reaffirmed 2026-07-29: this now explicitly extends to third-party booking MCPs. The skill may call a flight-search MCP for prices but must never invoke its booking tool nor route the traveler to it to buy.
 - **Live price data as a stored fact** - prices are pulled live per query, never encoded in the skill.
 - **Arkia Shabbat-flying permanence** - a potential Haredi buyout could change it; treat as a watch item, not a fixed fact.
 

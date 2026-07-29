@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "skill": "israeli-flight-finder",
-  "generated_at": "2026-07-15T00:00:00Z",
+  "generated_at": "2026-07-29T16:17:51.645381+00:00",
   "claims": [
     {
       "claim_id": "elal-baggage",
@@ -9,7 +9,11 @@
       "source_url": "https://www.elal.com/eng/baggage",
       "raw_snippet": "Economy carry-on: 8 kg, 56x45x25 cm, plus a personal item. Economy Lite to Europe and the UAE: carry-on must be checked at the gate; only a personal item up to 38x30x18 cm is allowed in the cabin.",
       "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/airline-baggage-quick-ref.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ]
     },
     {
       "claim_id": "elal-matmid",
@@ -17,7 +21,10 @@
       "source_url": "https://www.elal.com/eng/frequentflyer/club/tier_lobby",
       "raw_snippet": "The Matmid Frequent Flyer Program has four tier statuses: Silver, Gold, Platinum, and Top Platinum. The more Diamonds you earn, the faster you can advance to a higher tier status.",
       "fetched_at": "2026-07-16T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "elal-lite-gatecheck",
@@ -25,7 +32,11 @@
       "source_url": "https://www.elal.com/eng/baggage/hand-baggage",
       "raw_snippet": "send their carry-on to the aircraft hold at the gate at no cost, except for Matmid program Frequent Flyer members with Silver status or higher on the day of the flight, who will be permitted to bring their carry-on, subject to available space in the overhead storage compartments",
       "fetched_at": "2026-07-16T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/airline-baggage-quick-ref.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ]
     },
     {
       "claim_id": "israir-baggage",
@@ -33,7 +44,11 @@
       "source_url": "https://www.israir.co.il",
       "raw_snippet": "Israir baggage: carry-on $30 in advance, $40 at the airport; first checked bag $65 per direction in advance (effective 1 May 2026), $100 at the airport; additional bags $80 and $120.",
       "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/airline-baggage-quick-ref.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ]
     },
     {
       "claim_id": "arkia-baggage",
@@ -41,7 +56,11 @@
       "source_url": "https://www.arkia.co.il/en/luggage-information",
       "raw_snippet": "hand bag / backpack whose size does not exceed 20x30x40 cm ... baggage weighing up to 20 kg ... for an additional fee of $50 per passenger per direction ... the cost of purchasing baggage at the check-in counters is $90 per passenger per direction ... trolley suitcase weighing up to 8 kg ... in advance booking ... is $25 per passenger per direction ... at the counters is $30 per passenger per direction ... Second suitcase ... $70 per direction",
       "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/airline-baggage-quick-ref.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ]
     },
     {
       "claim_id": "wizz-resumed",
@@ -49,7 +68,11 @@
       "source_url": "https://www.wizzair.com",
       "raw_snippet": "Wizz Air resumed flights to Tel Aviv on 28 May 2026; base fare includes one small personal item, cabin and checked bags are paid add-ons.",
       "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/airline-baggage-quick-ref.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ]
     },
     {
       "claim_id": "etias-ees",
@@ -57,7 +80,10 @@
       "source_url": "https://travel-europe.europa.eu/etias_en",
       "raw_snippet": "ETIAS is a travel authorisation for visa-exempt non-EU nationals to travel to Schengen countries; it is linked to the traveller's passport and must be obtained before travel.",
       "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "tlv-security-3h",
@@ -65,7 +91,10 @@
       "source_url": "https://www.iaa.gov.il/en/airports/ben-gurion/securitybgn",
       "raw_snippet": "Passengers are advised to arrive at Ben Gurion Airport 3 hours before an international flight.",
       "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "booking-day-of-week",
@@ -73,7 +102,10 @@
       "source_url": "https://www.afar.com/magazine/expedia-data-shows-new-best-day-to-book-cheaper-flights",
       "raw_snippet": "Expedia found the cheapest day to fly is Tuesday, with travelers saving about 14 percent on average versus the most expensive day; weekend departures cost more.",
       "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "platforms-live",
@@ -81,7 +113,11 @@
       "source_url": "https://www.google.com/travel/flights?gl=IL&hl=he",
       "raw_snippet": "Google Flights lets users search and compare flights with locale set to Israel (gl=IL, hl=he), including AI Flight Deals and fare-history tracking.",
       "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/comparison-platforms.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/comparison-platforms.md"
+      ]
     },
     {
       "claim_id": "deal-sources",
@@ -89,7 +125,10 @@
       "source_url": "https://www.secretflights.co.il",
       "raw_snippet": "secretflights.co.il (טיסות סודיות) surfaces mispriced and error fares from Israel that do not appear on standard comparison engines.",
       "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "tlv-war-reopening-2026",
@@ -97,7 +136,10 @@
       "source_url": "https://www.timesofisrael.com/ben-gurion-airport-set-to-reopen-as-israel-eases-flight-restrictions-after-ceasefire/",
       "raw_snippet": "Ben Gurion Airport reopened in April 2026 after the ceasefire ended the February 2026 war; the airport had been closed and foreign carriers had suspended service, resuming on a rolling basis afterward.",
       "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "elal-network-2026",
@@ -105,7 +147,10 @@
       "source_url": "https://www.ynetnews.com/travel/article/ryuco7enzg",
       "raw_snippet": "about 900 weekly flights to more than 50 destinations worldwide ... 55 weekly flights to its destinations in North America, the most extensive activity ever on the continent",
       "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "lufthansa-group-tlv-2026",
@@ -113,7 +158,10 @@
       "source_url": "https://www.mtm.travel/news/wizz-air-and-the-lufthansa-group-resume-flights-to-tel-aviv/",
       "raw_snippet": "Austrian Airlines starting 1 June 2026 ... Lufthansa ... resume flights as early as 1 July 2026 ... SWISS ... 1 July 2026 ... Brussels Airlines has suspended operations to Tel Aviv through 24 October 2026 ... Wizz Air resumes May 28 with 22 routes.",
       "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "turkish-tlv-not-resumed-2026",
@@ -121,7 +169,10 @@
       "source_url": "https://openjaw.com/classified/2026/07/03/turkish-airlines-middle-east-flight-resumptions/",
       "raw_snippet": "resuming flights to Abu Dhabi starting July 1, 2026, Dammam starting July 10, 2026 and Kuwait starting July 11, 2026 and Bahrain starting July 16, 2026",
       "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "etias-delay-2026",
@@ -129,7 +180,10 @@
       "source_url": "https://travel-europe.europa.eu/en/etias/about-etias/news-corner/revised-timeline-ees-and-etias",
       "raw_snippet": "The revised timeline foresees ETIAS starting in the last quarter of 2026 with a transitional period before it becomes mandatory; the date is subject to change and may be pushed further.",
       "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "ees-live-2026",
@@ -137,7 +191,11 @@
       "source_url": "https://home-affairs.ec.europa.eu/news/entryexit-system-ees-fully-operational-2026-04-10_en",
       "raw_snippet": "Travellers' facial images, fingerprints and personal data from the travel document are also recorded ... Since its October 2025 rollout, it registered over 52 million entries and exits.",
       "fetched_at": "2026-07-16T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/domain-checklist.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ]
     },
     {
       "claim_id": "ryanair-tlv-2026",
@@ -145,7 +203,10 @@
       "source_url": "https://corporate.ryanair.com/news/ryanair-will-not-restart-tel-aviv-flights-as-ben-gurion-airport-refuses-to-confirm-s26-slots-or-availability-of-low-cost-terminal-1/",
       "raw_snippet": "Ryanair is cancelling 22 low-fare routes and losing approximately 1 million seats by not restarting winter flights to Tel Aviv; it will only return once Ben Gurion confirms its historic S26 slots and keeps Terminal 1 open.",
       "fetched_at": "2026-07-16T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
       "claim_id": "google-flights-deeplink",
@@ -153,7 +214,15 @@
       "source_url": "https://www.google.com/travel/flights?gl=IL&hl=he",
       "raw_snippet": "Deep-link template, verified HTTP 200 by direct request on 2026-07-15: https://www.google.com/travel/flights?q=Flights+from+TLV+to+{CITY}+on+{YYYY-MM-DD}+returning+{YYYY-MM-DD}&curr=ILS&gl=IL&hl=he",
       "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/comparison-platforms.md", "scripts/compare-flights.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/comparison-platforms.md",
+        "scripts/compare-flights.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T16:02:41.240071+00:00",
+      "notes": "Deep-link template re-verified HTTP 200 by direct request on 2026-07-29. raw_snippet is a verification note, not page text."
     },
     {
       "claim_id": "kayak-deeplink",
@@ -161,7 +230,15 @@
       "source_url": "https://il.kayak.com/flights",
       "raw_snippet": "Deep-link template, verified HTTP 200 by direct request on 2026-07-15: https://il.kayak.com/flights/TLV-{DEST}/{YYYY-MM-DD}/{YYYY-MM-DD}?sort=price_a",
       "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/comparison-platforms.md", "scripts/compare-flights.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/comparison-platforms.md",
+        "scripts/compare-flights.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T16:02:41.240071+00:00",
+      "notes": "Deep-link template re-verified HTTP 200 by direct request on 2026-07-29. raw_snippet is a verification note, not page text."
     },
     {
       "claim_id": "skyscanner-deeplink",
@@ -169,7 +246,142 @@
       "source_url": "https://www.skyscanner.co.il",
       "raw_snippet": "Deep-link templates, verified resolving on 2026-07-15: https://www.skyscanner.co.il/transport/flights/tlv/{dest}/{YYMMDD}/{YYMMDD}/ ; whole month https://www.skyscanner.co.il/transport/flights/tlv/{dest}/{YYMM}00/ ; flexible https://www.skyscanner.co.il/transport/flights/tlv/anywhere/{YYMMDD}/",
       "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": ["SKILL.md", "SKILL_HE.md", "references/comparison-platforms.md", "scripts/compare-flights.md"]
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/comparison-platforms.md",
+        "scripts/compare-flights.md"
+      ]
+    },
+    {
+      "claim_id": "soar-mcp-endpoint",
+      "claim": "The Soar Flight Booking MCP server endpoint is https://mcp.flysoar.ai/mcp",
+      "source_url": "https://flysoar.ai/mcp",
+      "raw_snippet": "codex mcp add soar_flights --url https://mcp.flysoar.ai/mcp --oauth-client-id soar-mcp",
+      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "soar-search-public-no-key",
+      "claim": "soar_search_flights works anonymously with no API key; booking/account tools require OAuth",
+      "source_url": "https://flysoar.ai/mcp",
+      "raw_snippet": "Public flight and stay search work immediately. Run `codex mcp login soar_flights` to continue into booking and account tools.",
+      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "soar-rate-limit",
+      "claim": "Anonymous Soar flight searches are limited to 5 calls per minute and 30 per hour per source IP",
+      "source_url": "https://mcp.flysoar.ai/mcp",
+      "raw_snippet": "Anonymous flight searches have a limit of five calls per minute and 30 per hour per source IP.",
+      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "soar-usd-only",
+      "claim": "Soar MCP prices flights in USD only and rejects an ILS currency request with code currency_usd_only",
+      "source_url": "https://mcp.flysoar.ai/mcp",
+      "raw_snippet": "Soar MCP prices flights and stays in USD only; omit currency or pass USD",
+      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "soar-book-destructive",
+      "claim": "soar_book_flight is annotated destructiveHint true and performs login, verification and payment in one flow",
+      "source_url": "https://flysoar.ai/mcp",
+      "raw_snippet": "Book a selected offer; Soar handles login, refresh, readiness, verification, and payment in one flow.",
+      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "soar-not-agency-of-record",
+      "claim": "Soar states it is not an airline, charter operator, or travel agency of record and sources inventory via third parties including Duffel",
+      "source_url": "https://flysoar.ai/terms",
+      "raw_snippet": "not an airline, charter operator, travel agency of record",
+      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "soar-duffel-source",
+      "claim": "Soar flight search results are sourced from Duffel inventory",
+      "source_url": "https://mcp.flysoar.ai/mcp",
+      "raw_snippet": "\"source\": \"duffel\"",
+      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "israeli-card-fx-fee",
+      "claim": "Israeli credit-card issuers charge roughly 3% (2.9-3.0%) foreign-currency conversion fee on purchases billed in a foreign currency; some card variants are exempt",
+      "source_url": "https://www.max.co.il/cards/pages/abroad-commissions",
+      "raw_snippet": "עמלת מט\"ח - ממטבע ביצוע העסקה לשקל בחיוב מחשבון שקלי\t3% מסכום העסקה",
+      "fetched_at": "2026-07-29T16:00:25.644778+00:00",
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T16:00:25.644778+00:00",
+      "notes": "Cross-checked: Cal 3.0% (cal-online.co.il goingabroad calculator), Isracard 2.9% on purchases. Some cards offer 0% FX.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "boi-representative-rate",
+      "claim": "The Bank of Israel publishes representative (yatzig) foreign exchange rates, usable as an in-session source for USD/ILS conversion",
+      "source_url": "https://www.boi.org.il/roles/markets/exchangerates/",
+      "raw_snippet": "שערים יציגים",
+      "fetched_at": "2026-07-29T16:10:32.643213+00:00",
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T16:10:32.643213+00:00",
+      "notes": "URL returns HTTP 200; page is the Bank of Israel exchange-rates hub. Cited in the skill only as where to read a live rate, no rate value is encoded in the skill.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "soar-advanced-tools",
+      "claim": "Soar's MCP exposes soar_discover_tools and soar_run_advanced_action_tool which load further tools on demand, so the action surface is not fixed",
+      "source_url": "https://flysoar.ai/mcp",
+      "raw_snippet": "Find only the uncommon stay, traveler, add-on, trip, payment, or support tools needed now.",
+      "fetched_at": "2026-07-29T16:17:51.645381+00:00",
+      "verified_via": "browser",
+      "verified_at": "2026-07-29T16:17:51.645381+00:00",
+      "notes": "Page also states: 'Advanced tools load only when discovered.' and '3 tools public; 9 core tools after OAuth.'",
+      "appears_in": [
+        "references/soar-mcp-usage.md"
+      ]
     }
   ]
 }

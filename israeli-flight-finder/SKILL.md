@@ -240,6 +240,15 @@ Construct a real, click-ready search URL for each platform from the route and da
 
 Open each link and read the actual results, do not stop at building the URLs:
 
+**Fastest path when a flight-search MCP is connected.** If the Soar MCP (`https://mcp.flysoar.ai/mcp`) is available this turn, call `soar_search_flights` (`origin: "TLV"`, `destination`, `date`, `return_date`, `passengers`) for structured live offers from Duffel inventory: carrier, flight numbers, stops, duration, fare brand, and baggage counts, with no API key. Coverage varies by route, so read carriers off the response. Binding rules (detail in `references/soar-mcp-usage.md`):
+
+- **USD only** (`currency: "ILS"` is rejected). Never convert from a remembered rate, that breaks the same "read it this session" rule that governs fares. Read a live rate (e.g. Bank of Israel, `https://www.boi.org.il/roles/markets/exchangerates/`) and show it, or leave the row in USD rather than inventing a NIS total.
+- **Put the ~3% Israeli card foreign-currency fee inside the total you rank on**, not in the notes, or Soar rows win comparisons they should lose.
+- **One reseller is not a comparison.** Do not assume it surfaces airline site-only promotions or Israeli charter seats. Soar is used precisely when no browser tool exists, which is also when the other platforms are unreadable, so the cross-check below is usually impossible. Say plainly that it is a single-source result and do not call it "the cheapest available".
+- **Use the offer's own baggage counts** in Step 4, not the static tables, or you will charge for an included bag.
+- **Never call `soar_book_flight`, and never send the traveler to Soar to buy.** It executes payment in one call, and Soar is not the agency of record and names no billing entity in its terms, leaving no clear counterparty for a refund or dispute.
+- **Rate limit** 5/min, 30/hr per IP, so it cannot serve flexible-month or "anywhere cheap" searches; use the Skyscanner month view for those.
+
 - With a browser tool (or a flights MCP), navigate to each URL and read the top 3-5 fares: airline, price in shekels, number of stops, total duration, and departure/return times.
 - **All three platforms render fares with JavaScript**, KAYAK included. Reading live prices needs a real browser/rendering tool or a flights MCP; a plain `WebFetch` returns an empty shell with no fares. If you do NOT have a browser tool this turn, do not report a comparison from `WebFetch` alone, hand the traveler the pre-filled links from Step 2 instead (see "Never invent a price").
 - Cross-check at least two platforms, the same route routinely differs by hundreds of NIS between Google Flights (direct airline fares) and Skyscanner (OTA deals).
@@ -252,15 +261,19 @@ A base fare is not comparable until you add what the traveler actually needs. Fo
 
 `base fare + checked-bag fee (if needed) + seat selection (if wanted) = total per person`.
 
+**Get everything into one currency first.** The Israir and Arkia tables are in dollars and euros and a Soar fare is in dollars, while the Step 5 table is in NIS. Convert with a rate you read this session, state that rate, and add the ~3% Israeli card conversion fee to anything billed in foreign currency. Never convert from memory; if you cannot read a rate, show the original currency (Gotcha 8).
+
 Pull the bag fees from the Israeli-airline tables above: El Al includes a checked bag on Classic and up, while Israir, Arkia, and Wizz charge for almost everything. A low base fare on Israir, Arkia, or Wizz routinely loses to El Al Classic once a 23 kg bag is added, this is the single most common comparison mistake.
 
 ### Step 5: Present the Comparison
 
 Return a table with the REAL fares you pulled, cheapest total first:
 
-| Option | Airline | Route / Stops | Base (NIS) | Bags (NIS) | Total (NIS) | Notes |
-|--------|---------|---------------|-----------|-----------|------------|-------|
-| 1 | ... | ... | ... | ... | ... | e.g. no Shabbat return, gate-check carry-on on Lite |
+| Option | Airline | Route / Stops | Base (NIS) | Bags (NIS) | Total (NIS) | Source | Notes |
+|--------|---------|---------------|-----------|-----------|------------|--------|-------|
+| 1 | ... | ... | ... | ... | ... | Google Flights / Skyscanner / Soar (USD) | e.g. no Shabbat return, gate-check carry-on on Lite |
+
+Name the source for every row, and state the conversion rate for any USD-sourced row. If all rows came from one source, say so rather than presenting it as the whole market.
 
 Then give a one-line recommendation covering cheapest total, best value (price vs. stops and timing), and best for a family with bags. Include the Step 2 links so the traveler can book or re-check the live price.
 
@@ -273,6 +286,7 @@ Then give a one-line recommendation covering cheapest total, best value (price v
 | MCP | What It Adds |
 |-----|-------------|
 | [Ben Gurion Flights](https://agentskills.co.il/en/mcp/ben-gurion-flights) | Real-time TLV arrivals and departures from the Israel Airports Authority. Complement the price-comparison workflow with live flight status on travel day. |
+| Soar Flight Booking MCP (`https://mcp.flysoar.ai/mcp`) | Structured live airfare from Duffel inventory via `soar_search_flights`, no API key needed for search. Use it for prices in Step 3 when you have no browser tool. Prices in USD only. Search tool only: never call its booking tool and never send the traveler there to buy (see Gotcha 9). |
 
 ## Gotchas
 
@@ -290,10 +304,15 @@ Then give a one-line recommendation covering cheapest total, best value (price v
 
 7. **Prices must be pulled live, never recalled**: fares change hourly, so a remembered or "typical" number is almost always wrong by the time it is quoted. Read the actual current price off the search links every time you compare, and if you cannot read live prices this turn, hand over the pre-filled links instead of guessing. A comparison built from invented numbers is the fastest way to lose the user's trust.
 
+8. **Not every number in this skill is already in shekels**: the Israir and Arkia baggage tables above are quoted in dollars and euros, and the Soar MCP quotes fares in dollars. The Step 5 table is in NIS. Dropping a `$65` Israir bag into a shekel column as `65` understates it threefold and flips this skill's own conclusion that El Al Classic beats the low-cost carriers once a bag is added. Convert every non-shekel figure using a rate you read this session, state it, and never convert from memory (see Step 4).
+
+9. **The Soar MCP is a price source, never a booking venue**: it quotes in USD only and draws on a single inventory pool that may miss site-only promotions and Israeli charter seats, so a Soar-only result is not "the cheapest available". Its `soar_book_flight` tool runs sign-in, verification, and payment in one call, and Soar is not the travel agency of record and names no billing entity in its terms, leaving an Israeli traveler no clear counterparty for a refund or disputed charge, and the consumer-protection cancellation rules covering a seller operating in Israel may not reach a foreign one. See `references/soar-mcp-usage.md`.
+
 ## Bundled Resources
 
 - `references/comparison-platforms.md` -- Detailed platform comparison with URLs and features
 - `references/airline-baggage-quick-ref.md` -- Quick-reference baggage table for all Israeli airlines
+- `references/soar-mcp-usage.md` -- Soar flight-search MCP: tools, parameters, binding constraints
 
 ## Reference Links
 

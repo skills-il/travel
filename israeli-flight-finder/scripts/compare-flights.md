@@ -30,14 +30,16 @@ Substitute the destination and dates into the verified templates (see `reference
 
 ### Step 3: Pull the Live Fares
 Open each link and read the top 3-5 results: airline, price in shekels, stops, total duration, times.
-- Use a real browser tool (or flights MCP) for Google Flights and Skyscanner (JavaScript-rendered).
-- KAYAK and the Google Flights natural-language query are the most fetch-friendly if only `WebFetch` is available.
+- Use a real browser tool (or flights MCP) for Google Flights and Skyscanner. All three platforms, KAYAK included, render fares with JavaScript, so a plain `WebFetch` returns an empty shell with no prices.
+- If no browser tool is available and the Soar MCP (`https://mcp.flysoar.ai/mcp`) is connected, call `soar_search_flights` (`origin`, `destination`, `date`, `return_date`, `passengers`) for structured live fares. Binding rules: it prices in USD only; never convert with a remembered exchange rate; add the ~3% Israeli card conversion fee into the ranked total; prefer the offer's own baggage counts over the static tables; treat it as a single source and say so; never call `soar_book_flight` and never send the traveler to Soar to buy. Anonymous limit 5/min, 30/hr per IP, so it cannot serve flexible-month searches.
 - Cross-check at least two platforms; the same route often differs by hundreds of NIS.
 
 ### Step 4: Calculate Total Cost
 For each option found:
 - Base fare
 - + Checked baggage fee (if needed) -- from the Israeli-airline baggage tables
++ ~3% Israeli card foreign-currency fee on any amount billed in USD/EUR
+NOTE: the Israir and Arkia baggage tables and any Soar fare are in USD/EUR while this table is in NIS. Convert with a rate you read this session and state it; never convert from memory. Name the source of every row.
 - + Seat selection (if desired)
 - = Total cost per person
 - El Al includes a bag on Classic and up; Israir, Arkia, and Wizz charge for almost everything, so a low base fare often loses once a 23 kg bag is added.
@@ -45,7 +47,7 @@ For each option found:
 ### Step 5: Present Comparison
 Format the REAL fares, cheapest total first:
 
-| Option | Airline | Route / Stops | Base (NIS) | Bags (NIS) | Total (NIS) | Notes |
+| Option | Airline | Route / Stops | Base (NIS) | Bags (NIS) | Total (NIS) | Source | Notes |
 |--------|---------|---------------|-----------|-----------|------------|-------|
 | 1 | ... | ... | ... | ... | ... | ... |
 
@@ -56,7 +58,7 @@ Format the REAL fares, cheapest total first:
 Include the Step 2 links so the user can book or re-check the live price.
 
 ## Never Invent a Price
-Every number in the table must come from a page loaded this session. If live prices cannot be read (no web/browser access, bot-block, or captcha), do NOT write numbers -- hand over the pre-filled Step 2 links and say plainly they open live results, because you could not read the fares this turn. A fabricated comparison is worse than none.
+Every number in the table, including any exchange rate used to convert a USD or EUR figure into shekels, must come from a page loaded this session. If live prices cannot be read (no web/browser access, bot-block, or captcha), do NOT write numbers -- hand over the pre-filled Step 2 links and say plainly they open live results, because you could not read the fares this turn. A fabricated comparison is worse than none.
 
 ## Seasonal Advice
 - Jewish holidays: warn about price spikes (they front-load 2-4 weeks before), suggest booking 6+ weeks ahead.

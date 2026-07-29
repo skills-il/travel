@@ -30,8 +30,8 @@
     ]
   },
   "author": "skills-il",
-  "version": "1.5.1",
-  "category": "localization",
+  "version": "1.6.0",
+  "category": "travel",
   "supported_agents": [
     "claude-code",
     "openclaw",

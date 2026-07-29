@@ -6,10 +6,19 @@
       "holdout_before": 1.0,
       "holdout_after": 1.0,
       "buckets": {
-        "improved": ["does Wizz Air fly from Tel Aviv and how much are bags (now names Wizz + baggage explicitly)"],
+        "improved": [
+          "does Wizz Air fly from Tel Aviv and how much are bags (now names Wizz + baggage explicitly)"
+        ],
         "regressed": [],
         "persistent_fail": [],
-        "stable_success": ["find the cheapest flight from Tel Aviv to Rome in August", "compare El Al vs Israir baggage fees", "cheapest time to fly Israel to Greece", "flight+hotel package to Cyprus", "train schedule TLV to Haifa (negative)", "book a hotel in Eilat (negative)"]
+        "stable_success": [
+          "find the cheapest flight from Tel Aviv to Rome in August",
+          "compare El Al vs Israir baggage fees",
+          "cheapest time to fly Israel to Greece",
+          "flight+hotel package to Cyprus",
+          "train schedule TLV to Haifa (negative)",
+          "book a hotel in Eilat (negative)"
+        ]
       },
       "lessons": [
         "Description rewritten to signal the real capability (build pre-filled search links + read live fares + never invent prices) after the v1.5.0 workflow rewrite; updated in all four places (SKILL.md + SKILL_HE.md frontmatter, metadata.json display_description en+he). Also removed the 1-star 'crap skill, doesnt work' review and reset avg_rating to 0 now that the underlying complaint is fixed.",
@@ -36,6 +45,21 @@
         "MAJOR added: TLV 3-hour security arrival note; points/miles (El Al Matmid + Israeli cards); multi-city/open-jaw tip.",
         "Expert round 2 CRITICAL fixed: the ETIAS/EES section wrongly implied ETIAS is 'becoming mandatory, apply in advance'. Verified via official EU + WebSearch: EES is LIVE since 10 Apr 2026 (no advance action); ETIAS is NOT required yet (operational Q4 2026, mandatory ~Apr 2027). Reworded both languages; added passport-6-month-validity as its own line, a war-disruption refundable-fare/insurance note (highest money-loss risk per Expert), and noted the El Al Shabbat no-fly window blocks outbound Fri-eve/Sat departures too.",
         "Deferred (MINOR, next cycle): error-fare may-not-be-honored caveat; Turkish July-1-2026 date already slipping (soften to mid-to-late 2026); ETIAS fee/process specifics (~EUR 7, ~10-min form) once it is required."
+      ]
+    },
+    {
+      "version": "1.6.0",
+      "date": "2026-07-29",
+      "lessons": [
+        "Added Soar MCP (mcp.flysoar.ai) as the live-fare path for Step 3; search-only, booking explicitly forbidden.",
+        "CARRY: 9 pre-existing evidence claims fail --check-sources because their cited news articles changed or paywalled: wizz-resumed, booking-day-of-week, platforms-live, deal-sources, tlv-war-reopening-2026, elal-network-2026, lufthansa-group-tlv-2026, ees-live-2026, ryanair-tlv-2026. Facts themselves still believed correct; the SNIPPETS no longer match the URLs. Next cycle must re-source each against a stable primary source (airline/IAA/EU pages) rather than press coverage.",
+        "Lesson: news-article URLs are poor evidence anchors for volatile TLV carrier status. Prefer airline/regulator primary pages even when the press article is easier to quote.",
+        "Deferred over Phase 4.1 cap: consider a currency-conversion helper note in scripts/compare-flights.md now that a USD-quoting source is in the workflow.",
+        "Fixed this cycle after expert review: metadata.json still said category 'localization' after the travel-category migration; corrected to 'travel'.",
+        "CARRY: references/airline-baggage-quick-ref.md still carries USD/EUR tables with no conversion warning, a stale 'May 2026' Israir stamp, and arkia.com/wizz.com hosts where SKILL.md uses arkia.co.il/wizzair.com. Refresh next cycle.",
+        "CARRY: six Hebrew carrier bullets (Wizz Air, Ryanair, flydubai, Emirates, Turkish Airlines, Lufthansa Group) still open with Latin script, violating the Hebrew RTL line-start rule. Not touched this cycle.",
+        "CARRY: add one sentence that Aviation Services Law compensation for a TLV departure runs against the operating carrier regardless of who sold the ticket, so the foreign-seller warning is not read as 'no rights at all'.",
+        "Lesson: a new references/ file is NOT exempt from the evidence gate. The judge caught 5 unevidenced claims introduced only in references/soar-mcp-usage.md; hedge or evidence corporate/legal assertions rather than asserting them."
       ]
     }
   ]
