@@ -11,7 +11,7 @@ Prices and policies are subject to change -- always verify on the airline's webs
 | El Al (Business) | 16 kg | 56x45x25 cm | 1 | -- |
 | Israir | 10 kg | Check israir.co.il | 1 (free) | Carry-on costs $30 advance / $40 airport (May 2026). Personal item remains free |
 | Arkia | No weight limit | 20x30x40 cm (under-seat hand bag) | -- | Free hand bag only; trolley (8 kg) is a paid add-on at $25 advance / $30 airport |
-| Wizz Air | 10 kg | 55x40x20 cm | 1 (40x30x20 cm) | Free personal item only on base fare; cabin bag requires WIZZ Priority or higher |
+| Wizz Air | 10 kg | 55x40x23 cm | 1 (40x30x20 cm) | Free personal item only on base fare; cabin bag requires WIZZ Priority or higher |
 
 ## Checked Baggage
 

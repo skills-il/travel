@@ -74,9 +74,9 @@ Google Flights offers an AI-powered "Flight Deals" feature available in Israel i
 | 1st checked bag | 23 kg | $65 per direction | $100 |
 | 2nd checked bag | 23 kg | $80 per direction | -- |
 | Bags 3-5 (each) | 23 kg | $120 per direction | -- |
-| Overweight (24-32 kg) | -- | +$20 per direction | +$70 |
+| Overweight (24-30 kg, first bag only) | -- | +$20 per direction | +$70 |
 
-Israir raised the advance first-bag fee to $65 per direction effective 1 May 2026; the airport fee stays $100. Always confirm the live figure before booking.
+Israir's published advance first-bag fee is $65 per direction and $100 at Ben Gurion. Always confirm the live figure on the Israir baggage-policy page before booking.
 
 Standard fares do not include checked baggage. Some vacation packages may bundle bags.
 
@@ -319,9 +319,9 @@ Then give a one-line recommendation covering cheapest total, best value (price v
 | Source | URL | What to Check |
 |--------|-----|---------------|
 | El Al baggage policy | https://www.elal.com/eng/baggage | Current carry-on weight/size, Lite fare restrictions, Matmid tier exemptions |
-| Israir baggage policy | https://www.israir.co.il | Advance vs airport carry-on and checked-bag pricing, personal item rules |
+| Israir baggage policy | https://www.israir.co.il/Passengers_Info/Baggage_Policy.html | Advance vs airport carry-on and checked-bag pricing, personal item rules |
 | Arkia baggage policy | https://www.arkia.co.il/en/luggage-information | Trolley and checked-bag fees, weight limits, excess/kg charges |
-| Wizz Air baggage & routes | https://www.wizzair.com | Base fare inclusions, WIZZ Priority add-on, current Israel route list |
+| Wizz Air baggage & routes | https://www.wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance | Base fare inclusions, WIZZ Priority add-on, current Israel route list |
 | Google Flights (Israel) | https://www.google.com/travel/flights?gl=IL&hl=he | Flight Deals AI availability, fare-history bands, tracked-price alerts |
 | Expedia 2026 Air Hacks (AFAR coverage) | https://www.afar.com/magazine/expedia-data-shows-new-best-day-to-book-cheaper-flights | Cheapest booking day, best day to fly, optimal booking window |
 | ETIAS (official EU) | https://travel-europe.europa.eu/etias_en | Whether ETIAS is required now for Israeli citizens, how to apply, EES rollout |
