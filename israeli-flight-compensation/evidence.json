@@ -297,12 +297,25 @@
       ]
     },
     {
-      "id": "foreign-law-interaction-s16-s20",
-      "claim": "Section 16 and Section 20 (סעיף 16, סעיף 20): Section 16 preserves a passenger's rights under any other law, and section 20 provides that a passenger who received a benefit under foreign law is not entitled to a benefit of the same type under this law. בעברית: סעיף 16 וסעיף 20 לחוק.",
+      "id": "foreign-law-interaction-s16",
+      "claim": "Section 16 (שמירת דינים) preserves a passenger's rights under any other law, including the right to compensation under any law. בעברית: סעיף 16 לחוק.",
       "claim_type": "legal-reference",
       "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
       "source_fetched_at": "2026-07-26T16:41:23Z",
-      "raw_snippet": "16. שמירת דינים אין בהוראות חוק זה כדי לגרוע מהוראות כל דין, ובכלל זה מזכותו של נוסע לפיצוי לפי כל דין. ... 20. סייג לזכאות בשל קבלת הטבה לפי דין זר נוסע שקיבל הטבה לפי דין זר בשל נסיבות המקימות עילה מזכה, לא יהיה זכאי להטבות לפי חוק זה מאותו סוג שקיבל כאמור.",
+      "raw_snippet": "16. שמירת דינים אין בהוראות חוק זה כדי לגרוע מהוראות כל דין, ובכלל זה מזכותו של נוסע לפיצוי לפי כל דין.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ]
+    },
+    {
+      "id": "foreign-law-interaction-s20",
+      "claim": "Section 20 provides that a passenger who received a benefit under foreign law for the same qualifying circumstances is not entitled to a benefit of the same type under this law. בעברית: סעיף 20 לחוק.",
+      "claim_type": "legal-reference",
+      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
+      "source_fetched_at": "2026-07-26T16:41:23Z",
+      "raw_snippet": "20. סייג לזכאות בשל קבלת הטבה לפי דין זר נוסע שקיבל הטבה לפי דין זר בשל נסיבות המקימות עילה מזכה, לא יהיה זכאי להטבות לפי חוק זה מאותו סוג שקיבל כאמור.",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
@@ -328,7 +341,7 @@
       "claim_type": "currency",
       "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
       "source_fetched_at": "2026-07-26T16:41:23Z",
-      "raw_snippet": "תוספת שלישית (סעיף 3(ב)(3)) מחיר כרטיס טיסה שהונפק כחלק מחבילת תיור ... טיסת שכר או טיסה סדירה במחלקת תיירים 920 1,840 3,060 טיסה סדירה במחלקת עסקים 2,450 4,280 7,650 טיסה סדירה במחלקה ראשונה 4,900 8,570 15,300",
+      "raw_snippet": "תוספת שלישית (סעיף 3(ב)(3)) מחיר כרטיס טיסה שהונפק כחלק מחבילת תיור מרחק הטיסה בכיוון אחד (בק\"מ) עד 2,000 עד 4,500 מעל 4,500 סוג הטיסה וסוג מחלקת השירות מחיר (בשקלים חדשים) טיסת שכר או טיסה סדירה במחלקת תיירים 920 1,840 3,060 טיסה סדירה במחלקת עסקים 2,450 4,280 7,650 טיסה סדירה במחלקה ראשונה 4,900 8,570 15,300",
       "verified_via": "browser",
       "verified_at": "2026-07-26T16:41:23Z",
       "appears_in": [
@@ -341,7 +354,7 @@
       "claim_type": "legal-reference",
       "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
       "source_fetched_at": "2026-07-26T16:42:07Z",
-      "raw_snippet": "9א. שינוי ההטבות לנוסע בשל מצב מיוחד ... (א) הוכרז על מצב מיוחד וההכרזה עמדה בתוקפה יותר מ־14 ימים, רשאי השר, לאחר התייעצות עם שר הכלכלה והתעשייה ובאישור ועדת הכלכלה של הכנסת, לקבוע, בצו ... (1) כי שירותי הלינה ... יוגבלו למספר לילות שיקבע השר ושלא יפחת משניים ... תהיה פחות מ־14 ימים ולא פחות משלושה ימים ... (2) היא לא תעלה על 60 ימים, ולעניין שלילת פיצוי לפי סעיף קטן (א)(3)(ב) – לא תעלה על 45 ימים",
+      "raw_snippet": "9א. שינוי ההטבות לנוסע בשל מצב מיוחד [תיקון: תשפ״ה] (א) הוכרז על מצב מיוחד וההכרזה עמדה בתוקפה יותר מ־14 ימים, רשאי השר, לאחר התייעצות עם שר הכלכלה והתעשייה ובאישור ועדת הכלכלה של הכנסת, לקבוע, בצו, לעניין טיסה שהמועד הנקוב בכרטיס הטיסה שהונפק לגביה הוא בתקופה שיקבע (בסעיף זה – התקופה הקובעת), אחת או יותר מהוראות אלה:",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
