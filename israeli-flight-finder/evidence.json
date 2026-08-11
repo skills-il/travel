@@ -147,14 +147,16 @@
     },
     {
       "claim_id": "tlv-security-3h",
-      "claim": "The Israel Airports Authority advises arriving 3 hours before international departures from Ben Gurion because of layered security screening.",
+      "claim": "The Israel Airports Authority advises passengers to arrive 3 hours prior to departure for the security check procedure at Ben Gurion Airport",
       "source_url": "https://www.iaa.gov.il/en/airports/ben-gurion/securitybgn",
-      "raw_snippet": "Passengers are advised to arrive at Ben Gurion Airport 3 hours before an international flight.",
-      "fetched_at": "2026-06-21T00:00:00Z",
+      "raw_snippet": "Passengers should arrive 3 hours prior to departure for the security check procedure.",
+      "fetched_at": "2026-08-11",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-11"
     },
     {
       "claim_id": "booking-day-of-week",
