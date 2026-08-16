@@ -1,161 +1,479 @@
 {
-  "skill_slug": "israeli-abroad-trip-planner",
   "schemaVersion": "1.0",
-  "generated_at": "2026-07-18",
-  "notes": "Anti-fabrication skill: it routes users to live official sources rather than asserting volatile visa/warning facts. Most claims below are (a) verified official source URLs the skill cites, and (b) stable institutional facts. Several gov.il pages (NSC travel warnings, MFA travel recommendations, MoH vaccination, biometric passport) return HTTP 403 to automated WebFetch but resolve normally in a browser; for those, the raw_snippet is the verbatim page/link title returned by search indexing of the same URL.",
+  "skill": "israeli-abroad-trip-planner",
+  "generated_at": "2026-08-16T00:00:00Z",
+  "notes": "Normalized from the legacy id/source_fetched_at schema to canonical claim_id/fetched_at/appears_in on 2026-08-16. gov.il, kolzchut.org.il and iatatravelcentre.com all return 403 to plain fetches while rendering normally in a browser; entries verified that way carry verified_via=browser.",
   "claims": [
     {
-      "id": "url_nsc_travel_warnings",
-      "claim": "The National Security Council travel-warnings page for Israelis lives at gov.il/he/departments/dynamiccollectors/travel-warnings-nsc",
-      "claim_type": "url",
+      "claim_id": "url_nsc_travel_warnings",
+      "claim": "Israel's official travel warnings are published by the National Security Council at the gov.il travel-warnings-nsc collector",
       "source_url": "https://www.gov.il/he/departments/dynamiccollectors/travel-warnings-nsc",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "אזהרות מסע | המטה לביטחון לאומי",
-      "confidence": "high"
+      "raw_snippet": "המטה לביטחון לאומי אזהרות מסע",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ]
     },
     {
-      "id": "fact_nsc_issues_warnings",
-      "claim": "Israeli travel warnings (אזהרות מסע) are issued by the National Security Council (המטה לביטחון לאומי / המל\"ל)",
-      "claim_type": "company",
+      "claim_id": "fact_nsc_warnings_phone",
+      "claim": "The National Security Council travel-warnings inquiry line is 02-666-7444 and telephone response is available 24/7",
       "source_url": "https://www.gov.il/he/departments/dynamiccollectors/travel-warnings-nsc",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "אזהרות מסע | המטה לביטחון לאומי",
-      "confidence": "high"
+      "raw_snippet": "טלפון לבירורים בנושא אזהרות מסע: 02-666-7444",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
-      "id": "url_mfa_travel_recommendations",
-      "claim": "The Ministry of Foreign Affairs publishes travel recommendations (המלצות מסע) for Israelis abroad",
-      "claim_type": "url",
+      "claim_id": "url_mfa_travel_recommendations",
+      "claim": "The Ministry of Foreign Affairs publishes travel recommendations for Israelis abroad at the gov.il travel_warnings collector",
       "source_url": "https://www.gov.il/he/departments/dynamiccollectors/travel_warnings",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "המלצות מסע | משרד החוץ",
-      "confidence": "high"
+      "raw_snippet": "משרד החוץ המלצות מסע",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ]
     },
     {
-      "id": "fact_israeli_doc_mandatory",
-      "claim": "Israeli citizens must use Israeli travel documentation to enter or leave Israel, even with dual citizenship",
-      "claim_type": "law",
-      "source_url": "https://www.nbn.org.il/life-in-israel/government-services/obtaining-an-israeli-passport/",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "It is mandatory for all Israeli citizens, regardless of dual citizenship with another country, to use Israeli travel documentation when entering or leaving Israel.",
-      "confidence": "high"
-    },
-    {
-      "id": "fact_passport_authority",
-      "claim": "The Israeli passport is issued by the Population and Immigration Authority (רשות האוכלוסין וההגירה)",
-      "claim_type": "company",
-      "source_url": "https://www.nbn.org.il/life-in-israel/government-services/obtaining-an-israeli-passport/",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "Book an appointment at The Population and Immigration Authority for EACH person who needs a passport.",
-      "confidence": "high"
-    },
-    {
-      "id": "fact_emergency_passport_bengurion",
-      "claim": "An emergency passport can be issued at the Ben Gurion airport emergency passport center, which is open long hours including 24 hours Sun-Thu",
-      "claim_type": "feature",
-      "source_url": "https://www.nbn.org.il/life-in-israel/government-services/obtaining-an-israeli-passport/",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "Emergency passport center at the airport is open 24 hours Sun-Thur, until 14:00 on Fridays, and from 21:00 on Saturday night.",
-      "confidence": "high"
-    },
-    {
-      "id": "url_govil_passport_service",
-      "claim": "Israeli passport applications and renewals are handled via the Population and Immigration Authority passport service on gov.il",
-      "claim_type": "url",
+      "claim_id": "url_govil_passport_service",
+      "claim": "Israeli passport applications and renewals are handled by the Population and Immigration Authority through its gov.il passport service",
       "source_url": "https://www.gov.il/he/service/application_for_biometric_passport2",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
       "raw_snippet": "בקשה לדרכון | רשות האוכלוסין וההגירה",
-      "confidence": "high"
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ]
     },
     {
-      "id": "fact_clalit_travel_clinic_timing",
-      "claim": "Clalit recommends booking the first travel-clinic appointment about a month and a half before travel",
-      "claim_type": "threshold",
-      "source_url": "https://www.clalit.co.il/he/myrights/vaccines/Pages/travel-vaccines.aspx",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "מומלץ לקבוע את התור הראשון במרפאה חודש וחצי לפני הנסיעה",
-      "confidence": "high"
+      "claim_id": "fact_piba_service_line",
+      "claim": "The Population and Immigration Authority national service centre number is *3450",
+      "source_url": "https://www.gov.il/he/service/application_for_biometric_passport2",
+      "raw_snippet": "רשות האוכלוסין וההגירה מוקד שירות ארצי *3450",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
-      "id": "fact_clalit_travel_clinic_access",
-      "claim": "Clalit members access travel vaccines by contacting a travel clinic in arrangement with Clalit Mushlam to book a consultation and vaccination",
-      "claim_type": "feature",
-      "source_url": "https://www.clalit.co.il/he/myrights/vaccines/Pages/travel-vaccines.aspx",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "יש ליצור קשר עם מרפאת המטיילים שבהסדר עם כללית מושלם לצורך קביעת תור לייעוץ ולחיסון",
-      "confidence": "high"
-    },
-    {
-      "id": "url_moh_vaccination_abroad",
-      "claim": "The Ministry of Health publishes vaccination guidance for travelers abroad (חיסונים לנוסעים לחוץ לארץ)",
-      "claim_type": "url",
-      "source_url": "https://www.gov.il/he/service/vaccination_abroad",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "חיסונים לנוסעים לחוץ לארץ | משרד הבריאות",
-      "confidence": "high"
-    },
-    {
-      "id": "url_chabad_locator",
-      "claim": "Chabad.org hosts a worldwide Chabad center locator / synagogue directory travelers can use to find a Chabad house near them",
-      "claim_type": "url",
-      "source_url": "https://www.chabad.org/centers/default_cdo/jewish/Centers.htm",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "Chabad Centers and Synagogue Directory",
-      "confidence": "high"
-    },
-    {
-      "id": "url_elal",
-      "claim": "El Al is an Israeli airline operating flights between Israel (Tel Aviv) and destinations abroad; its official site is elal.com",
-      "claim_type": "company",
-      "source_url": "https://www.elal.com/en",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "Flights to Israel: Non-Stop & Flexible Flights to Tel Aviv | EL AL",
-      "confidence": "high"
-    },
-    {
-      "id": "url_iata_travel_centre",
-      "claim": "IATA Travel Centre provides passport, visa and health documentation requirements personalised by the traveler's nationality and destination",
-      "claim_type": "url",
-      "source_url": "https://www.iatatravelcentre.com/",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "IATA - Personalised Passport, Visa & Health travel documentation advice",
-      "confidence": "high"
-    },
-    {
-      "id": "mcp_ben_gurion_flights",
-      "claim": "The ben-gurion-flights MCP server provides real-time flight data from Ben Gurion airport: flight status, search by airline or destination, and airport activity tracking (status, not booking)",
-      "claim_type": "feature",
-      "source_url": "https://agentskills.co.il/he/mcp/ben-gurion-flights",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "שרת MCP לנתוני טיסות בזמן אמת מנמל התעופה בן גוריון. תבדקו סטטוס של טיסה, תחפשו לפי חברת תעופה או יעד ותעקבו אחרי פעילות שדה התעופה.",
-      "confidence": "high"
-    },
-    {
-      "id": "fact_minor_passport_validity",
-      "claim": "An adult Israeli passport is valid 10 years, but a minor's passport (under 16) is valid only 5 years",
-      "claim_type": "threshold",
+      "claim_id": "fact_passport_appointment_and_lead_time",
+      "claim": "Biometric passports are issued by appointment only, booked online or through the *3450 call centre, and the passport is issued and passed to the distribution company within six weeks of the application",
       "source_url": "https://www.kolzchut.org.il/he/הוצאת_דרכון_ביומטרי",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "תוקף הדרכון הוא ל-10 שנים. תוקף דרכון של קטין מתחת לגיל 16 הוא ל-5 שנים",
-      "confidence": "high"
+      "raw_snippet": "הנפקת דרכונים ביומטריים נעשית באמצעות זימון תורים בלבד. יש לקבוע תור מראש באופן מקוון או במוקד הטלפוני - 3450*. הנפקת דרכון כרוכה בתשלום אגרה. ראו פירוט של סכומי האגרות בהמשך. הדרכון יונפק ויועבר לחברת ההפצה בתוך שישה שבועות מיום הגשת הבקשה.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
-      "id": "fact_minor_both_parents_consent",
-      "claim": "Issuing a travel document for a minor whose parents are divorced, separated, common-law or unmarried requires written consent from both parents",
-      "claim_type": "law",
-      "source_url": "https://www.gov.il/he/service/issuing_and_extending_travel_documents",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "במקרה של הורים גרושים, פרודים, ידועים בציבור או רווקים, נדרשת הסכמה בכתב של שני ההורים.",
-      "confidence": "high"
+      "claim_id": "fact_passport_fee_discount_window",
+      "claim": "The passport fee is charged at a reduced rate from November through the end of February",
+      "source_url": "https://www.kolzchut.org.il/he/הוצאת_דרכון_ביומטרי",
+      "raw_snippet": "ניתן לשלם אגרה בתעריף מוזל מחודש נובמבר ועד סוף פברואר",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     },
     {
-      "id": "fact_lost_passport_abroad_travel_document",
-      "claim": "If an Israeli travel document is lost, stolen or damaged abroad, the nearest Israeli mission issues a new travel document; Israeli missions abroad cannot issue a biometric passport (so it is a laissez-passer / teudat maavar)",
-      "claim_type": "feature",
-      "source_url": "https://www.gov.il/he/service/issuing_and_extending_travel_documents",
-      "source_fetched_at": "2026-07-18T00:00:00Z",
-      "raw_snippet": "מסמך נסיעה חדש בעקבות אובדן, גניבה, השחתה או בלאי של מסמך הנסיעה הקודם. ... לא ניתן להנפיק מסמך נסיעה ביומטרי בנציגויות ישראל בחוץ לארץ.",
-      "confidence": "high"
+      "claim_id": "fact_passport_validity_bands",
+      "claim": "An Israeli passport is valid 10 years; a minor under 16 gets 5 years, and since 18.07.2023 a minor over 16 gets 10 years",
+      "source_url": "https://www.kolzchut.org.il/he/הוצאת_דרכון_ביומטרי",
+      "raw_snippet": "תוקף הדרכון הוא ל-10 שנים. החל מ-01.07.2022, תוקף הדרכון הוא ל-10 שנים, בין אם ניתנה הסכמה לשמירת טביעות האצבע ובין אם לא. תוקף דרכון של קטין מתחת לגיל 16 הוא ל-5 שנים (החל מ-18.07.2023 תוקף דרכון של קטין מעל גיל 16 הוא 10 שנים).",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_destination_validity_rule_six_months",
+      "claim": "Many destinations require at least six months of remaining passport validity, and the traveler should confirm this per destination rather than assume it",
+      "source_url": "https://www.kolzchut.org.il/he/הוצאת_דרכון_ביומטרי",
+      "raw_snippet": "מדינות רבות דורשות שתהיה לדרכון יתרת תוקף של חצי שנה לפחות. רצוי לברר זאת מול סוכן הנסיעות, חברת התעופה או נציגות המדינה שנוסעים אליה.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_exit_order_sources",
+      "claim": "A stay-of-exit order barring passport issuance or departure can be imposed by a court, a religious court, or the Execution Office (lishkat hotzaa lapoal)",
+      "source_url": "https://www.kolzchut.org.il/he/הוצאת_דרכון_ביומטרי",
+      "raw_snippet": "בעלי אזרחות ישראלית, שלא הוטלה עליהם הגבלה בנוגע להחזקת דרכון או צו עיכוב יציאה מהארץ על-ידי בית משפט, בית דין, לשכת ההוצאה לפועל",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "url_exit_order_cancel",
+      "claim": "A debtor under a stay-of-exit order issued in execution proceedings can apply to the Enforcement and Collection Authority to have it cancelled, and the authority's service centre is *35592",
+      "source_url": "https://www.gov.il/he/service/exit_order_cancel_stay",
+      "raw_snippet": "השירות מספק מידע לחייבים על הגשת בקשה לביטול צו עיכוב יציאה מהארץ שניתן נגדם במסגרת הליכי הוצאה לפועל",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_temporary_passport_validity_and_network",
+      "claim": "From 1 September 2023 the emergency (temporary) passport is valid for one year and is issued at 17 Population Authority bureaus as well as at Ben Gurion airport",
+      "source_url": "https://www.gov.il/he/pages/temporary_passports",
+      "raw_snippet": "החל מה-1 בספטמבר 2023: דרכון חירום (זמני) ישוב להיות בתוקף לשנה ויונפק ב-17 לשכות מינהל אוכלוסין ובנתב״ג.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_mission_issues_non_biometric_passport",
+      "claim": "Israeli missions abroad issue a NON-BIOMETRIC Israeli travel document (passport), not a laissez-passer; a first document or an applicant absent from Israel over 10 years requires in-person appearance and the document is valid one year only",
+      "source_url": "https://embassies.gov.il/france/he/services/israeli-citizens/hnpqt-msmk-nsyh-ysrly-bqsh-ldrkwn",
+      "raw_snippet": "שירות זה מאפשר לאזרחים ולתושבים ישראליים השוהיים בחוץ לארץ להגיש בקשה לקבלת מסמך נסיעה ישראלי (דרכון) שאינו ביומטרי",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_mission_document_ten_year_absence",
+      "claim": "An applicant absent from Israel more than 10 years must appear in person at the mission and the travel document issued is valid for one year only",
+      "source_url": "https://embassies.gov.il/france/he/services/israeli-citizens/hnpqt-msmk-nsyh-ysrly-bqsh-ldrkwn",
+      "raw_snippet": "כאשר מגיש הבקשה נעדר מישראל למעלה מ-10 שנים, חלה עליו חובת התייצבות בנציגות. תוקף מסמך הנסיעה המונפק יהיה לשנה בלבד.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_olim_travel_document_first_year",
+      "claim": "An oleh three months past aliyah must exit and enter Israel on an Israeli travel document; in the first year the entitlement is a teudat maavar valid 5 years, and entitlement to an Israeli passport begins a year after aliyah subject to actually living in Israel",
+      "source_url": "https://www.kolzchut.org.il/he/הוצאת_דרכון_או_תעודת_מעבר_לעולים_חדשים",
+      "raw_snippet": "עולה חדש, שעברו 3 חודשים מאז שעלה לישראל, חייב לצאת ולהיכנס לישראל עם מסמך נסיעה ישראלי - תעודת מעבר או דרכון. בשנה הראשונה לעלייה, עולה חדש זכאי לתעודת מעבר בתוקף ל-5 שנים. לאחר שנה ממועד העלייה העולה זכאי לקבל דרכון ישראלי, בהתאם למשך הזמן ששהה בישראל מאז שעלה.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_minors_notarial_consent",
+      "claim": "Because border authorities worldwide have tightened checks on under-18s to prevent child abduction, the Ministry of Foreign Affairs recommends carrying a notarized consent document when a minor leaves Israel alone or with only one parent",
+      "source_url": "https://www.gov.il/he/pages/leaving_the_country_with_minors",
+      "raw_snippet": "שלטונות ההגירה במעברי הגבול בעולם מחמירים את בדיקותיהם לגבי קטינים עד גיל 18, וזאת כדי למנוע חטיפת ילדים. הנהלים אמנם שונים ממדינה למדינה, אך על מנת למנוע עיכובים ועגמת נפש בשדה התעופה, משרד החוץ ממליץ להצטייד באישור נוטריוני מתאים, במקרים בהם הקטין יוצא מהארץ בגפו, או רק עם אחד ההורים.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_mfa_situation_room",
+      "claim": "The Ministry of Foreign Affairs situation room is staffed 24 hours a day year-round for citizens abroad: telephone 02-5303155, WhatsApp 050-507-3969, email matzav@mfa.gov.il",
+      "source_url": "https://www.gov.il/he/pages/matzav",
+      "raw_snippet": "מרכז מצב מאויש ופעיל בכל ימות השנה, 24 שעות ביממה ומסוגל לתת מענה ראשוני לפניות של גופים ואזרחים, בכל שעה.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_mfa_situation_room_contacts",
+      "claim": "The MFA situation room contact details are telephone 02-5303155, email matzav@mfa.gov.il and WhatsApp 050-507-3969",
+      "source_url": "https://www.gov.il/he/pages/matzav",
+      "raw_snippet": "טלפון: 02-5303155 פקס: 02-5303896 כתובת דואר אלקטרוני: matzav@mfa.gov.il טופס דיווח באירועי חירום ווטצאפ 050-507-3969",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_uk_eta_required_since_jan_2025",
+      "claim": "Israeli travelers to the UK have needed an electronic travel authorisation (ETA) since 8 January 2025",
+      "source_url": "https://embassies.gov.il/england/en/announcements/eta-uk",
+      "raw_snippet": "Please note that from the 8/1/2025, travelers to the UK need to apply for an ETA up to 72 hours before their departure to the UK",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_uk_eta_cost_and_duration",
+      "claim": "A UK ETA costs GBP 20 and permits travel to the UK, Jersey, Guernsey or the Isle of Man for stays of up to 6 months",
+      "source_url": "https://www.gov.uk/eta",
+      "raw_snippet": "An electronic travel authorisation (ETA) lets you travel to the UK, Jersey, Guernsey or the Isle of Man for up to 6 months. You can get an ETA for tourism, visiting family or for certain other reasons. An ETA costs £20.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "url_esta_official_portal",
+      "claim": "The official US ESTA application portal is esta.cbp.dhs.gov; Israel participates in the US Visa Waiver Program and Israeli citizens apply for ESTA there",
+      "source_url": "https://esta.cbp.dhs.gov/",
+      "raw_snippet": "Official ESTA Application Website",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z"
+    },
+    {
+      "claim_id": "fact_olim_passport_residence_threshold",
+      "claim": "An oleh applying for an Israeli passport a year after aliyah qualifies if they have lived in Israel permanently since aliyah, meaning present in Israel at least 60% of the time",
+      "source_url": "https://www.kolzchut.org.il/he/הוצאת_דרכון_או_תעודת_מעבר_לעולים_חדשים",
+      "raw_snippet": "הוא גר בישראל באופן קבוע מאז שעלה לישראל (נמצא בישראל לפחות 60% מהזמן מאז שעלה)",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_eu_ees_replaces_stamping",
+      "claim": "As of 10 April 2026 the EU Entry/Exit System replaces passport stamping for non-EU nationals at the external borders of 29 European countries, registering biometric data and automatically detecting overstayers",
+      "source_url": "https://home-affairs.ec.europa.eu/policies/schengen/smart-borders/entry-exit-system_en",
+      "raw_snippet": "As of 10 April 2026, the EES replaces the stamping of passports allowing the automatic detection of overstayers (travellers who have exceeded the maximum duration of their authorised stay).",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "url_moh_vaccination_abroad",
+      "claim": "The Ministry of Health publishes vaccination guidance for travelers abroad and advises attending a travel clinic at least six weeks before departure because some vaccines are given as a series",
+      "source_url": "https://www.gov.il/he/service/vaccination_abroad",
+      "raw_snippet": "מתי צריך לקבל את החיסונים יש להגיע 6 שבועות לפחות לפני מועד הנסיעה, מכיוון שיש חיסונים הניתנים כסדרה.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ]
+    },
+    {
+      "claim_id": "fact_moh_kupah_arrangement_check",
+      "claim": "The Ministry of Health advises checking which arrangement the traveler's kupat cholim has and the level of reimbursement before booking a travel-clinic appointment",
+      "source_url": "https://www.gov.il/he/service/vaccination_abroad",
+      "raw_snippet": "יש לבדוק היכן קיים הסדר של קופת החולים אליה אתם משתייכים ואת גובה ההחזר, אם קיים, לפני קביעת התור.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_clalit_travel_clinic_timing",
+      "claim": "Clalit recommends booking the first travel-clinic appointment about a month and a half before travel",
+      "source_url": "https://www.clalit.co.il/he/myrights/vaccines/Pages/travel-vaccines.aspx",
+      "raw_snippet": "מומלץ לקבוע את התור הראשון במרפאה חודש וחצי לפני הנסיעה",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_btl_waiting_period_on_return",
+      "claim": "A resident abroad 18 consecutive months or more who has not paid health insurance contributions for at least 12 months, or who ceased to be a resident, loses entitlement to health services for up to six months on return, calculated as one month per absence year with a minimum of two and a maximum of six, where an absence year is any 12 months containing at least 182 days outside Israel",
+      "source_url": "https://www.btl.gov.il/Insurance/Living_abroad/Pages/chishuvTkufatHamtana.aspx",
+      "raw_snippet": "אם שהית בחוץ לארץ 18 חודשים רצופים או יותר ולא שילמת דמי ביטוח בריאות עבור תקופה של 12 חודשים לפחות, או אם חדלת להיות תושב ישראל - לא תהיה זכאי לקבלת שירותי בריאות במשך תקופה של 6 חודשים לכל היותר. חישוב תקופת המתנה עבור כל שנה שנעדרת מהארץ, תהיה לך תקופת המתנה של חודש אחד, כאשר תקופת ההמתנה המינימלית היא חודשיים ותקופת ההמתנה המרבית היא 6 חודשים. שנת היעדרות היא תקופה של 12 חודשים שבמהלכם שהית מחוץ לגבולות ישראל לפחות 182 ימים, גם אם אינם רצופים.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_international_driving_permit",
+      "claim": "An international driving permit grants the right to drive abroad only when attached to a valid permanent (plastic) Israeli licence, and is valid for 3 years or until the Israeli licence expires, whichever is earlier",
+      "source_url": "https://www.gov.il/he/departments/dynamiccollectors/photo_driving_license_stock",
+      "raw_snippet": "רישיון נהיגה בינלאומי מקנה את הזכות לנהוג במדינות זרות בהתאם לדרגות רישיון הנהיגה ומותנה בכך שיוצמד אליו רישיון ישראלי קבוע (פלסטיק) בר תוקף. תוקף רישיון הנהיגה הבינלאומי הוא 3 שנים או עד פקיעת תוקף רישיון הנהיגה הישראלי, המוקדם מבניהם.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_check_entry_policy_independently",
+      "claim": "The Population and Immigration Authority tells applicants to check each destination's entry policy independently, including the passport validity required for the visit",
+      "source_url": "https://www.gov.il/he/service/application_for_biometric_passport2",
+      "raw_snippet": "יש לבדוק את מדיניות הכניסה למדינות השונות באופן עצמאי, כולל בדיקת תנאי הכניסה למדינת היעד",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "url_mfa_visa_exemption_table",
+      "claim": "The Ministry of Foreign Affairs publishes a visa-exemption table for Israeli passport holders by destination (edition dated 12.07.2026), and it states that some countries which exempt Israelis from a visa nonetheless require an advance online visit authorization, usually for a fee, applied for some days before the flight",
+      "source_url": "https://www.gov.il/BlobFolder/reports/examption_visa-israeli-heb/he/ISR_Visa_Abroad_Heb.pdf",
+      "raw_snippet": "מדינות מסוימות, גם מדינות הפוטרות אזרחים ישראלים מהנפקת אשרה - דורשות אישור ביקור מקוון מראש. יש להגיש בקשה מקוונת לאישור הביקור, לרוב בתשלום, כמה ימים לפני הטיסה.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "pdf",
+      "verified_at": "2026-08-16T00:00:00Z"
+    },
+    {
+      "claim_id": "url_iata_travel_centre",
+      "claim": "IATA Travel Centre provides passport, visa and health documentation requirements personalised by nationality, and is bot-protected so a human may need to pass a security check to open it",
+      "source_url": "https://www.iatatravelcentre.com/",
+      "raw_snippet": "www.iatatravelcentre.com",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ]
+    },
+    {
+      "claim_id": "url_chabad_locator",
+      "claim": "Chabad.org hosts a worldwide Chabad center locator covering community centers and synagogues in over 100 countries",
+      "source_url": "https://www.chabad.org/jewish-centers/",
+      "raw_snippet": "Chabad-Lubavitch Jewish community centers and synagogues are here for you in over 100 countries and all 50 states.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ]
+    },
+    {
+      "claim_id": "url_mission_locator",
+      "claim": "gov.il hosts a locator for Israeli consular representations abroad",
+      "source_url": "https://www.gov.il/he/Departments/dynamiccollectors/israeli-consular-services",
+      "raw_snippet": "חיפוש נציגויות ישראל בעולם",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z"
+    },
+    {
+      "claim_id": "mcp_ben_gurion_flights",
+      "claim": "The ben-gurion-flights MCP server provides real-time flight data from Ben Gurion airport: flight status, search by airline or destination, and airport activity tracking",
+      "source_url": "https://agentskills.co.il/he/mcp/ben-gurion-flights",
+      "raw_snippet": "ben-gurion-flights",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ]
+    },
+    {
+      "claim_id": "fact_korea_keta_exemption_israelis",
+      "claim": "Israeli citizens are exempt from submitting a K-ETA for tourism entry to South Korea, an exemption valid until 31 December 2026",
+      "source_url": "https://embassies.gov.il/seoul/en/announcements/israelis-exempt-keta",
+      "raw_snippet": "We would like to inform you about the exemption from submitting a K-ETA. The exemption applies to citizens seeking to enter Korea for tourism purposes. The exemption is valid until December 31, 2026.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "fact_uk_eta_per_traveller_and_transit",
+      "claim": "Every traveller needs their own UK ETA including babies and children, and an ETA is also needed to transit landside through a UK airport",
+      "source_url": "https://www.gov.uk/eta",
+      "raw_snippet": "Each person travelling needs an ETA, including babies and children.",
+      "fetched_at": "2026-08-16T00:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-08-16T00:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
     }
   ]
 }
