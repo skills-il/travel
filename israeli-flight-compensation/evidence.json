@@ -243,7 +243,7 @@
       "claim_type": "url",
       "source_url": "https://www.consumers.org.il/category/aviation-law-benefits",
       "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "ipt is enabled for purposes of website accessibility 18/08/2026 אודות המועצה פייסבוק ערוץ יוטיוב English مجلس المستهلك הגשת תלונה צור קשר פורום המועצה מכתבים להורדה חוק הפקדון מידע כללי שירותים ומידע פרסומים חוק ומשפט חינוך לצרכנות מי אנחנו?",
+      "raw_snippet": "is enabled for purposes of website accessibility 18/08/2026 אודות המועצה פייסבוק ערוץ יוטיוב English مجلس المستهلك הגשת תלונה צור קשר פורום המועצה מכתבים להורדה חוק הפקדון מידע כללי שירותים ומידע פרסומים חוק ומשפט חינוך לצרכנות מי אנחנו?",
       "confidence": "medium",
       "verified_via": "source re-fetched and decoded correctly (PDF via pdftotext, HTML with its declared encoding); snippet copied from the result",
       "verified_at": "2026-08-18",
