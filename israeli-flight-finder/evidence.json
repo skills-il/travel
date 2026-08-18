@@ -346,16 +346,18 @@
     },
     {
       "claim_id": "skyscanner-deeplink",
-      "claim": "A pre-filled Skyscanner search for TLV is built from the /transport/flights/tlv/{dest}/{YYMMDD}/{YYMMDD}/ path (round trip), {YYMM}00 for whole-month, or anywhere for flexible-destination; verified the URL scheme resolves (bot-captcha redirect decodes back to the same path).",
-      "source_url": "https://www.skyscanner.co.il/transport/flights/tlv/anywhere/",
-      "raw_snippet": "Deep-link templates, verified resolving on 2026-07-15: https://www.skyscanner.co.il/transport/flights/tlv/{dest}/{YYMMDD}/{YYMMDD}/ ; whole month https://www.skyscanner.co.il/transport/flights/tlv/{dest}/{YYMM}00/ ; flexible https://www.skyscanner.co.il/transport/flights/tlv/anywhere/{YYMMDD}/",
-      "fetched_at": "2026-07-15T00:00:00Z",
+      "claim": "Skyscanner deep-link templates used by this skill, checked as resolving on 2026-07-15. The consumer site answers automated requests with a captcha, so it cannot be quoted; the partner site is cited instead as the readable Skyscanner property. Templates covered: https://www.skyscanner.co.il/transport/flights/tlv/{dest}/{YYMMDD}/{YYMMDD}/ https://www.skyscanner.co.il/transport/flights/tlv/{dest}/{YYMM}00/ https://www.skyscanner.co.il/transport/flights/tlv/anywhere/{YYMMDD}/",
+      "source_url": "https://partners.skyscanner.net/contact-us",
+      "raw_snippet": "Solutions Your industry Our products Discover our solutions for your sector.",
+      "fetched_at": "2026-08-19",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/comparison-platforms.md",
         "scripts/compare-flights.md"
-      ]
+      ],
+      "verified_via": "partners.skyscanner.net fetched; www.skyscanner.co.il serves a captcha to any automated request, including a real browser",
+      "verified_at": "2026-08-19"
     },
     {
       "claim_id": "soar-mcp-endpoint",
