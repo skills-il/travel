@@ -1,0 +1,16 @@
+{
+  "cycles": [
+    {
+      "version": "1.1.0",
+      "date": "2026-07-26",
+      "lessons": [
+        "Expert MAJOR deferred: passengers with disabilities are covered by תקנות שוויון זכויות (הסדרת נגישות לשירותי תחבורה ציבורית), 2003 פרק ג', not by this law. Note the commonly-cited 'תקנות נגישות לשירותי תעופה' does not exist, so an agent improvising a citation will invent one. Add coverage or an explicit out-of-scope row next cycle.",
+        "Expert MAJOR deferred: the demand-letter template is described in prose but never provided as a file, so the section 11 demand, the section 14(b) document request and the burden-of-proof sentence are re-improvised on every run.",
+        "Expert MAJOR deferred: organizer vs operator vs travel agent liability (ss.4, 15, 10(b)) is a checklist line but absent from the body, so a passenger who booked via an agency may address the wrong party.",
+        "Expert MINOR deferred: case-law citations for the narrow reading of extraordinary circumstances are still absent; the 'do not concede an exemption' posture rests on assertion. Most candidates are small-claims judgments with no precedential force, so any citation must carry that caveat.",
+        "Unsourced claim carried over: the '20 to 35 percent' claim-company fee in the Problem section has no evidence entry. Either source it or reframe qualitatively next cycle.",
+        "Process lesson: the coverage agent asserted a tiered domestic structure and a small-claims ceiling; both were re-verified against primary sources before writing. The domestic amounts (300/180/240) were confirmed from the regulations text, and section 9א was confirmed verbatim from the statute rather than trusted from the agent summary."
+      ]
+    }
+  ]
+}
