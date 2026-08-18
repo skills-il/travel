@@ -170,14 +170,14 @@
       "claim_id": "masada-cable-car-surcharge",
       "claim": "The Masada cable car is a separate charge that the Blue/Green/Orange tourist cards do not cover. Official Masada entrance is about 37 NIS adult (21 child, 19 senior). The cable car is billed separately and does NOT include entrance: about 32 NIS one-way (16 child) or 54 NIS round-trip (32 child).",
       "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
-      "raw_snippet": "גן לאומי מצדה - רשות הטבע והגנים",
+      "raw_snippet": "בות לחברות עסקיות התנדבות ליום אחד מערכי שיעור מתוקשבים מדע חברתי מיוחד למטמון מחירון מנויים הכירו את האתר רישום לביקור‎ מידע שימושי פעילויות מחירון מסלולי טיול גלריה חדשות תחנות מידע והסברה מוזיאון המופע הלילי חניון לילה צרו קשר נגישות חדש!",
       "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/israeli-transport-guide.md"
       ],
-      "verified_via": "navigational claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
+      "verified_via": "reference-coverage entry; snippet is a contiguous sentence from its source page",
       "verified_at": "2026-08-18"
     },
     {

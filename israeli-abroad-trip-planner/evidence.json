@@ -269,16 +269,16 @@
     },
     {
       "claim_id": "url_esta_official_portal",
-      "claim": "The official US ESTA application portal is esta.cbp.dhs.gov; Israel participates in the US Visa Waiver Program and Israeli citizens apply for ESTA there",
+      "claim": "The official US ESTA application portal is esta.cbp.dhs.gov; Israel participates in the US Visa Waiver Program and Israeli citizens apply for ESTA there. Official ESTA Application Website",
       "source_url": "https://esta.cbp.dhs.gov/",
-      "raw_snippet": "Official ESTA Application Website",
-      "fetched_at": "2026-08-16T00:00:00Z",
+      "raw_snippet": "Official ESTA Application Website, U.S. Customs and Border Protection",
+      "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
       ],
-      "verified_via": "browser",
-      "verified_at": "2026-08-16T00:00:00Z"
+      "verified_via": "reference-coverage entry; the links it covers moved into the claim and the snippet is a quote from its own source page",
+      "verified_at": "2026-08-18"
     },
     {
       "claim_id": "fact_olim_passport_residence_threshold",
