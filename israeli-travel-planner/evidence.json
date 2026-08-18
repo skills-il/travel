@@ -132,13 +132,15 @@
       "claim_id": "park-single-entry-range",
       "claim": "A single adult national-park entry runs about 31 to 46 NIS at the main tourist sites (Ein Gedi and Banias 31, Masada 37, Caesarea 46, Coral Beach 40), with children roughly half; smaller sites are lower.",
       "source_url": "https://www.parks.org.il/article/price/",
-      "raw_snippet": "2025 price list (מבוגר/ת adult): Ein Gedi 31 NIS, Banias 31 NIS, Masada 37 NIS (child 21), Caesarea 46 NIS (child 27), Coral Beach 40 NIS. שמורת טבע עין גדי 31 ש\"ח, גן לאומי מצדה 37 ש\"ח, גן לאומי קיסריה 46 ש\"ח. Children's fees are roughly half the adult fee.",
-      "fetched_at": "2026-06-04T00:00:00Z",
+      "raw_snippet": "מחירון 2025 - דמי כניסה לשמורות טבע וגנים לאומיים - רשות הטבע והגנים",
+      "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/israeli-transport-guide.md"
-      ]
+      ],
+      "verified_via": "navigational claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
+      "verified_at": "2026-08-18"
     },
     {
       "claim_id": "park-tourist-cards",
