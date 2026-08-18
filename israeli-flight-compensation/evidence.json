@@ -243,8 +243,11 @@
       "claim_type": "url",
       "source_url": "https://www.consumers.org.il/category/aviation-law-benefits",
       "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "https://www.consumers.org.il/category/aviation-law-benefits",
-      "confidence": "medium"
+      "raw_snippet": "������ �������� �������, ����� ��� ����� ���� ���� ������",
+      "confidence": "medium",
+      "verified_via": "navigational claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
+      "verified_at": "2026-08-18",
+      "fetched_at": "2026-08-18"
     },
     {
       "id": "bgn-flights-mcp",

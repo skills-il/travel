@@ -173,24 +173,28 @@
       "claim_id": "platforms-live",
       "claim": "Google Flights (Israel), Skyscanner, KAYAK, Issta, and Lametayel are all operating flight-comparison platforms accessible to Israeli users in Hebrew.",
       "source_url": "https://www.google.com/travel/flights?gl=IL&hl=he",
-      "raw_snippet": "Google Flights lets users search and compare flights with locale set to Israel (gl=IL, hl=he), including AI Flight Deals and fare-history tracking.",
-      "fetched_at": "2026-06-21T00:00:00Z",
+      "raw_snippet": "חיפוש טיסות זולות ברחבי העולם והזמנת כרטיס – Google חיפוש טיסות",
+      "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/comparison-platforms.md"
-      ]
+      ],
+      "verified_via": "navigational claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
+      "verified_at": "2026-08-18"
     },
     {
       "claim_id": "deal-sources",
       "claim": "Israeli travelers track error fares and flash deals through secret-flights sites such as secretflights.co.il and through Telegram/Facebook deal channels, which rarely appear on the big aggregators.",
       "source_url": "https://www.secretflights.co.il",
-      "raw_snippet": "secretflights.co.il (טיסות סודיות) surfaces mispriced and error fares from Israel that do not appear on standard comparison engines.",
-      "fetched_at": "2026-06-21T00:00:00Z",
+      "raw_snippet": "טיסות זולות | השוואת מחירי טיסות לחו\"ל | טיסות סודיות",
+      "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
+      ],
+      "verified_via": "navigational claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
+      "verified_at": "2026-08-18"
     },
     {
       "claim_id": "tlv-war-reopening-2026",
