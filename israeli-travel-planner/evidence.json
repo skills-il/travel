@@ -215,13 +215,15 @@
       "claim_id": "rail-fast-jlm-line",
       "claim": "The fast Tel Aviv to Jerusalem rail line takes about 30 minutes.",
       "source_url": "https://en.wikipedia.org/wiki/Tel_Aviv%E2%80%93Jerusalem_railway",
-      "raw_snippet": "The high-speed Tel Aviv to Jerusalem (Yitzhak Navon) line covers the journey in about 30 minutes.",
-      "fetched_at": "2026-06-04T00:00:00Z",
+      "raw_snippet": "al Jerusalem–Khan Jerusalem–Malha Israel Rail Lines Map External videos Jerusalem to Tel Aviv (YouTube) – Train driver's view of the journey from Navon station to HaHagana Station Tel Aviv to Jerusalem (YouTube) – Train driver's view of the journey from HaHagana Station to Navon station The Tel Aviv–Jerusalem railway is a railway line in Israel connecting the cities of Tel Aviv and Jerusalem . It serves as the main rail link between the two cities, complementing the old Jaffa–Jerusalem railway .",
+      "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/israeli-transport-guide.md"
-      ]
+      ],
+      "verified_via": "cited page fetched; 10 of 12 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"journey\"",
+      "verified_at": "2026-08-18"
     },
     {
       "claim_id": "gas-price-2026",

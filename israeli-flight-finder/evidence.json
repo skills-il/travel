@@ -196,12 +196,14 @@
       "claim_id": "tlv-war-reopening-2026",
       "claim": "The February 2026 Iran war closed Israeli airspace and shut Ben Gurion for roughly 40 days; the airport fully reopened on 9 April 2026 and operates normally, with an uneven foreign-carrier recovery.",
       "source_url": "https://www.timesofisrael.com/ben-gurion-airport-set-to-reopen-as-israel-eases-flight-restrictions-after-ceasefire/",
-      "raw_snippet": "Ben Gurion Airport reopened in April 2026 after the ceasefire ended the February 2026 war; the airport had been closed and foreign carriers had suspended service, resuming on a rolling basis afterward.",
-      "fetched_at": "2026-07-15T00:00:00Z",
+      "raw_snippet": "ening the country’s airspace and resume regular operations at Tel Aviv’s Ben Gurion Airport starting at midnight Wednesday-Thursday, roughly one day after a ceasefire was announced between the US, Israel and Iran. The Transportation Ministry said it was working with the Israel Airports Authority and the Civil Aviation Authority on returning to full operations at Ben Gurion Airport, the country’s main international gateway. Duty-Free shops and all terminal services were also reopening.",
+      "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
+      ],
+      "verified_via": "cited page fetched; 17 of 28 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"roughly\"",
+      "verified_at": "2026-08-18"
     },
     {
       "claim_id": "elal-network-2026-weekly",
@@ -297,12 +299,14 @@
       "claim_id": "ryanair-tlv-2026",
       "claim": "Ryanair will not restart Tel Aviv, cancelling 22 low-fare routes and roughly 1 million seats, citing Ben Gurion's refusal to confirm its summer-2026 (S26) slots and to keep the low-cost Terminal 1 open.",
       "source_url": "https://corporate.ryanair.com/news/ryanair-will-not-restart-tel-aviv-flights-as-ben-gurion-airport-refuses-to-confirm-s26-slots-or-availability-of-low-cost-terminal-1/",
-      "raw_snippet": "Ryanair is cancelling 22 low-fare routes and losing approximately 1 million seats by not restarting winter flights to Tel Aviv; it will only return once Ben Gurion confirms its historic S26 slots and keeps Terminal 1 open.",
-      "fetched_at": "2026-07-16T00:00:00Z",
+      "raw_snippet": "However, Tel Aviv Airport keeps closing this facility for its own convenience, forcing Ryanair, and other low-cost airlines, into the more expensive T3 – where we do not want to be – but they refuse to honour the low-cost agreement, which T1 facilities provide.",
+      "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
+      ],
+      "verified_via": "cited page fetched; 21 of 30 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"losing\"",
+      "verified_at": "2026-08-18"
     },
     {
       "claim_id": "google-flights-deeplink",
