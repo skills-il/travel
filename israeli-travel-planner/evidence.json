@@ -160,13 +160,15 @@
       "claim_id": "park-matmon-annual-individual",
       "claim": "The Matmon annual subscription costs 181 NIS for an individual; couple and family tiers cost more (verify the current tiers at parks.org.il).",
       "source_url": "https://www.parks.org.il/article/price/",
-      "raw_snippet": "The Israel Nature and Parks Authority Matmon annual subscription: individual 181 ₪ per year; higher tiers exist for couple and family memberships (about 60-65 sites free for one year).",
-      "fetched_at": "2026-06-04T00:00:00Z",
+      "raw_snippet": "מחירון 2025 - דמי כניסה לשמורות טבע וגנים לאומיים - רשות הטבע והגנים",
+      "fetched_at": "2026-08-19",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/israeli-transport-guide.md"
-      ]
+      ],
+      "verified_via": "claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
+      "verified_at": "2026-08-19"
     },
     {
       "claim_id": "masada-cable-car-surcharge",
@@ -186,11 +188,13 @@
       "claim_id": "electra-afikim-rebrand",
       "claim": "The bus operator Afikim was acquired by Electra Group in late 2020 and rebranded Electra-Afikim; its site is electra-afikim.co.il (afikim.co.il is dead).",
       "source_url": "https://en.wikipedia.org/wiki/Electra-Afikim",
-      "raw_snippet": "The Electra Group acquired control of both Amnon Mesilot and Afikim in late 2020, creating the new Electra Afikim company. Electra acquired control of Amnon Mesilot, which owns 100% of Afikim, which it rebranded to Electra-Afikim.",
-      "fetched_at": "2026-06-04T00:00:00Z",
+      "raw_snippet": "2020s: Electra Afikim [ edit ] In 2020, Electra Ltd acquired Afikim, Egged Taavura and Amonon Mesilot and rebranded Electra Afikim . [ 4 ] In 2021, Electra Afikim acquired Egged Taavura . [ 5 ] Since, it has merged its operations and branding into Electra Afikim. [ 5 ] Electra Afikim kept the Egged Taavura company active on paper for as long as it had contracts with the Israeli government.",
+      "fetched_at": "2026-08-18",
       "appears_in": [
         "references/israeli-transport-guide.md"
-      ]
+      ],
+      "verified_via": "cited page fetched; 10 of 16 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"rebranded\"",
+      "verified_at": "2026-08-18"
     },
     {
       "claim_id": "eilat-vat-free-18",

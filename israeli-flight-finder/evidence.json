@@ -162,12 +162,14 @@
       "claim_id": "booking-day-of-week",
       "claim": "Recent Expedia data put the cheapest day to fly mid-week (Tuesday, around 14% below the peak day domestically) with weekend departures at a premium; shifting dates by 1-2 days can save 30%+.",
       "source_url": "https://www.afar.com/magazine/expedia-data-shows-new-best-day-to-book-cheaper-flights",
-      "raw_snippet": "Expedia found the cheapest day to fly is Tuesday, with travelers saving about 14 percent on average versus the most expensive day; weekend departures cost more.",
-      "fetched_at": "2026-06-21T00:00:00Z",
+      "raw_snippet": "It tracked patterns throughout a year of Expedia’s Flight Deals tool, which highlights fares priced at least 20 percent below normal. Fewer business travelers are flying on Friday, and that opens up cheaper inventory for leisure travelers heading into the weekend. Despite this new report, experts still caution against reading too much into any single “best day” finding.",
+      "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
+      ],
+      "verified_via": "cited page fetched; 19 of 25 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"below\"",
+      "verified_at": "2026-08-18"
     },
     {
       "claim_id": "platforms-live",
