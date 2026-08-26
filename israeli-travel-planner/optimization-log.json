@@ -47,6 +47,41 @@
         "Matmon couple/family tiers were not confirmable on the official page, so only the individual tier is stated as a number."
       ],
       "deferred": []
+    },
+    {
+      "version": "1.4.0",
+      "date": "2026-08-26",
+      "trigger": "Batch2 drift-type-C review: external-site dependency and link rot.",
+      "changes": [
+        "CRITICAL FIX: all six bus daily caps were wrong. The published set (11.5/21/27/30.5/52.5, over-225 'no cap') was a verbatim transcription of the TRAIN single-ride column of the same official table. Correct bus caps are 17.5/29/37.5/37.5/60.5/79.5, and every band has a cap. Verified twice independently in a rendered browser at bus.gov.il/FaresDistance.",
+        "Replaced the dead fare source: pti.org.il/DerekhShava/ now 301s to bus.gov.il and serves an empty SPA shell to non-browser fetchers. All fare claims re-sourced to bus.gov.il/FaresDistance.",
+        "Added the Tzedek Tachburti rider-profile discount scheme, verified at bus.gov.il/Discounts, including the profile-registration prerequisite, the no-stacking rule and mandatory validation.",
+        "Added chagim to the Shabbat section (Yom Tov shutdown, erev-chag wind-down, Chol HaMoed crowding) and reframed Yom Kippur as practical effect rather than a legal claim.",
+        "Rewrote weekend-transit guidance as a per-city check instead of the blanket 'no transit on Shabbat', without publishing an unsourced municipality list.",
+        "Brought driving and car rental into scope (Highway 6 barrier-free rebilling, rental eligibility, parking) because both worked examples route the traveler into a car while the checklist disclaimed the topic.",
+        "Added a Ben Gurion Airport ground-transport section.",
+        "Added Masada gate timings, the 08:00 cable-car start (so a sunrise ascent is on foot), heat-load cutoffs and the advance visit-coordination booking, all from the operator page.",
+        "Removed the Matmon 181 NIS figure: it was cited to the INPA price list, which I rendered in full and which contains no Matmon price. Replaced with the water-sites 50% rule that the page does state.",
+        "Flagged that line 421 runs by advance reservation on weekdays, which undermined the weekend Dead Sea example; demoted it in favour of a rental car.",
+        "Added a Reference Links / קישורי עזר section, which the skill lacked entirely.",
+        "Fixed metadata.json category, which said 'localization' rather than 'travel'.",
+        "Rewrote scripts/plan_route.py: Hebrew city aliases, a Ben Gurion node, --list, 20 more city pairs, real direct-train routes that were previously denied, non-zero exit on unknown input, and it now computes the Derech Shava band with the bus-vs-combined-rail column warning instead of telling the user to look it up."
+      ],
+      "deviations": [
+        "Could not source the Neim BeSofash municipality roster from any live official page (gov.il and bus.gov.il paths both dead), so the weekend-service guidance is written as a per-city instruction rather than a named list.",
+        "Could not source the Eilat VAT carve-out list, so the skill states that exclusions exist and routes to the Tax Authority rather than enumerating them.",
+        "Israel Railways EMV acceptance was previously asserted on the strength of a 2018 tender article written in the future tense. Downgraded to UNVERIFIED and the assertion removed from all four surfaces.",
+        "Could not verify any Matmon tier price; no figure is stated."
+      ],
+      "lessons": [
+        "CARRY: Israel Railways EMV acceptance is still unverified. Confirm on rail.co.il next cycle.",
+        "CARRY: the Eilat fare regime is genuinely separate (Wikivoyage shows a distinct Eilat fare column and a Zone 1 Eilat monthly). Not covered; source it from bus.gov.il next cycle.",
+        "CARRY: accessibility is covered only as a fare-discount profile. Rail assistance-booking lead times and per-site INPA accessibility are absent; the Masada sunrise guidance routes every reader onto the Snake Path with no alternative for a mobility-limited traveler.",
+        "CARRY: Dead Sea beach access omits the free Ein Bokek public facilities and the hotel day-use model.",
+        "CARRY: hotel-chain and Zimmerim entries are brand-to-tier filler; the booking mechanics that actually change a decision (weekend minimum stays, direct booking, kosher dining and Shabbat-mode constraints) are missing.",
+        "Deferred over the Phase 4.1 cap: park opening hours in the reference guide are unsourced and not reconciled with the Friday/chag early-closing rule.",
+        "METHOD: the daily-cap error was a wrong-column read from a six-column table that survived three cycles because every gate checked whether the stated number was correct, and it was, in the column it came from. When transcribing any multi-column rate table, record WHICH column each figure came from in the evidence claim text."
+      ]
     }
   ]
 }

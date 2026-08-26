@@ -1,55 +1,39 @@
 {
   "schemaVersion": "1.0",
   "skill": "israeli-travel-planner",
-  "generated_at": "2026-06-04T00:00:00Z",
+  "generated_at": "2026-08-26T17:19:49+00:00",
   "claims": [
     {
-      "claim_id": "fare-single-urban-8nis-90min",
-      "claim": "Under the Derech Shava reform (effective 25 April 2025) a single urban bus ride up to 15 km costs 8 NIS and includes 90 minutes of free transfers within the zone.",
-      "source_url": "https://pti.org.il/DerekhShava/",
-      "raw_snippet": "Up to 15 km (yellow): single ride 8 ₪. נסיעה בודדת 8 ₪ כולל 90 דקות של מעבר חופשי.",
-      "fetched_at": "2026-06-04T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
-      ]
-    },
-    {
       "claim_id": "fare-distance-bands-2025",
-      "claim": "Current post-reform single-ride bus fares by distance band: up to 15 km 8 NIS, up to 40 km 14.5 NIS, up to 75 km 19 NIS, up to 120 km 19 NIS, up to 225 km 30.5 NIS, over 225 km 74 NIS.",
-      "source_url": "https://pti.org.il/DerekhShava/",
-      "raw_snippet": "Bus Only single ride: Up to 15 km (צהוב) 8 ₪; 15-40 km (ירוק) 14.5 ₪; 40-75 km (תכלת) 19 ₪; 75-120 km (כחול) 19 ₪; 120-225 km (סגול) 30.5 ₪; Over 225 km (אפור) 74 ₪.",
-      "fetched_at": "2026-06-04T00:00:00Z",
+      "claim": "Single-ride bus fares by distance band: 8 / 14.5 / 19 / 19 / 30.5 / 74 NIS",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "צהוב 0-15 ק\"מ אוטובוס: 8 ₪ ירוק 15-40 ק\"מ אוטובוס: 14.5 ₪ תכלת 40-75 ק\"מ אוטובוס: 19 ₪ כחול 75-120 ק\"מ אוטובוס: 19 ₪ סגול 120-225 ק\"מ אוטובוס: 30.5 ₪ אפור מעל 225 ק\"מ אוטובוס: 74 ₪",
+      "fetched_at": "2026-08-26T16:54:55+00:00",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
-      ]
-    },
-    {
-      "claim_id": "fare-daily-caps",
-      "claim": "Daily caps (bus only) rise with the band: up to 15 km ~11.5 NIS, up to 40 km ~21 NIS, up to 75 km ~27 NIS, up to 120 km ~30.5 NIS, up to 225 km ~52.5 NIS; the over-225 km band has no daily cap.",
-      "source_url": "https://pti.org.il/DerekhShava/",
-      "raw_snippet": "Daily caps (חופשי יומי, bus only): Up to 15 km 11.5 ₪; 15-40 km 21 ₪; 40-75 km 27 ₪; 75-120 km 30.5 ₪; 120-225 km 52.5 ₪; Over 225 km no daily cap option listed.",
-      "fetched_at": "2026-06-04T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
-      ]
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:54:55+00:00"
     },
     {
       "claim_id": "fare-nationwide-monthly-315",
-      "claim": "A nationwide unlimited monthly pass (Chofshi Artzi, up to 225 km) costs 315 NIS.",
-      "source_url": "https://ravkavonline.co.il/en/derekh-shava",
-      "raw_snippet": "A new deal allows travel by bus and light rail for distances of up to 225 km, without limitations for an entire month, at a price of 315 NIS.",
-      "fetched_at": "2026-06-04T00:00:00Z",
+      "claim": "Nationwide unlimited monthly bus pass is 315 NIS",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "חופשי חודשי ארצי אוטובוס: 315 ₪",
+      "fetched_at": "2026-08-26T16:54:55+00:00",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
-      ]
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:54:55+00:00"
     },
     {
       "claim_id": "fare-senior-free-67",
@@ -60,7 +44,8 @@
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
+        "references/israeli-transport-guide.md",
+        "scripts/plan_route.py"
       ]
     },
     {
@@ -68,20 +53,6 @@
       "claim": "Since early 2026 passengers can board and pay at Egged validators with a physical credit card or via Apple Pay / Google Pay, with a pilot in Eilat, Jerusalem and Haifa; no Rav-Kav needed. Also covers: https://en.parks.org.il/reserve-park/masada-national-park/",
       "source_url": "https://www.egged.co.il/en/information-for-passengers/rav-kav-and-payment-apps",
       "raw_snippet": "At the beginning of 2026, a pilot for credit card payments will launch on Egged bus lines in Eilat, Jerusalem, and Haifa. This means you can board the bus and pay for your ride directly at the validators using a physical credit card, or via a digital wallet (Apple Pay and Google Pay) on your phone or smartwatch. This option is an additional solution designed to make boarding easier, especially for passengers who don't have a Rav-Kav card or a payment app available at that moment.",
-      "fetched_at": "2026-08-18",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
-      ],
-      "verified_via": "source fetched and the passage copied verbatim from the cited page",
-      "verified_at": "2026-08-18"
-    },
-    {
-      "claim_id": "emv-rail",
-      "claim": "EMV contactless is not Egged-only: Israel Railways lets passengers pay with EMV credit cards instead of a paper ticket or pre-loaded card.",
-      "source_url": "https://www.calcalistech.com/ctech/articles/0,7340,L-3741573,00.html",
-      "raw_snippet": "A train station in Israel (illustration). Photo: Eran Yofi Cohen צילום: ערן יופי כהן The new system will allow passengers to use EMV-enabled credit cards to instantly pay for rides without needing to purchase a paper ticket or charge a pre-purchased card, according to the tender. At the end of each day, a passenger’s credit cards will be charged with the most affordable option, according to the trips they made and available saving options, such as daily passes.",
       "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
@@ -105,10 +76,10 @@
     },
     {
       "claim_id": "remote-load-apps",
-      "claim": "A physical Rav-Kav can be loaded remotely via the Rav-Kav Online, HopOn and Rav-Pass apps and websites.",
+      "claim": "Rav-Kav Online is the official site for loading Rav-Kav travel cards remotely",
       "source_url": "https://ravkavonline.co.il/en/",
       "raw_snippet": "Rav-Kav Online | The official website for loading Rav-Kav travel cards",
-      "fetched_at": "2026-08-18",
+      "fetched_at": "2026-08-26T17:08:24+00:00",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
@@ -129,60 +100,19 @@
       ]
     },
     {
-      "claim_id": "park-single-entry-range",
-      "claim": "A single adult national-park entry runs about 31 to 46 NIS at the main tourist sites (Ein Gedi and Banias 31, Masada 37, Caesarea 46, Coral Beach 40), with children roughly half; smaller sites are lower.",
-      "source_url": "https://www.parks.org.il/article/price/",
-      "raw_snippet": "מחירון 2025 - דמי כניסה לשמורות טבע וגנים לאומיים - רשות הטבע והגנים",
-      "fetched_at": "2026-08-18",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
-      ],
-      "verified_via": "navigational claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
-      "verified_at": "2026-08-18"
-    },
-    {
       "claim_id": "park-tourist-cards",
-      "claim": "Tourist multi-site cards (valid two weeks): Blue (3 sites) 90 NIS, Green (6 sites) 130 NIS, Orange (unlimited) 175 NIS. They do not cover the Masada cable car.",
+      "claim": "Tourist multi-site cards: Blue (3 sites) 90 NIS, Green (6 sites) 130 NIS, Orange (unlimited) 175 NIS, each valid two weeks from the first visit; the Masada cable car is not included",
       "source_url": "https://en.parks.org.il/article/money-saving-tickets/",
-      "raw_snippet": "Accessibility contact us Home > Money Saving Tickets Money Saving Tickets כרטיס מטמון וכרטיסי תייר.jpg PERSONAL MULTI SITE TICKETS Blue Card with 3 site visits, valid for two weeks – 90 ₪ Green Card with 6 site visits, valid for two weeks – ₪130 Orange Card with unlimited site visits, valid for two weeks – ₪ 175 Note concerning the tourist cards The price is the same for all ages. The cards offer access only to the official sites listed on the front of the card.",
-      "fetched_at": "2026-08-18",
+      "raw_snippet": "Blue Card with 3 site visits, valid for two weeks – 90 ₪ Green Card with 6 site visits, valid for two weeks – ₪130 Orange Card with unlimited site visits, valid for two weeks – ₪ 175",
+      "fetched_at": "2026-08-26T16:54:55+00:00",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
       ],
-      "verified_via": "source fetched and the passage copied verbatim from the cited page",
-      "verified_at": "2026-08-18"
-    },
-    {
-      "claim_id": "park-matmon-annual-individual",
-      "claim": "The Matmon annual subscription costs 181 NIS for an individual; couple and family tiers cost more (verify the current tiers at parks.org.il).",
-      "source_url": "https://www.parks.org.il/article/price/",
-      "raw_snippet": "מחירון 2025 - דמי כניסה לשמורות טבע וגנים לאומיים - רשות הטבע והגנים",
-      "fetched_at": "2026-08-19",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
-      ],
-      "verified_via": "claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
-      "verified_at": "2026-08-19"
-    },
-    {
-      "claim_id": "masada-cable-car-surcharge",
-      "claim": "The Masada cable car is a separate charge that the Blue/Green/Orange tourist cards do not cover. Official Masada entrance is about 37 NIS adult (21 child, 19 senior). The cable car is billed separately and does NOT include entrance: about 32 NIS one-way (16 child) or 54 NIS round-trip (32 child).",
-      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
-      "raw_snippet": "בות לחברות עסקיות התנדבות ליום אחד מערכי שיעור מתוקשבים מדע חברתי מיוחד למטמון מחירון מנויים הכירו את האתר רישום לביקור‎ מידע שימושי פעילויות מחירון מסלולי טיול גלריה חדשות תחנות מידע והסברה מוזיאון המופע הלילי חניון לילה צרו קשר נגישות חדש!",
-      "fetched_at": "2026-08-18",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/israeli-transport-guide.md"
-      ],
-      "verified_via": "reference-coverage entry; snippet is a contiguous sentence from its source page",
-      "verified_at": "2026-08-18"
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:54:55+00:00"
     },
     {
       "claim_id": "electra-afikim-rebrand",
@@ -191,6 +121,8 @@
       "raw_snippet": "2020s: Electra Afikim [ edit ] In 2020, Electra Ltd acquired Afikim, Egged Taavura and Amonon Mesilot and rebranded Electra Afikim . [ 4 ] In 2021, Electra Afikim acquired Egged Taavura . [ 5 ] Since, it has merged its operations and branding into Electra Afikim. [ 5 ] Electra Afikim kept the Egged Taavura company active on paper for as long as it had contracts with the Israeli government.",
       "fetched_at": "2026-08-18",
       "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
         "references/israeli-transport-guide.md"
       ],
       "verified_via": "cited page fetched; 10 of 16 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"rebranded\"",
@@ -198,21 +130,23 @@
     },
     {
       "claim_id": "eilat-vat-free-18",
-      "claim": "Eilat is a VAT-free zone, so shoppers save the standard 18% Israeli VAT (raised from 17% to 18% on 1 January 2025 by the Israeli Tax Authority) on eligible goods.",
+      "claim": "The Israeli standard VAT rate rose to 18% on 1 January 2025. (This entry supports the 18% figure only; the Eilat exemption itself is described in the skill without asserting specific carve-outs.)",
       "source_url": "https://sovos.com/regulatory-updates/vat/israel-vat-rate-increase-to-18-from-january-1-2025/",
-      "raw_snippet": "Israel's standard VAT rate increased from 17% to 18%, effective January 1, 2025, confirmed by the Israeli Tax Authority. Eilat is a free trade zone where transactions are VAT-free.",
-      "fetched_at": "2026-06-04T00:00:00Z",
+      "raw_snippet": "Israel VAT rate increase to 18% from January 1, 2025",
+      "fetched_at": "2026-08-26T17:08:24+00:00",
       "appears_in": [
         "SKILL.md",
-        "SKILL_HE.md"
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
       ]
     },
     {
       "claim_id": "rail-karmiel-line",
-      "claim": "Israel Railways runs an Acre to Karmiel line (opened September 2017, stations Ahidud and Karmiel) and a Jezreel Valley line to Beit She'an (completed 2016), both used by Galilee travelers.",
+      "claim": "The Galilee line serves Karmiel with stations at Ahihud and Karmiel, opened September 2017",
       "source_url": "https://en.wikipedia.org/wiki/Railway_to_Karmiel",
       "raw_snippet": "Most of the route is in the vicinity of Highway 85 . There are two stations on the railway: Ahidud and Karmiel . From Karmiel, a plan exists to eventually extend the railway to Korazim (near Safed ) and from there to Kiryat Shmona at the very northern tip of Israel. The Northern District Planning and Building Committee approved plans for the line in the spring of 2021.",
-      "fetched_at": "2026-08-18",
+      "fetched_at": "2026-08-26T17:08:24+00:00",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
@@ -223,17 +157,15 @@
     },
     {
       "claim_id": "rail-fast-jlm-line",
-      "claim": "The fast Tel Aviv to Jerusalem rail line takes about 30 minutes.",
+      "claim": "Scheduled Tel Aviv to Jerusalem journey time on the fast line is 32-34 minutes including the Ben Gurion Airport stop",
       "source_url": "https://en.wikipedia.org/wiki/Tel_Aviv%E2%80%93Jerusalem_railway",
-      "raw_snippet": "Jerusalem–Yitzhak Navon (no night service Wed.-Thu.) Jerusalem–Central Jerusalem–Khan Jerusalem–Malha Israel Rail Lines Map External videos Jerusalem to Tel Aviv (YouTube) – Train driver's view of the journey from Navon station to HaHagana Station Tel Aviv to Jerusalem (YouTube) – Train driver's view of the journey from HaHagana Station to Navon station The Tel Aviv–Jerusalem railway is a railway line in Israel connecting the cities of Tel Aviv and Jerusalem .",
-      "fetched_at": "2026-08-18",
+      "raw_snippet": "32-34 minutes (including the stop at Ben Gurion Airport)",
+      "fetched_at": "2026-08-26T17:08:24+00:00",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/israeli-transport-guide.md"
-      ],
-      "verified_via": "cited page fetched; 28 of 29 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"videos\"",
-      "verified_at": "2026-08-18"
+      ]
     },
     {
       "claim_id": "gas-price-2026",
@@ -247,13 +179,477 @@
     },
     {
       "claim_id": "hebrew-figures-mirror",
-      "claim": "Hebrew copy mirrors the verified figures in shekels: נסיעה עירונית 8 ש\"ח, עד 40 ק\"מ 14.5 ש\"ח, עד 75 ק\"מ 19 ש\"ח, עד 120 ק\"מ 19 ש\"ח, עד 225 ק\"מ 30.5 ש\"ח, מעל 225 ק\"מ 74 ש\"ח; תקרות יומיות 11.5 ש\"ח / 21 ש\"ח / 27 ש\"ח / 30.5 ש\"ח / 52.5 ש\"ח; חופשי ארצי 315 ש\"ח; כרטיס כחול 90 ש\"ח, ירוק 130 ש\"ח, כתום 175 ש\"ח; מנוי מטמון יחיד 181 ש\"ח; כניסת מבוגר 31 עד 46 ש\"ח; מצדה 37 ש\"ח כניסה, רכבל 32 ש\"ח לכיוון אחד / 54 ש\"ח הלוך ושוב בנפרד (16 ש\"ח ילד חד כיווני); מע\"מ 18%.",
-      "source_url": "https://pti.org.il/DerekhShava/",
-      "raw_snippet": "Hebrew amounts mirror the English-sourced figures verified in the other claims (Derech Shava fares from pti.org.il, parks.org.il park fees, Masada entrance and cable car, 18% VAT): 8 ש\"ח, 14.5 ש\"ח, 19 ש\"ח, 30.5 ש\"ח, 74 ש\"ח, 11.5 ש\"ח, 21 ש\"ח, 27 ש\"ח, 52.5 ש\"ח, 315 ש\"ח, 90 ש\"ח, 130 ש\"ח, 175 ש\"ח, 181 ש\"ח, 31 ש\"ח, 37 ש\"ח, 32 ש\"ח, 54 ש\"ח, 16 ש\"ח, 46 ש\"ח, 18%.",
-      "fetched_at": "2026-06-04T00:00:00Z",
+      "claim": "The Hebrew companion mirrors the same fare figures as the English file from the same official tariff table",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "אזור / מרחק",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
       "appears_in": [
         "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "fare-bus-includes-lightrail",
+      "claim": "In the official tariff \"bus\" covers buses, light rail (Dankal and Jerusalem), Metronit, Rakavlit and the Carmelit",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "אוטובוס: כולל נסיעה באוטובוסים, רכבות קלות (דנקל וירושלים), מטרונית, רכבלית וכרמלית.",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "park-matmon-water-sites",
+      "claim": "A Matmon subscription covers entry everywhere except the water sites (Chorshat Tal, Achziv, Gan HaShlosha/Sachne, Palmachim and the sea turtle rescue visitor centre), where subscribers pay 50%. INPA does not publish Matmon tier prices on the public price list.",
+      "source_url": "https://www.parks.org.il/article/price/",
+      "raw_snippet": "מנויי מטמון – ללא תשלום,  מלבד אתרי המים: חורשת טל, אכזיב, גן השלושה (הסחנה), פלמחים, ובמרכז המבקרים להצלת צבי הים – מנויים משלמים 50%",
+      "fetched_at": "2026-08-26T16:54:55+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:54:55+00:00"
+    },
+    {
+      "claim_id": "parks-live-closure-alerts",
+      "claim": "INPA posts live per-site closures for heat load, flooding, trail damage, safety works and planned power outages, plus standing collapse/sinkhole warnings for nature reserves and national parks",
+      "source_url": "https://www.parks.org.il/article/price/",
+      "raw_snippet": "סכנת נפלים בשמורות טבע ובגנים לאומיים ... מסלולים סגורים מסיבות בטיחות ... שמורת טבע עין גדי – תל גורן: עקב עומסי חום, הכניסה למסלול תתאפשר עד השעה 10:00",
+      "fetched_at": "2026-08-26T16:54:55+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:54:55+00:00"
+    },
+    {
+      "claim_id": "fare-transfer-90min",
+      "claim": "A single bus ride up to 15 km (yellow zone) includes unlimited free transfers for 90 minutes from first validation",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "נסיעת מעבר: בנסיעות בודדות עד 15 ק\"מ (אזור צהוב), ניתן לבצע מעברים חופשיים ללא הגבלה במשך 90 דקות מרגע התיקוף הראשון.",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "fare-band-yellow",
+      "claim": "Yellow band 0-15 km: bus single 8 NIS, bus daily cap 17.5 NIS",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "אוטובוס: 8 ₪",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "fare-cap-yellow",
+      "claim": "Yellow band 0-15 km bus daily cap is 17.5 NIS",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "אוטובוס: 17.5 ₪",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "fare-cap-green",
+      "claim": "Green band 15-40 km: bus single 14.5 NIS, bus daily cap 29 NIS",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "אוטובוס: 29 ₪",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "fare-cap-tchelet-kachol",
+      "claim": "Turquoise 40-75 km and blue 75-120 km bands both have a 37.5 NIS bus daily cap",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "אוטובוס: 37.5 ₪",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "fare-cap-purple",
+      "claim": "Purple band 120-225 km bus daily cap is 60.5 NIS",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "אוטובוס: 60.5 ₪",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "fare-cap-grey",
+      "claim": "The over-225 km grey band DOES have a bus daily cap, 79.5 NIS",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "אוטובוס: 79.5 ₪",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "fare-rail-separate-column",
+      "claim": "A journey including Israel Railways is priced on the separate combined-rail column, not the bus column",
+      "source_url": "https://bus.gov.il/FaresDistance",
+      "raw_snippet": "משולב רכבת: כולל את כל אמצעי התחבורה בתוספת נסיעה ברכבת ישראל.",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md",
+        "scripts/plan_route.py"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "tzedek-no-stacking",
+      "claim": "Tzedek Tachburti discounts do not stack; the system automatically applies the highest one the rider qualifies for",
+      "source_url": "https://bus.gov.il/Discounts",
+      "raw_snippet": "ההנחה הכי משתלמת עבורכם: אין כפל הנחות. המערכת תזהה ותעניק לכם אוטומטית את ההנחה הגבוהה ביותר מבין אלו שאתם זכאים להן.",
+      "fetched_at": "2026-08-26T16:58:40+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:58:40+00:00"
+    },
+    {
+      "claim_id": "park-fee-ein-gedi",
+      "claim": "Ein Gedi Nature Reserve adult entry is 31 NIS on the INPA 2026 price list",
+      "source_url": "https://www.parks.org.il/article/price/",
+      "raw_snippet": "שמורת טבע עין גדי\t08-6584285\t31\t16\t26\t14\t26\t23\t16\t16",
+      "fetched_at": "2026-08-26T16:56:38+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "park-fee-masada",
+      "claim": "Masada National Park adult entry is 37 NIS, child 21, senior 19",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "מבוגר\t₪ 37.00\t",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "park-fee-caesarea",
+      "claim": "Caesarea National Park adult entry is 46 NIS",
+      "source_url": "https://www.parks.org.il/article/price/",
+      "raw_snippet": "גן לאומי קיסריה\t04-6361010\t46\t27\t39\t23\t39\t35\t27\t23",
+      "fetched_at": "2026-08-26T16:56:38+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "park-pricelist-2026",
+      "claim": "The INPA published price list in force is titled \"מחירון 2026\"",
+      "source_url": "https://www.parks.org.il/article/price/",
+      "raw_snippet": "מחירון 2026 - דמי כניסה לשמורות טבע וגנים לאומיים",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "masada-cablecar-excludes-entry",
+      "claim": "Masada cable-car fares are published explicitly as NOT including park entry",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "רכבל חד כיווני לא כולל כניסה",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "masada-last-entry",
+      "claim": "Masada park entry closes an hour before posted closing and the last cable car ascends an hour before closing",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "הכניסה לגן הלאומי נסגרת שעה לפני שעות הסגירה הרשומות. הרכבל האחרון עולה להר שעה לפני הסגירה.",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "masada-heat-cutoff",
+      "claim": "Under moderate heat load the Snake Path has a 10:00 last ascent and 11:00 last descent",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "בעומס חום בינוני כניסה אחרונה לשביל בשעה 10:00 וירידה אחרונה בשעה 11:00.",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "parks-sinkhole-alert",
+      "claim": "INPA posts a standing collapse/sinkhole danger alert for nature reserves and national parks",
+      "source_url": "https://www.parks.org.il/article/price/",
+      "raw_snippet": "סכנת נפלים בשמורות טבע ובגנים לאומיים",
+      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:56:20+00:00"
+    },
+    {
+      "claim_id": "tzedek-rates",
+      "claim": "Tzedek Tachburti 33% discount applies to young adults aged 18-26",
+      "source_url": "https://bus.gov.il/Discounts",
+      "raw_snippet": "צעירים בני 18-26",
+      "fetched_at": "2026-08-26T16:58:40+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:58:40+00:00"
+    },
+    {
+      "claim_id": "tzedek-50",
+      "claim": "Tzedek Tachburti 50% discount applies to youth 5-18, women 62-67, qualifying geographic profile, riders with disabilities and National Insurance benefit recipients",
+      "source_url": "https://bus.gov.il/Discounts",
+      "raw_snippet": "נוער בני 5-18, אזרחיות ותיקות 62-67, בעלי פרופיל גאוגרפי, נוסעים עם מגבלות וזכאי ביטוח לאומי",
+      "fetched_at": "2026-08-26T16:58:40+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:58:40+00:00"
+    },
+    {
+      "claim_id": "tzedek-validation",
+      "claim": "Validation is mandatory on every bus or train boarding even for riders travelling free or holding a pass",
+      "source_url": "https://bus.gov.il/Discounts",
+      "raw_snippet": "חובת תיקוף: גם אם אתם נוסעים בחינם או מחזיקים במנוי – חובה לתקף את האפליקציה או הכרטיס בכל עלייה לאוטובוס או לרכבת.",
+      "fetched_at": "2026-08-26T16:58:40+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:58:40+00:00"
+    },
+    {
+      "claim_id": "tzedek-profile-registration",
+      "claim": "The discount requires registering the personal profile on the Rav-Kav card, including at an Al HaKav service centre",
+      "source_url": "https://bus.gov.il/Discounts",
+      "raw_snippet": "עמדות שירות פרונטליות: ניתן להגיע לאחד ממרכזי \"על הקו\" הפרוסים ברחבי הארץ לעדכון הפרופיל בכרטיס הרב-קו.",
+      "fetched_at": "2026-08-26T16:58:40+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T16:58:40+00:00"
+    },
+    {
+      "claim_id": "park-fee-coral-beach",
+      "claim": "Coral Beach Nature Reserve adult entry is 40 NIS on the INPA 2026 price list",
+      "source_url": "https://www.parks.org.il/article/price/",
+      "raw_snippet": "שמורת טבע חוף האלמוגים\t08-6326422\t40\t25\t34\t21\t34\t30\t25\t20",
+      "fetched_at": "2026-08-26T17:08:24+00:00",
+      "appears_in": [
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T17:08:24+00:00"
+    },
+    {
+      "claim_id": "park-fee-banias",
+      "claim": "Banias Nature Reserve adult entry is 31 NIS on the INPA 2026 price list",
+      "source_url": "https://www.parks.org.il/article/price/",
+      "raw_snippet": "שמורת טבע בניאס\t6950272 -04\t31\t16\t26\t14\t26\t23\t16\t16",
+      "fetched_at": "2026-08-26T17:08:24+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T17:08:24+00:00"
+    },
+    {
+      "claim_id": "deadsea-421-reservation",
+      "claim": "Egged line 421 toward the Dead Sea operates by advance reservation and its published operation is weekdays, so it may not serve a weekend itinerary",
+      "source_url": "https://moovitapp.com/index/en/public_transit-line-421_%D7%91%D7%94%D7%96%D7%9E%D7%A0%D7%94_%D7%9E%D7%A8%D7%90%D7%A9-Israel-1-1-110173565-0",
+      "raw_snippet": "421 - By advance reservation",
+      "fetched_at": "2026-08-26T17:08:24+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
       ]
+    },
+    {
+      "claim_id": "no-rail-to-eilat",
+      "claim": "The Israeli rail network ends at Beer Sheva and Dimona; reaching Eilat without flying requires a bus",
+      "source_url": "https://en.wikivoyage.org/wiki/Public_transit_in_Israel",
+      "raw_snippet": "the rail network ends at Beer Sheva and Dimona",
+      "fetched_at": "2026-08-26T17:09:49+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ]
+    },
+    {
+      "claim_id": "masada-cablecar-oneway",
+      "claim": "Masada cable car one-way, excluding park entry, is 32 NIS adult and 16 NIS child",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "סוג\tמחיר\tהערות || מבוגר\t₪ 32.00\t || ילד\t₪ 16.00\t",
+      "fetched_at": "2026-08-26T17:09:17+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T17:09:17+00:00"
+    },
+    {
+      "claim_id": "masada-cablecar-return",
+      "claim": "Masada cable car round-trip, excluding park entry, is 54 NIS adult and 32 NIS child",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "סוג\tמחיר\tהערות || מבוגר\t₪ 54.00\t || ילד\t₪ 32.00\t",
+      "fetched_at": "2026-08-26T17:09:17+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T17:09:17+00:00"
+    },
+    {
+      "claim_id": "masada-advance-booking",
+      "claim": "Masada National Park operates an advance visit-coordination booking system that guarantees a place at the booked time",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "רישום מראש במערכת תיאום הביקור מבטיח לך מקום בגן לאומי מצדה במועד שאליו נרשמת",
+      "fetched_at": "2026-08-26T17:09:17+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T17:09:17+00:00"
     }
   ]
 }
