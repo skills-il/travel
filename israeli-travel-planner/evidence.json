@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0",
   "skill": "israeli-travel-planner",
-  "generated_at": "2026-08-26T17:19:49+00:00",
+  "generated_at": "2026-08-26T18:17:13+00:00",
   "claims": [
     {
       "claim_id": "fare-distance-bands-2025",
@@ -468,17 +468,17 @@
     },
     {
       "claim_id": "masada-heat-cutoff",
-      "claim": "Under moderate heat load the Snake Path has a 10:00 last ascent and 11:00 last descent",
+      "claim": "Heat load closes the Masada Snake Path on a sliding scale decided that morning from the meteorological forecast: moderate heat last ascent 10:00 / descent 11:00; heavy heat 08:00 / 09:00; peak summer 07:00 / 08:00 with the Roman ramp at 11:00 / 12:00",
       "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
-      "raw_snippet": "בעומס חום בינוני כניסה אחרונה לשביל בשעה 10:00 וירידה אחרונה בשעה 11:00.",
-      "fetched_at": "2026-08-26T16:56:20+00:00",
+      "raw_snippet": "בעומס חום בינוני כניסה אחרונה לשביל בשעה 10:00 וירידה אחרונה בשעה 11:00. בעומס חום כבד השביל נסגר ב 8:00 לעליה וב 9:00 לירידה.",
+      "fetched_at": "2026-08-26T18:17:13+00:00",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/domain-checklist.md"
       ],
       "verified_via": "browser",
-      "verified_at": "2026-08-26T16:56:20+00:00"
+      "verified_at": "2026-08-26T18:17:13+00:00"
     },
     {
       "claim_id": "parks-sinkhole-alert",
@@ -650,6 +650,73 @@
       ],
       "verified_via": "browser",
       "verified_at": "2026-08-26T17:09:17+00:00"
+    },
+    {
+      "claim_id": "masada-sunrise-cablecar",
+      "claim": "INPA runs a dedicated sunrise cable car at Masada on selected dates through the year, by advance registration. A sunrise visit therefore does NOT have to be on foot.",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "זריחה לכו-לם – רכבל בזריחה –  במועדים שונים לאורך השנה תוכלו להנות מעלייה בזריחה באמצעות הרכבל – לפרטים והרשמה",
+      "fetched_at": "2026-08-26T18:17:13+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T18:17:13+00:00"
+    },
+    {
+      "claim_id": "masada-snake-path-predawn",
+      "claim": "The Snake Path opens for ascent about an hour before sunrise, and INPA advises arriving about half an hour before it opens because of sunrise crowds and ticket queues. Climb time about an hour, graded difficult.",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "שביל הנחש נפתח לעלייה כשעה לפני הזריחה (יש להתעדכן עצמאית על שעת הזריחה).",
+      "fetched_at": "2026-08-26T18:17:13+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T18:17:13+00:00"
+    },
+    {
+      "claim_id": "masada-snake-path-closing",
+      "claim": "The Snake Path closes for ascent two hours before the site closes and for descent one hour before",
+      "source_url": "https://www.parks.org.il/reserve-park/%D7%92%D7%9F-%D7%9C%D7%90%D7%95%D7%9E%D7%99-%D7%9E%D7%A6%D7%93%D7%94/",
+      "raw_snippet": "השביל נסגר לעלייה בכל יום שעתיים לפני שעת סגירת האתר. השביל נסגר לירידה בכל יום שעה לפני שעת הסגירה של האתר.",
+      "fetched_at": "2026-08-26T18:17:13+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T18:17:13+00:00"
+    },
+    {
+      "claim_id": "inpa-annual-subscription-prices",
+      "claim": "INPA annual subscription prices are published on its sales portal, not on the public price list: individual 208 NIS (renewal 187, two-year 354), couple 316, senior 105",
+      "source_url": "https://fe.sales.parks.org.il/content/page/price-table",
+      "raw_snippet": "יחיד/ה | 208 ₪ | 187 ₪ | 354 ₪",
+      "fetched_at": "2026-08-26T18:17:13+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/israeli-transport-guide.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T18:17:13+00:00"
+    },
+    {
+      "claim_id": "tourist-cards-exclude-city-of-david",
+      "claim": "The Blue/Green/Orange tourist cards exclude the City of David as well as the Masada cable car",
+      "source_url": "https://en.parks.org.il/article/money-saving-tickets/",
+      "raw_snippet": "City of david N.P is not included.",
+      "fetched_at": "2026-08-26T18:17:13+00:00",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-08-26T18:17:13+00:00"
     }
   ]
 }

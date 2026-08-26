@@ -82,6 +82,24 @@
         "Deferred over the Phase 4.1 cap: park opening hours in the reference guide are unsourced and not reconciled with the Friday/chag early-closing rule.",
         "METHOD: the daily-cap error was a wrong-column read from a six-column table that survived three cycles because every gate checked whether the stated number was correct, and it was, in the column it came from. When transcribing any multi-column rate table, record WHICH column each figure came from in the evidence claim text."
       ]
+    },
+    {
+      "version": "1.4.1",
+      "date": "2026-08-26",
+      "trigger": "RETRACTION of a claim shipped in v1.4.0, raised by the auditor after release.",
+      "changes": [
+        "RETRACTED and corrected: v1.4.0 stated the Masada cable car 'runs only from 08:00, so it is NOT an option for a sunrise ascent'. That is WRONG. INPA runs a dedicated sunrise cable car on selected dates by advance registration, and the Snake Path opens for ascent about an hour BEFORE sunrise, well before the 08:00 gate opening. The v1.4.0 error came from inferring trail hours from posted gate hours. Verified verbatim on the operator page.",
+        "Replaced the guidance with the full sourced rule set: pre-dawn Snake Path opening, the half-hour-early arrival advice, climb times and grades for the Snake Path and the Roman ramp, the three-tier heat-load cutoffs, and the two-hours-before-closing ascent cutoff.",
+        "Restored the INPA annual subscription prices. v1.4.0 said the tiers were not published; they are, on the separate sales portal fe.sales.parks.org.il. Individual 208 NIS (renewal 187, two-year 354), couple 316, senior 105.",
+        "Added that the tourist cards exclude the City of David, not only the Masada cable car."
+      ],
+      "deviations": [
+        "Named the annual subscription as 'INPA annual subscription (sold as Matmon)' rather than asserting the Matmon brand over the table: the sales-portal price table's own headers are משפחתי / יחיד/ה / אזרח ותיק, and 'מטמון' appears there only in site navigation."
+      ],
+      "lessons": [
+        "METHOD, the important one this cycle: I inferred 'no sunrise cable car' from the posted gate hours (08:00) instead of reading the trail and activity sections of the same page. Posted opening hours are the GATE, not the trails or the special activities. An inference from one section of a page is not a reading of the page, and it shipped as a confident negative that would have sent every sunrise visitor up on foot unnecessarily.",
+        "METHOD: the error survived the Judge and the Expert because both were asked to check what was written against sources, and the claim was internally consistent with the 08:00 hours I had cited. A confident negative ('X is not available') needs its own positive search for X, not just consistency with an adjacent fact."
+      ]
     }
   ]
 }
