@@ -22,7 +22,7 @@ Distance is measured from the origin to the final destination (for a connecting 
 
 Rough distance guide from Tel Aviv (confirm the exact great-circle distance for borderline cases):
 - Up to 2,000 km: Cyprus, Greece, Turkey and the near south-east (Larnaca ~400, Athens ~1,200, Istanbul ~1,100, Bucharest ~1,500).
-- 2,000 to 4,500 km: most of the rest of Europe (Rome ~2,270, Vienna ~2,300, Berlin ~2,900, Paris ~3,300, London ~3,600, Madrid ~3,600).
+- 2,000 to 4,500 km: most of the rest of Europe (Rome ~2,280, Vienna ~2,300, Berlin ~2,900, Paris ~3,300, London ~3,600, Madrid ~3,600).
 - Over 4,500 km: North America, the Far East, southern Africa, Australia (New York ~9,100, Bangkok ~7,000, Johannesburg ~6,500).
 
 Watch the boundary cases. Rome and Vienna FEEL like short hops but both sit just above the
@@ -66,7 +66,7 @@ was never provided.
 Before any amount applies, check how the ticket was obtained. A passenger is NOT entitled to
 any benefit if the ticket was received free of charge, or bought at a special fare not
 available to the public directly or indirectly (staff, industry-discount, negotiated
-non-public fares). The exception, which is the common case: a ticket issued by virtue of
+non-public fares). The exception: a ticket issued by virtue of
 membership in a frequent-flyer or benefits programme IS covered, so an award ticket bought
 with points carries a full claim. Entitlement also requires the passenger to have been issued
 a ticket at all, so a lap infant without their own ticket has no claim.
@@ -77,7 +77,7 @@ The passenger is entitled to the monetary amount above when any of these happens
 
 - Cancellation: the airline cancelled with less than 14 days notice before the scheduled departure and did not offer a qualifying alternative.
 - Delay treated as cancellation: the flight departed 8 or more hours late (international). For domestic Israeli flights the threshold is 3 hours.
-- Involuntary denied boarding (overbooking): the passenger was bumped and did NOT volunteer to give up the seat.
+- Involuntary denied boarding (overbooking): the passenger was bumped and did NOT volunteer to give up the seat. Section 5(d) excludes a refusal for security, the passenger's health, flight safety, or inadequate travel documents; section 5(e) restores the money for a security refusal where the passenger arrived 3h+ before departure, cooperated and was cleared, and held valid documents. The text of section 5 lists no section 6(e) exemption grounds (whether courts read one in is a case-law question).
 - Early departure: moved earlier by more than 5 and up to 8 hours, with less than 14 days notice, gives a refund or alternative flight (assistance). Moved earlier by more than 8 hours also adds the monetary compensation above.
 - Downgrade to a lower class than booked: compensation is a percentage of the ticket price the passenger paid, set by the law's Second Schedule (see the downgrade table below).
 
@@ -103,6 +103,16 @@ If the passenger accepted an alternative flight the airline offered, the airline
 | Over 4,500 km | 4 hours | 1,835 NIS |
 
 (The third column is the reduced amount, half of the band figure, for 2026.)
+
+These windows are for a CANCELLATION (section 6(b)). Denied boarding has its own, wider windows under section 5(c), with the same half-amounts:
+
+| Flight distance | Denied boarding: alternative arrives within |
+|---|---|
+| Up to 2,000 km | 4 hours |
+| 2,000 to 4,500 km | 5 hours |
+| Over 4,500 km | 6 hours |
+
+Never apply the cancellation window to a bumped passenger: a short-haul passenger whose alternative landed 3 hours late is still inside the denied-boarding window, so the airline may pay half.
 
 There are also no-compensation carve-outs based on how much notice the airline gave and how close the alternative runs to the original:
 

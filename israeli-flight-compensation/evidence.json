@@ -7,10 +7,13 @@
       "id": "amount-band-1-2026",
       "claim": "As of 2026, compensation for a flight up to 2,000 km is 1,530 NIS (1,530 ש\"ח) under the Aviation Services Law",
       "claim_type": "currency",
-      "source_url": "https://www.kolzchut.org.il/he/פיצוי_במקרה_של_טיסה_שהתבטלה",
-      "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "עד 2,000 ק\"מ: 1,530 ₪",
-      "confidence": "high"
+      "source_url": "https://www.kolzchut.org.il/he/פיצוי_במקרה_של_טיסה_שהמריאה_באיחור_או_שהוקדמה",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "עד 2,000 ק\"מ - 1,530 ₪.",
+      "confidence": "high",
+      "verified_via": "browser",
+      "verified_at": "2026-09-15",
+      "note": "Rendered in a real browser 2026-09-15 (curl is Cloudflare-blocked); location.href asserted equal to the requested URL and page title confirmed before reading; snippet copied from document.body.innerText."
     },
     {
       "id": "amount-band-2-2026",
@@ -40,10 +43,13 @@
       "id": "amounts-three-bands",
       "claim": "The three statutory compensation amounts are 1,530 NIS, 2,450 NIS, or 3,670 NIS depending on the distance between origin and destination",
       "claim_type": "currency",
-      "source_url": "https://www.kolzchut.org.il/he/פיצוי_במקרה_של_טיסה_שהתבטלה",
-      "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "1,530 ₪, 2,450 ₪ או 3,670 ₪, בהתאם למרחק שבין מקום היציאה למקום היעד",
-      "confidence": "high"
+      "source_url": "https://www.kolzchut.org.il/he/פיצוי_במקרה_של_טיסה_שהמריאה_באיחור_או_שהוקדמה",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "עד 2,000 ק\"מ - 1,530 ₪.\nעד 4,500 ק\"מ - 2,450 ₪.\nמעל 4,500 ק\"מ - 3,670 ₪.",
+      "confidence": "high",
+      "verified_via": "browser",
+      "verified_at": "2026-09-15",
+      "note": "Rendered in a real browser 2026-09-15 (curl is Cloudflare-blocked); location.href asserted equal to the requested URL and page title confirmed before reading; snippet copied from document.body.innerText."
     },
     {
       "id": "cpi-annual-update",
@@ -91,10 +97,11 @@
       "id": "communication-services",
       "claim": "Communication services are defined as up to 2 phone calls plus one fax or email message, at the passenger's choice",
       "claim_type": "threshold",
-      "source_url": "https://www.kolzchut.org.il/he/פיצוי_במקרה_של_טיסה_שהמריאה_באיחור_או_שהוקדמה",
-      "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "שירותי תקשורת (שתי שיחות טלפון ומשלוח הודעה באמצעות פקס או דואר אלקטרוני, לפי בחירת הנוסע)",
-      "confidence": "high"
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "שתי שיחות טלפון, וכן משלוח הודעה באמצעות פקסימיליה או דואר אלקטרוני לפי בחירת הנוסע (בחוק זה – שירותי תקשורת)",
+      "confidence": "high",
+      "note": "Repointed 2026-09-15 from Kol Zchut (Cloudflare-blocked, snippet not found) to the statute text on Nevo, sections 19 and 4(a)(1)(d); snippet copied verbatim from the fetched page."
     },
     {
       "id": "fifty-percent-reduction",
@@ -121,10 +128,11 @@
       "id": "cancellation-14-days",
       "claim": "A cancellation triggers compensation when notice is given less than 14 days before the scheduled departure and no qualifying alternative is offered",
       "claim_type": "threshold",
-      "source_url": "https://rotbaumlaw.com/חוק-שירותי-תעופה/",
-      "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "כאשר חברת התעופה מבטלת את הטיסה פחות מ-14 ימים לפני מועד ההמראה הנקוב ואינה מציעה חלופה העומדת בתנאי החוק",
-      "confidence": "high"
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "14 ימים לפחות לפני מועד הטיסה הנקוב בכרטיס הטיסה",
+      "confidence": "high",
+      "note": "Section 6(c)(1), statute text on Nevo, read 2026-09-15."
     },
     {
       "id": "scope-departing-arriving",
@@ -139,10 +147,11 @@
       "id": "limitation-4-years",
       "claim": "The limitation period for a claim under the Aviation Services Law is 4 years from when the cause of entitlement arose",
       "claim_type": "date",
-      "source_url": "https://www.kolzchut.org.il/he/פיצוי_במקרה_של_טיסה_שהתבטלה",
-      "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "תקופת ההתיישנות של תביעה לפי החוק היא ארבע שנים",
-      "confidence": "high"
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "תקופת ההתיישנות של תביעה בשל הפרת הוראות חוק זה היא ארבע שנים מיום שנוצרה עילה מזכה",
+      "confidence": "high",
+      "note": "Repointed 2026-09-15 from Kol Zchut (Cloudflare-blocked, snippet not found) to the statute text on Nevo, sections 19 and 4(a)(1)(d); snippet copied verbatim from the fetched page."
     },
     {
       "id": "denied-boarding",
@@ -182,18 +191,24 @@
       "claim": "For domestic Israeli flights a delay of more than 3 hours is treated as a cancellation, a different threshold from the 8-hour international rule",
       "claim_type": "threshold",
       "source_url": "https://www.kolzchut.org.il/he/פיצוי_במקרה_של_טיסה_שהמריאה_באיחור_או_שהוקדמה",
-      "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "טיסות פנים-ארציות: עד 3 שעות - אין פיצוי; מעל 3 שעות - נחשבת לביטול טיסה",
-      "confidence": "medium"
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "הטבות במקרה של עיכוב בטיסת פנים לפי החוק הישראלי\nעיכוב של עד 3 שעות - לא יינתן פיצוי.\nעיכוב של למעלה מ- 3 שעות - ייחשב לביטול טיסה ויחולו ההוראות המפורטות כאן.",
+      "confidence": "medium",
+      "verified_via": "browser",
+      "verified_at": "2026-09-15",
+      "note": "Rendered in a real browser 2026-09-15 (curl is Cloudflare-blocked); location.href asserted equal to the requested URL and page title confirmed before reading; snippet copied from document.body.innerText."
     },
     {
       "id": "iron-swords-exemption",
       "claim": "Amendment No. 2 (Iron Swords) exempts airlines from the monetary compensation obligation for specific war-period flight-date ranges, while assistance, refund, and alternative-flight obligations still apply",
       "claim_type": "date",
-      "source_url": "https://rotbaumlaw.com/חוק-טיבי/",
-      "source_fetched_at": "2026-06-23T00:00:00Z",
-      "raw_snippet": "תיקון מס' 2 ('חרבות ברזל'), הפוטר חברות תעופה מפיצוי בגין טיסות שבוטלו או התעכבו במועדים",
-      "confidence": "medium"
+      "source_url": "https://fs.knesset.gov.il/25/law/25_lsr_5694585.pdf",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "שלושה ימים לפחות לפני מועד הטיסה הנקוב בכרטיס",
+      "confidence": "medium",
+      "verified_via": "pdf",
+      "verified_at": "2026-09-15",
+      "note": "Knesset law booklet of Amendment No. 2, text extracted with pdftotext 2026-09-15. Subsection (a) lists four windows: 7.10.2023-30.11.2023, 12.4.2024-18.4.2024, 3.8.2024-8.8.2024, 1.10.2024-5.10.2024. Subsection (b) adds 1.12.2023-29.2.2024 only where the operator proves notice of at least three days (snippet). Subsection (c) preserves judgments given before commencement."
     },
     {
       "id": "refund-21-days",
@@ -424,30 +439,33 @@
       "id": "no-regulator-enforcement",
       "claim": "The Aviation Services Law contains no enforcement chapter and designates no regulator empowered to order an airline to pay a passenger; the passenger's route is a civil claim, and the limitation period is four years.",
       "claim_type": "legal-reference",
-      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
-      "source_fetched_at": "2026-07-26T16:56:25Z",
-      "raw_snippet": "19. התיישנות תקופת ההתיישנות של תביעה בשל הפרת הוראות חוק זה היא ארבע שנים מיום שנוצרה עילה מזכה.",
-      "note": "Verified by enumerating all sections of the statute: there is no עיצום כספי, no קנס, and no supervisory authority provision. The Civil Aviation Authority's remit is licensing, airworthiness and safety.",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "תקופת ההתיישנות של תביעה בשל הפרת הוראות חוק זה היא ארבע שנים",
+      "note": "NEGATIVE claim. The full statute text on Nevo was searched 2026-09-15 for פיקוח, מפקח, עיצום, אכיפה, סמכויות: zero hits, and no section designates a regulator or an enforcement chapter; the only remedy route in the text is a claim (limitation, s.19, quoted).",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/domain-checklist.md"
-      ]
+      ],
+      "verified_via": "source",
+      "verified_at": "2026-09-15"
     },
     {
       "id": "notice-carveouts-s6c",
       "claim": "Where the airline gave 7 to 14 days notice, no monetary compensation is owed if the alternative departs no more than 2 hours early and arrives no more than 4 hours after the original; where it gave less than 7 days notice, the equivalent limits are 1 hour early and 2 hours late.",
       "claim_type": "threshold",
-      "source_url": "https://he.wikisource.org/wiki/חוק_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)",
-      "source_fetched_at": "2026-07-26T16:56:25Z",
-      "raw_snippet": "סעיף 6(ג) לחוק שירותי תעופה: פסקאות (2) ו-(3) קובעות את חלונות הזמן של הכרטיס החלופי שבהם לא תקום זכאות לפיצוי כספי, לפי תקופת ההודעה מראש",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "שמועד המראתה הוא לכל היותר שעתיים לפני מועד הטיסה הנקוב בכרטיס הטיסה המקורי, ומועד נחיתתה ביעד הסופי הוא לא יאוחר מארבע שעות",
       "verified_via": "browser",
       "verified_at": "2026-07-26T16:56:25Z",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/compensation-table.md"
-      ]
+      ],
+      "note": "Section 6(c)(2); (3) reads \"לכל היותר שעה ... לא יאוחר משעתיים\". Verbatim from Nevo 2026-09-15."
     },
     {
       "id": "downgrade-21-days-s3b2",
@@ -473,17 +491,19 @@
     },
     {
       "id": "eu261-scope-and-amounts",
-      "claim": "EU Regulation 261/2004 provides compensation of 250, 400 or 600 EUR by distance with a delay threshold of 3 hours, and applies to any flight departing an airport in the EU regardless of carrier, and to a flight from a third country to the EU operated by a Community carrier. A Tel Aviv to Paris flight is about 3,284 km, which falls in the 400 EUR band.",
+      "claim": "EU Regulation 261/2004 compensation is 250, 400 or 600 EUR by distance, and the Regulation applies to passengers departing an airport in a Member State, and to passengers departing a third country for a Member State when a Community carrier operates the flight.",
       "claim_type": "regulation",
-      "source_url": "https://www.kolzchut.org.il/he/%D7%A4%D7%99%D7%A6%D7%95%D7%99_%D7%91%D7%9E%D7%A7%D7%A8%D7%94_%D7%A9%D7%9C_%D7%98%D7%99%D7%A1%D7%94_%D7%A9%D7%94%D7%AA%D7%91%D7%98%D7%9C%D7%94",
-      "source_fetched_at": "2026-07-26T16:56:25Z",
-      "raw_snippet": "תקנה אירופית 261/2004: פיצוי של 250, 400 או 600 אירו לפי מרחק הטיסה, בעיכוב של מעל 3 שעות",
-      "note": "Cross-checked distance: TLV-CDG great circle is about 3,284 km, inside the 1,500-3,500 km band.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32004R0261",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "(a) EUR 250 for all flights of 1500 kilometres or less; (b) EUR 400 for all intra-Community flights of more than 1500 kilometres, and for all other flights between 1500 and 3500 kilometres; (c) EUR 600 for all flights not falling under (a) or (b).",
+      "note": "Rendered in a real browser 2026-09-15 (curl is Cloudflare-blocked); location.href asserted equal to the requested URL and page title confirmed before reading; snippet copied from document.body.innerText. Article 3(1)(a)/(b) scope read on the same page: \"to passengers departing from an airport located in the territory of a Member State\" and third-country departures to a Member State \"when a Community carrier operates the flight\".",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/compensation-table.md"
-      ]
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-09-15"
     },
     {
       "id": "caa-not-compensation-regulator",
@@ -511,6 +531,164 @@
       "appears_in": [
         "SKILL.md"
       ]
+    },
+    {
+      "id": "denied-boarding-alt-windows-s5c",
+      "claim": "Section 5(c) of the statute (סעיף 5(ג), denied boarding): the airline may halve the monetary compensation where the passenger accepted an alternative that landed within 4 hours (up to 2,000 km), 5 hours (2,000 to 4,500 km) or 6 hours (over 4,500 km) of the original arrival, wider than the 2/3/4-hour cancellation windows of section 6(b)",
+      "claim_type": "threshold",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "(1) עד ארבע שעות – אם מרחק הטיסה אינו עולה על 2,000 ק\"מ; (2) עד חמש שעות – אם מרחק הטיסה עולה על 2,000 ק\"מ ואינו עולה על 4,500 ק\"מ; (3) עד שש שעות – אם מרחק הטיסה עולה על 4,500 ק\"מ",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ],
+      "note": "Section 5 (סירוב להטיס נוסע בטיסה), subsection (c), read in full on Nevo 2026-09-15; contrasted with section 6(b). The first repair this cycle mis-cited it as 9(c); corrected after the arithmetic review."
+    },
+    {
+      "id": "eu261-3h-delay",
+      "claim": "Under EU261 as applied, a delay in arrival of more than 3 hours carries the full 250/400/600 EUR compensation (a case-law rule, not in the Regulation text)",
+      "claim_type": "threshold",
+      "source_url": "https://www.kolzchut.org.il/he/פיצוי_במקרה_של_טיסה_שהתבטלה",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "מעל 3 שעות (או אם לא הוצעה טיסה חלופית)",
+      "confidence": "high",
+      "verified_via": "browser",
+      "verified_at": "2026-09-15",
+      "note": "Kol Zchut EU table row read in a real browser with location.href asserted. The Regulation text (EUR-Lex) contains no 3-hour delay-compensation rule; the rule derives from CJEU case law."
+    },
+    {
+      "id": "halted-operator-alternative-ticket",
+      "claim": "While the October 2023 home-front special-situation declaration is in force, an operator that halted all its flights to and from Israel must offer an alternative ticket from a different origin or to a different destination",
+      "claim_type": "regulation",
+      "source_url": "https://fs.knesset.gov.il/25/law/25_lsr_5694585.pdf",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "שהפסיק את כלל טיסותיו מישראל ואליה",
+      "confidence": "high",
+      "verified_via": "pdf",
+      "verified_at": "2026-09-15",
+      "note": "Amendment No. 2, subsection (d), text extracted with pdftotext."
+    },
+    {
+      "id": "domestic-reg1-3h-or-more",
+      "claim": "A domestic flight counts as cancelled if it departed 3 hours or more late (regulation 1 of the 2013 domestic regulations), so exactly 3.0 hours qualifies",
+      "claim_type": "threshold",
+      "source_url": "https://he.wikisource.org/wiki/תקנות_שירותי_תעופה_(פיצוי_וסיוע_בשל_ביטול_טיסה_או_שינוי_בתנאיה)_(טיסות_פנים-ארציות)",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "טיסה שהמריאה באיחור של שלוש שעות לפחות מהמועד הנקוב בכרטיס הטיסה",
+      "confidence": "high",
+      "note": "Wikisource transcription of the regulations; official Reshumot scan ק\"ת תשע\"ג 1479 not opened. Kol Zchut's 'מעל 3 שעות' is loose wording."
+    },
+    {
+      "id": "rome-distance",
+      "claim": "Tel Aviv to Rome is about 2,280 km great-circle, above the 2,000 km band line",
+      "claim_type": "threshold",
+      "source_url": "https://en.wikipedia.org/wiki/Great-circle_distance",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "great-circle distance",
+      "confidence": "high",
+      "verified_via": "source",
+      "verified_at": "2026-09-15",
+      "note": "Computed, not quoted: haversine with R=6371 km between TLV (32.0114, 34.8867) and FCO (41.8003, 12.2389) gives 2,279 km. The checker golden uses 2279."
+    },
+    {
+      "id": "denied-boarding-exclusions-s5d",
+      "claim": "Section 5(d) (סעיף 5(ד)): the denied-boarding section does not apply where boarding was refused for security reasons, the passenger's health, a flight-safety concern, or inadequate travel documents",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "הוראות סעיף זה לא יחולו אם בשל טעמי ביטחון, בשל מצב בריאותו של הנוסע או בשל חשש לפגיעה בבטיחות הטיסה, לא ניתן להטיס את הנוסע בטיסה, או אם אין בידיו מסמכי נסיעה נאותים",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ],
+      "note": "Statute text on Nevo, read in full 2026-09-15 after the Expert Review; verbatim."
+    },
+    {
+      "id": "denied-boarding-security-carveback-s5e",
+      "claim": "Section 5(e) (סעיף 5(ה)): a passenger refused on security grounds still receives the monetary compensation if they arrived at least 3 hours before departure, cooperated with the security check and were cleared, and held valid travel documents",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "הוא הגיע לשדה התעופה שלוש שעות לפחות לפני מועד ההמראה הנקוב בכרטיס הטיסה או מועד הטיסה המתוכנן",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ],
+      "note": "Statute text on Nevo, read in full 2026-09-15 after the Expert Review; verbatim."
+    },
+    {
+      "id": "refused-alternative-s6d",
+      "claim": "Section 6(d) (סעיף 6(ד)): the section 6(c) carve-out does not apply if the passenger refused the alternative because it was not offered to a named companion, or for security, religious or medical reasons",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "לא יחולו אם הנוסע סירב לטוס בטיסה חלופית שהוצעה לו בשל כך שההצעה לא ניתנה לאדם המצטרף אליו לטיסה לפי הודעת הנוסע, או משום שנבצר מהנוסע לטוס בטיסה החלופית מטעמי ביטחון, דת או מגבלה רפואית",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ],
+      "note": "Statute text on Nevo, read in full 2026-09-15 after the Expert Review; verbatim."
+    },
+    {
+      "id": "checkin-rule-s2a",
+      "claim": "Section 2(a) (סעיף 2(א)): check-in may not be required more than 3 hours before departure, 90 minutes applies where no time was set, and a passenger whose flight was cancelled need not present",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "ובלבד שהנוסע לא יידרש להתייצב יותר משלוש שעות לפני המועד המתוכנן להמראת הטיסה, ואם לא נקבע מועד כאמור – 90 דקות לפחות לפני מועד ההמראה האמור",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ],
+      "note": "Statute text on Nevo, read in full 2026-09-15 after the Expert Review; verbatim."
+    },
+    {
+      "id": "transfer-arrived-on-time-s2b1",
+      "claim": "Section 2(b)(1) (סעיף 2(ב)(1)): no benefits where the passenger was notified of a transfer to another flight and reached the final destination at the originally ticketed time",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "והוא הגיע ליעדו הסופי במועד שהיה נקוב בכרטיס הטיסה המקורי",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ],
+      "note": "Statute text on Nevo, read in full 2026-09-15 after the Expert Review; verbatim."
+    },
+    {
+      "id": "s5-no-6e-grounds",
+      "claim": "Negative claim: the text of section 5 (סעיף 5) lists no extraordinary-circumstances, strike or Shabbat exemption ground; its only exclusions are in section 5(d). Whether courts read one in is left to case law.",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "הוראות סעיף זה לא יחולו אם בשל טעמי ביטחון",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md",
+        "scripts/compensation_calc.py"
+      ],
+      "note": "Section 5(a) to (e) read in full on Nevo 2026-09-15 (curl): no 'נסיבות מיוחדות', 'שביתה' or 'שבת' ground appears in section 5; compare section 6(e). Hedged in the skill as a statement about the text only."
     }
   ]
 }

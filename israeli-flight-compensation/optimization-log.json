@@ -11,6 +11,27 @@
         "Unsourced claim carried over: the '20 to 35 percent' claim-company fee in the Problem section has no evidence entry. Either source it or reframe qualitatively next cycle.",
         "Process lesson: the coverage agent asserted a tiered domestic structure and a small-claims ceiling; both were re-verified against primary sources before writing. The domestic amounts (300/180/240) were confirmed from the regulations text, and section 9א was confirmed verbatim from the statute rather than trusted from the agent summary."
       ]
+    },
+    {
+      "version": "1.2.1",
+      "date": "2026-09-15",
+      "lessons": [
+        "Resolved: denied-boarding 50% reduction used the cancellation window (2/3/4h); statute s.5(c) is 4/5/6h. Found by reading s.6 and s.9 in full, not reported by any reviewer. Checker manifest carries the same flaw; manifest change proposed to admin, NOT written.",
+        "Resolved (arithmetic pass, round 1 FAIL): script lacked the s.6(c)(2)-(3) no-compensation carve-outs (paid 765/2,450 where statute gives 0); early_departure ignored the s.8(b) under-14-days notice condition and used an unsourced 3h domestic threshold. My own first fix cited the denied-boarding window as s.9(c); it is s.5(c). Lesson: the reviewer caught a wrong section cite in the author's repair, as the workflow predicts.",
+        "Resolved (Expert CRITICAL x2, verified on Nevo): s.5(d)/(e) denied-boarding exclusions and security carve-back, and s.6(d) protected refusal of an alternative, were absent; script paid every denied boarding. Also applied Expert MAJORs s.2(a) check-in, s.2(b)(1), no s.6(e) grounds for s.5, and the downgrade exemplary-damages cite (s.9(b), not s.7). Script now withholds the amount when an offered alternative's timing is incomplete and treats timing flags as implying an offer (arithmetic pass hardening).",
+        "Resolved: 6 evidence snippets failed --check-sources (Kol Zchut Cloudflare). Repointed to Nevo (ss.19, 4) or browser-verified with location.href assertion.",
+        "Confirmed: domestic cancelled-flight threshold is 'שלוש שעות לפחות' (reg.1, Wikisource transcription); Kol Zchut's 'מעל 3 שעות' is loose wording. International is 'שמונה שעות לפחות' (s.1). Checker gte branches correct.",
+        "Resolved CARRY: the unsourced '20 to 35 percent' fee is already qualitative in the body ('large success fee'); only source found is AirHelp 'a quarter' (Ynet 2018).",
+        "CARRY: which year's indexed amount governs an older flight is unpublished; skill now hedges. Older-year tables (yalkut 9350..14222) not read.",
+        "CARRY: 2026 operation 'שאגת הארי' cancellations; no s.9א order confirmed (Reshumot/Economy Committee not reached). Existing 9א instruction covers the check.",
+        "CARRY (Expert MAJOR, 2nd cycle): accessibility regs 2003 פרק ג', demand-letter template file, organizer/agent liability ss.4, 15. Over discretionary cap.",
+        "Deferred discretionary: Sde Dov closed note; foreign airline without Israeli branch; consumer-initiated cancellation row; airspace-closure as extraordinary circumstance (Kol Zchut position).",
+        "Deferred (legal gate, low): EN description 'exactly how much' is assertive; soften when the description next changes (eval gate).",
+        "Deferred (Expert MAJOR): s.3(b) refund rules (half fare on a round-trip return leg, full fare plus return ticket on an abandoned connection, refund right lost once an alternative is chosen); not read in full this cycle.",
+        "Deferred (Expert MINOR): s.6(f) duty to present alternatives, s.11(b) exemplary-damages factors, s.14(c) airport representative, s.17 no contracting out, s.10/11(a)(2) unapproved flight time.",
+        "Judge round 3: two unsourced phrases fixed (hedged the s.5 no-grounds conclusion with a negative-claim entry; dropped 'Shabbat is the common case'). Applied reviewer residuals: omitted denied-boarding reason now notes the assumption; s.6(d) flag blocks s.5(c) halving; Step 3 lists the new inputs.",
+        "Deferred (Expert MAJOR, carried): s.3(b) refund rules. Deferred: whether 5(c) halving applies inside a 5(e) carve-back (untested; statute routes 5(e) money through 5(b))."
+      ]
     }
   ]
 }

@@ -19,10 +19,12 @@ import json
 import sys
 
 # 2026 in-force monetary compensation by distance band (NIS).
+# alt_window_hours is the section 6(b) CANCELLATION window for the 50% reduction.
+# Denied boarding has its own wider windows under section 5(c): 4 / 5 / 6 hours.
 BANDS = [
-    {"max_km": 2000, "amount": 1530, "alt_window_hours": 2},
-    {"max_km": 4500, "amount": 2450, "alt_window_hours": 3},
-    {"max_km": None, "amount": 3670, "alt_window_hours": 4},  # over 4,500 km
+    {"max_km": 2000, "amount": 1530, "alt_window_hours": 2, "denied_boarding_window_hours": 4},
+    {"max_km": 4500, "amount": 2450, "alt_window_hours": 3, "denied_boarding_window_hours": 5},
+    {"max_km": None, "amount": 3670, "alt_window_hours": 4, "denied_boarding_window_hours": 6},  # over 4,500 km
 ]
 
 # 2026 in-force DOMESTIC monetary compensation (NIS). Domestic flights are NOT
@@ -58,8 +60,12 @@ def band_for_distance(distance_km):
 
 def assess(distance_km, event, delay_hours, notice_days, domestic,
            alternative_accepted, alternative_arrival_delay_hours, exemption,
-           domestic_route="other", passengers=1, ticket_type="unknown"):
+           domestic_route="other", passengers=1, ticket_type="unknown",
+           alternative_offered=False, alternative_departure_early_hours=None,
+           denied_boarding_reason=None, security_carveback=False,
+           refused_alternative_protected_reason=False):
     notes = []
+    undetermined = False
     if ticket_type in ("free", "non_public"):
         notes.append(
             "Section 2(b)(2): a ticket received free of charge, or bought at a special fare "
@@ -113,15 +119,71 @@ def assess(distance_km, event, delay_hours, notice_days, domestic,
         if notice_days is not None and notice_days < CANCELLATION_NOTICE_DAYS:
             eligible = True
             notes.append(f"Cancellation with {notice_days} days notice (under 14): monetary compensation applies if no qualifying alternative was offered.")
+            # Section 6(c)(2)-(3): an OFFERED alternative close enough to the original
+            # removes the money, whether or not the passenger took it (section 6(d)
+            # excepts a refusal on companion, security, religious or medical grounds).
+            # Either timing flag implies an alternative was offered.
+            offered = (alternative_offered or alternative_accepted
+                       or alternative_departure_early_hours is not None
+                       or alternative_arrival_delay_hours is not None)
+            if offered and refused_alternative_protected_reason:
+                notes.append(
+                    "Section 6(d): the passenger refused the alternative because it was not offered to a "
+                    "named companion, or on security, religious or medical grounds, so the section 6(c) "
+                    "no-compensation carve-out does NOT apply.")
+            elif offered and alternative_departure_early_hours is not None and alternative_arrival_delay_hours is not None:
+                if notice_days >= 7:
+                    max_early, max_late = 2, 4
+                else:
+                    max_early, max_late = 1, 2
+                if alternative_departure_early_hours <= max_early and alternative_arrival_delay_hours <= max_late:
+                    eligible = False
+                    notes.append(
+                        f"Section 6(c): with {notice_days} days notice, an alternative departing no more than "
+                        f"{max_early}h early and landing no more than {max_late}h late removes the monetary "
+                        "compensation (assistance and the refund-or-alternative choice still stand). This does "
+                        "not apply if the passenger refused it on companion, security, religious or medical grounds (section 6(d)).")
+            elif offered:
+                undetermined = True
+                notes.append(
+                    "An alternative was offered but its departure AND arrival timing were not both given, so "
+                    "the section 6(c) carve-out cannot be decided. No amount is stated: pass "
+                    "--alternative-departure-early-hours and --alternative-arrival-delay-hours.")
         else:
             notes.append("Cancellation with 14+ days notice: generally no monetary compensation.")
     elif event == "denied_boarding":
-        eligible = True
-        notes.append("Involuntary denied boarding (no voluntary give-up of seat): monetary compensation applies.")
+        # Section 5(d): section 5 does not apply where boarding was refused for security,
+        # the passenger's health, flight safety, or inadequate travel documents. Section 5(e)
+        # restores the MONEY for a security refusal if the passenger arrived 3h+ before
+        # departure, cooperated and was cleared, and held valid documents.
+        if denied_boarding_reason is None:
+            denied_boarding_reason = "overbooking"
+            notes.append("Reason for refusal not stated: assumed overbooking. Confirm it was not security, health, flight safety or travel documents (section 5(d)).")
+        if denied_boarding_reason == "overbooking":
+            eligible = True
+            notes.append("Involuntary denied boarding (no voluntary give-up of seat): monetary compensation applies.")
+        elif denied_boarding_reason == "security" and security_carveback:
+            eligible = True
+            notes.append(
+                "Section 5(e): refused on security grounds, but the passenger arrived at least 3 hours "
+                "before departure, cooperated with the security check and was cleared, and held valid "
+                "documents, so the monetary compensation is owed.")
+        else:
+            notes.append(
+                "Section 5(d): boarding refused for %s, so section 5 does not apply and no statutory "
+                "denied-boarding benefit is owed. For a SECURITY refusal, section 5(e) restores the money "
+                "only if the passenger arrived 3h+ early, cooperated and was cleared, and had valid "
+                "documents (pass --security-carveback)." % denied_boarding_reason)
     elif event == "early_departure":
-        early_threshold = (DOMESTIC_DELAY_CANCELLATION_HOURS if domestic
-                           else INTL_DELAY_CANCELLATION_HOURS)
-        if delay_hours is not None and delay_hours > early_threshold:
+        # Section 8(b): more than 8 hours earlier AND notice under 14 days. The statute
+        # sets no separate domestic early-departure threshold, so 8h applies to both.
+        early_threshold = INTL_DELAY_CANCELLATION_HOURS
+        short_notice = notice_days is None or notice_days < CANCELLATION_NOTICE_DAYS
+        if notice_days is None:
+            notes.append("Notice not stated: section 8 applies only where notice was under 14 days; confirm it.")
+        if delay_hours is not None and delay_hours > early_threshold and not short_notice:
+            notes.append("Early departure notified 14 or more days ahead: section 8 gives no benefit.")
+        elif delay_hours is not None and delay_hours > early_threshold:
             eligible = True
             notes.append(
                 "Early departure of more than %gh with short notice: monetary compensation applies."
@@ -140,7 +202,7 @@ def assess(distance_km, event, delay_hours, notice_days, domestic,
             "ticket price, use the Third Schedule deemed prices in "
             "references/compensation-table.md.")
         notes.append(
-            "Section 7 is one of the sections listed in section 11, so exemplary damages of "
+            "Section 9(b) (downgrade) is one of the heads listed in section 11, so exemplary damages of "
             "up to %d NIS per passenger can be claimed on a downgrade too."
             % EXEMPLARY_DAMAGES_MAX_2026)
         return {
@@ -155,6 +217,22 @@ def assess(distance_km, event, delay_hours, notice_days, domestic,
         }
 
     amount = base if eligible else 0
+    if undetermined:
+        return {
+            "eligible_for_money": None,
+            "amount_nis": None,
+            "passengers": passengers,
+            "total_for_all_passengers_nis": None,
+            "exemplary_damages_max_nis_per_passenger": EXEMPLARY_DAMAGES_MAX_2026,
+            "band_distance_km": distance_km,
+            "notes": notes,
+            "limitation_years": LIMITATION_YEARS,
+        }
+    if domestic and event == "cancellation" and eligible:
+        notes.append(
+            "Domestic cancellation: section 18 applies the law 'with the necessary changes', but the "
+            "domestic money comes from the 2013 regulations; applying the section 6(c) carve-outs to a "
+            "domestic flight is plausible but not verified against those regulations.")
 
     # 50% reduction for an accepted alternative arriving within the window.
     if eligible and alternative_accepted and band.get("alt_window_hours") is None:
@@ -164,7 +242,14 @@ def assess(distance_km, event, delay_hours, notice_days, domestic,
             "regulations, so no reduction was applied here. Confirm against the domestic "
             "regulations before telling the passenger the full amount is safe.")
     if eligible and alternative_accepted and band.get("alt_window_hours") is not None:
-        window = band["alt_window_hours"]
+        # Section 5(c) gives denied boarding wider windows than section 6(b) cancellation.
+        if event == "denied_boarding" and refused_alternative_protected_reason:
+            window = -1  # s.5(c): no reduction in the circumstances of s.6(d)
+            notes.append("Section 5(c): no 50% reduction where the passenger refused an alternative for a section 6(d) reason.")
+        elif event == "denied_boarding":
+            window = band["denied_boarding_window_hours"]
+        else:
+            window = band["alt_window_hours"]
         if alternative_arrival_delay_hours is not None and alternative_arrival_delay_hours <= window:
             amount = round(base / 2)
             notes.append(
@@ -175,7 +260,13 @@ def assess(distance_km, event, delay_hours, notice_days, domestic,
                 f"Accepted alternative arrived beyond the {window}h window: full amount stands."
             )
 
-    if eligible and exemption:
+    if eligible and exemption and event == "denied_boarding":
+        notes.append(
+            "Exemption ASSERTED by the airline (%s). Section 5 (denied boarding) lists no section 6(e) "
+            "grounds in its text: no extraordinary-circumstances, strike or Shabbat ground. Its only "
+            "exclusions are the section 5(d) reasons (security, health, flight safety, travel documents). "
+            "Whether a court reads such a defence in is a case-law question." % exemption)
+    elif eligible and exemption:
         notes.append(
             "Exemption ASSERTED by the airline (%s). This is NOT applied automatically: "
             "section 6(e) puts the burden of proof on the carrier, and there are exactly "
@@ -219,7 +310,7 @@ def main():
     p.add_argument("--delay-hours", type=float, default=None,
                    help="Hours of delay at departure (for delay/early_departure events)")
     p.add_argument("--notice-days", type=int, default=None,
-                   help="Days of advance notice (for cancellation)")
+                   help="Days of advance notice (for cancellation and early departure)")
     p.add_argument("--domestic", action="store_true",
                    help="Domestic Israeli flight (3h threshold AND the separate domestic amounts)")
     p.add_argument("--domestic-route", choices=tuple(DOMESTIC_ROUTES),
@@ -229,7 +320,20 @@ def main():
     p.add_argument("--passengers", type=int, default=1,
                    help="Number of ticketed passengers; each has a separate claim")
     p.add_argument("--alternative-accepted", action="store_true")
+    p.add_argument("--alternative-offered", action="store_true",
+                   help="An alternative flight was offered (for the section 6(c) carve-out), even if refused")
+    p.add_argument("--alternative-departure-early-hours", type=float, default=None,
+                   help="How many hours BEFORE the original departure the alternative left (0 if not earlier)")
     p.add_argument("--alternative-arrival-delay-hours", type=float, default=None)
+    p.add_argument("--refused-alternative-protected-reason", action="store_true",
+                   help="Passenger refused the alternative because it was not offered to a named companion, "
+                        "or on security, religious or medical grounds (section 6(d))")
+    p.add_argument("--denied-boarding-reason",
+                   choices=("overbooking", "security", "health", "safety", "documents"),
+                   default=None,
+                   help="Why boarding was refused (omitted = assumed overbooking, with a note); section 5(d) excludes security, health, safety, documents")
+    p.add_argument("--security-carveback", action="store_true",
+                   help="Section 5(e): arrived 3h+ early, cooperated and was cleared, valid documents")
     p.add_argument("--exemption", default=None,
                    help="Exemption reason if the airline claims one (e.g. extraordinary, iron_swords)")
     p.add_argument("--ticket-type",
@@ -259,6 +363,9 @@ def main():
         args.distance_km, args.event, args.delay_hours, args.notice_days,
         args.domestic, args.alternative_accepted, args.alternative_arrival_delay_hours,
         args.exemption, args.domestic_route, args.passengers, args.ticket_type,
+        args.alternative_offered, args.alternative_departure_early_hours,
+        args.denied_boarding_reason, args.security_carveback,
+        args.refused_alternative_protected_reason,
     )
     print(json.dumps(result, ensure_ascii=False, indent=2))
     return 0

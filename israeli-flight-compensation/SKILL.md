@@ -39,7 +39,9 @@ The Aviation Services Law applies only to a flight that departs from Israel OR a
 
 If the flight neither departs from nor arrives to Israel, STOP and tell the user this law does not apply; EU Regulation 261/2004 may cover it instead, with different amounts (250/400/600 EUR) and a 3-hour delay threshold. Never quote the Israeli amounts for a non-Israel flight, and never quote EU261 amounts as if they were the Israeli entitlement. The two regimes are separate, but they do OVERLAP on many Israel routes, so do not treat "the Israeli law applies" as meaning EU261 cannot. Step 6.5 has the test and the claiming order.
 
-**Then check the ticket itself.** Entitlement attaches to a passenger who was ISSUED a ticket and presented for check-in on time. Two ticket types are excluded from all benefits under section 2(b)(2): a ticket received free of charge, and a ticket bought at a special fare not available to the public directly or indirectly (staff tickets, industry discounts, negotiated non-public fares). The carve-back matters and is the common case: a ticket issued under a frequent-flyer or loyalty programme IS covered, so an award ticket bought with points is a full claim. Ask how the ticket was obtained before quoting any amount, and note that a lap infant with no issued ticket of their own has no entitlement.
+**Then check the ticket itself.** Entitlement attaches to a passenger who was ISSUED a ticket and presented for check-in on time. Two ticket types are excluded from all benefits under section 2(b)(2): a ticket received free of charge, and a ticket bought at a special fare not available to the public directly or indirectly (staff tickets, industry discounts, negotiated non-public fares). The carve-back matters: a ticket issued under a frequent-flyer or loyalty programme IS covered, so an award ticket bought with points is a full claim. Ask how the ticket was obtained before quoting any amount, and note that a lap infant with no issued ticket of their own has no entitlement.
+
+**Two more gates in section 2.** Presenting "on time" means at the check-in time the airline set and told the passenger, but it may not require more than 3 hours before departure, and where no time was set, 90 minutes applies; a passenger whose flight was cancelled need not present at all (section 2(a)). And under section 2(b)(1) there are NO benefits if the passenger was told of a transfer to another flight and still reached the final destination at the originally ticketed time.
 
 ### Step 2: Classify the disruption
 
@@ -48,15 +50,15 @@ Ask what happened and map it to one trigger:
 - Cancellation: the airline cancelled. Compensation is owed when notice was less than 14 days before departure AND no qualifying alternative was offered. "Qualifying" is defined by how much notice was given, and it is the carrier's most common defence, so check it rather than assuming:
   - 7 to 14 days notice: no compensation if the alternative departs no more than 2 hours early AND arrives no more than 4 hours late.
   - Less than 7 days notice: no compensation if the alternative departs no more than 1 hour early AND arrives no more than 2 hours late.
-  Assistance and the refund-or-alternative choice still stand either way.
+  Assistance and the refund-or-alternative choice still stand either way. The carve-out does NOT apply if the passenger refused the alternative because it was not offered to a companion they had named, or because they could not take it for security, religious or medical reasons (section 6(d)), for example an alternative that would require flying on Shabbat for an observant passenger.
 - Delay treated as cancellation: the flight departed 8 or more hours late (international), or 3 or more hours late (domestic).
-- Denied boarding (overbooking): the passenger was bumped and did NOT volunteer to give up the seat.
+- Denied boarding (overbooking): the passenger was bumped and did NOT volunteer to give up the seat. Ask WHY. Section 5(d) excludes the section entirely where boarding was refused for security reasons, the passenger's health, a flight-safety concern, or inadequate travel documents. Section 5(e) restores the MONEY for a security refusal only if all three hold: the passenger reached the airport at least 3 hours before departure, cooperated with the security check and was cleared to fly, and held valid travel documents. Unlike section 6, the text of section 5 lists no extraordinary-circumstances, strike or Shabbat ground; its only exclusions are the section 5(d) reasons. Whether a court would read such a defence in is a case-law question, so say the statute provides none rather than that the airline certainly cannot raise one.
 - Early departure: moved earlier by more than 5 and up to 8 hours with less than 14 days notice gives a refund or an alternative flight; moved earlier by more than 8 hours adds the monetary compensation on top.
 - Downgrade: the passenger was moved to a lower class than booked.
 
 ### Step 3: Gather the inputs for the amount
 
-Collect: the origin and final destination (to get the distance band), the length of the delay, how much notice the airline gave, whether the passenger accepted an alternative flight and how late that alternative arrived versus the original, and the flight date (to check it against the closed Iron Swords windows listed in Step 5, and against any emergency order that was in force on that date).
+Collect: the origin and final destination (to get the distance band), the length of the delay, how much notice the airline gave, whether an alternative flight was offered or accepted, how many hours earlier it departed and how late it arrived versus the original, and whether the passenger refused it for a section 6(d) reason; for denied boarding, WHY boarding was refused and, for a security refusal, the three section 5(e) facts; and the flight date (to check it against the closed Iron Swords windows listed in Step 5, and against any emergency order that was in force on that date).
 
 ### Step 4: Compute the entitlement
 
@@ -68,11 +70,15 @@ python3 scripts/compensation_calc.py --distance-km 6000 --delay-hours 9 \
     --alternative-accepted --alternative-arrival-delay-hours 3
 python3 scripts/compensation_calc.py --distance-km 9000 --delay-hours 9 --passengers 4
 python3 scripts/compensation_calc.py --domestic --domestic-route eilat --delay-hours 4
+python3 scripts/compensation_calc.py --distance-km 2280 --event cancellation --notice-days 10 \
+    --alternative-offered --alternative-departure-early-hours 0 --alternative-arrival-delay-hours 3.5
 ```
 
 Domestic flights do NOT use the distance bands. Section 18 defers them to separate regulations with their own amounts: 300 NIS on the Eilat routes, 180 NIS on Sde Dov to Ein Yahav or Rosh Pina, and 240 NIS on any other domestic route (2026 figures, also CPI-updated each January). Pass `--domestic` with the right `--domestic-route`, and never quote a distance-band figure for a domestic flight.
 
-The monetary amount is set by distance band (2026 figures): up to 2,000 km, then 2,000 to 4,500 km, then over 4,500 km. Quote the band amount from the reference file and tell the user these amounts are CPI-updated every January so they should confirm the current-year figure. Apply the 50 percent reduction only if the passenger accepted an alternative that arrived within the per-distance window.
+The monetary amount is set by distance band (2026 figures): up to 2,000 km, then 2,000 to 4,500 km, then over 4,500 km. Quote the band amount from the reference file and tell the user these amounts are CPI-updated every January so they should confirm the current-year figure. Apply the 50 percent reduction only if the passenger accepted an alternative that arrived within the per-distance window (for denied boarding the window is wider, see Gotchas).
+
+**Older flights: do not assume the 2026 figure.** The amounts are re-indexed every 1 January, and a claim can reach back 4 years, so a 2023 or 2024 disruption may be claimed today. None of the sources this skill relies on says whether the indexed amount of the flight year, the demand year, or the payment year governs. Say that this is unsettled, quote the 2026 figure only as the current amount, and tell the user to confirm the figure for their case rather than presenting 2026 as certain.
 
 **Then add the head most claims leave on the table: exemplary damages (פיצויים לדוגמה) under section 11.** The court may award up to 12,240 NIS per passenger (the 10,000 NIS in the statute, indexed for 2026), with NO proof of harm, where it finds the airline KNOWINGLY failed to give the benefits owed under sections 5, 6, 7, 8, 9(b) or 10. This is often larger than the band amount itself and is a major reason airlines settle, so state it explicitly in the demand letter and in any statement of claim rather than treating the band figure as the whole claim. It is discretionary, so present it as claimed, not guaranteed.
 
@@ -130,7 +136,7 @@ If the airline refuses or ignores the demand, the realistic next step is a small
 Set expectations on the regulator honestly: the Aviation Services Law contains no enforcement chapter and designates no regulator to order payment to a passenger. The Civil Aviation Authority handles licensing, airworthiness and safety, not individual compensation claims, so a complaint there will not get the money paid. The Israeli Consumer Council is useful for guidance and pressure, but it also cannot order payment. Do not send the passenger to a regulator instead of to court.
 
 Two practical points for the filing:
-- The small claims ceiling is about 39,900 NIS (2026, CPI-updated),. A family claim that stacks band amounts plus section 11 exemplary damages plus consequential losses can exceed the ceiling, in which case it must be trimmed or filed in the magistrates court instead.
+- The small claims ceiling is about 39,900 NIS (2026, CPI-updated). A family claim that stacks band amounts plus section 11 exemplary damages plus consequential losses can exceed the ceiling, in which case it must be trimmed or filed in the magistrates court instead.
 - Suing a foreign airline requires serving its Israeli representative for service of court documents; the Civil Aviation Authority publishes that register, which is the one genuinely useful thing it offers here.
 
 Remind the user that the limitation period is 4 years from the disruption.
@@ -143,8 +149,8 @@ User says: "My TLV to Rome flight left 9 hours late. Am I owed anything?"
 Actions:
 1. Scope: TLV departure, the law applies.
 2. Trigger: 9-hour delay is over the 8-hour international threshold, treated as a cancellation.
-3. Distance: TLV to Rome is about 2,270 km great-circle, which is OVER the 2,000 km line, so it falls in the second band (2,450 NIS as of 2026). Rome is the classic trap here: it feels like "nearby Europe" but sits just above the boundary, so measure rather than assume.
-4. Run `python3 scripts/compensation_calc.py --distance-km 2270 --delay-hours 9`.
+3. Distance: TLV to Rome is about 2,280 km great-circle, which is OVER the 2,000 km line, so it falls in the second band (2,450 NIS as of 2026). Rome is the classic trap here: it feels like "nearby Europe" but sits just above the boundary, so measure rather than assume.
+4. Run `python3 scripts/compensation_calc.py --distance-km 2280 --delay-hours 9`.
 Result: Explain the amount, the assistance the airline owed during the wait, and draft the demand letter.
 
 ### Example 2: Cancelled flight with last-minute notice
@@ -194,7 +200,7 @@ Result: Confirm it is still claimable and draft the demand letter.
 - Do not use EU261 numbers. The single most common error is quoting 250/400/600 EUR or the EU261 3-hour delay threshold for an Israel flight. Israel's law is NIS-denominated (1,530 / 2,450 / 3,670 as of 2026) with an 8-hour international delay threshold. They are different regimes.
 - The amounts change every January. They are CPI-linked and rounded to the nearest 10 NIS. A figure that was right last year may be stale. Always say "as of 2026, confirm the current-year amount."
 - Assistance and money are separate. A passenger can be owed food, accommodation, and a refund even when an exemption (or the Iron Swords window) removes the monetary compensation. Do not collapse the two.
-- An accepted alternative can halve the money, but only if it arrived within the 2, 3, or 4-hour window for the distance. Outside the window, the full amount stands. Do not apply the 50 percent reduction automatically just because a rebooking happened.
+- An accepted alternative can halve the money, but only if it arrived within the window for the distance, and the window depends on WHAT happened. For a cancellation (section 6(b)) it is 2, 3, or 4 hours. For denied boarding (section 5(c)) it is wider: 4, 5, or 6 hours. Outside the window, the full amount stands. Do not apply the 50 percent reduction automatically just because a rebooking happened, and do not use the cancellation window for a bumped passenger.
 - Do not concede an "extraordinary circumstances" exemption on the airline's say-so. Israeli case law reads it narrowly; a routine technical or crewing fault usually does not qualify.
 - Per-passenger, not per-booking. Each passenger on the reservation has their own claim. A family of four is four claims.
 
