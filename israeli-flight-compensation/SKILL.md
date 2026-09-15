@@ -84,6 +84,13 @@ The monetary amount is set by distance band (2026 figures): up to 2,000 km, then
 
 Separately from the money, explain the assistance the airline owed during the wait (food and communication after 2 hours; from 5 to under 8 hours, the passenger's CHOICE of a refund or an alternative flight, and accommodation plus ground transport only where they accepted an alternative departing the next day). Assistance is owed even when an exemption removes the monetary compensation. This ladder applies to DOMESTIC flights too: section 18 applies the whole law to domestic passengers with the necessary changes and carves out only the monetary compensation, which is what the separate regulations set. So a domestic passenger delayed 4 hours is owed the same care, even though their money figure comes from the domestic schedule.
 
+**Refund scope, when the passenger chooses a refund (section 3).** The refund covers everything paid for the ticket, including fees, levies and taxes, and is due within 21 days of a written request (section 3(a)(2)). Get the scope right in the demand letter, because section 3(b) sets it by itinerary:
+- **Connecting flight with the same operator:** the full fare, even if one leg was flown, provided the passenger did not reach the final destination. A passenger who reached the intermediate stop and, because of the disruption, decided not to continue also gets a free ticket back to the origin (section 3(b)(1)).
+- **Round trip with the same operator:** a disruption on the outbound leg refunds the full fare; a disruption on the return leg refunds only half the fare. If the round trip includes a stopover and the disruption hit the outbound leg, a passenger who reached the intermediate stop and, because of the disruption, decided not to continue also gets a free ticket back to the origin, on top of the refund (section 3(b)(2)).
+- **No refund once an alternative was chosen:** subject to the two rules above, a passenger who chose an alternative ticket, or chose to fly on the disrupted flight, is not entitled to the refund. If the accepted alternative departs from a different airport, the cost of getting to that airport is reimbursed (section 3(b)(4)).
+
+A "stopover" here means a stay of up to 24 hours before the onward flight, and a "round trip" requires both legs to be operated by the same operator (section 3(c)).
+
 ### Step 5: Check exemptions before promising money
 
 Section 6(e) gives the airline exactly THREE grounds, and the burden of proving one is expressly on the carrier, not on the passenger:

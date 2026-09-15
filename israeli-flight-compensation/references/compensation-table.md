@@ -189,4 +189,17 @@ Third Schedule unless a different amount is proved. 2026 figures by one-way dist
 
 The fixed statutory compensation is separate from actual consequential losses. If the disruption forced extra spending (an unplanned hotel night, a missed onward connection, replacement tickets), those real out-of-pocket losses can be claimed in addition to the statutory amount, usually proven with receipts in the same small claims suit. Do not treat the fixed amount as the ceiling on what the passenger can recover.
 
+## Refund scope (section 3)
+
+The refund covers everything paid for the ticket, including fees, levies and taxes, and is due within 21 days of a written request (section 3(a)(2)). Section 3(b) sets the scope by itinerary:
+
+| Itinerary | Disruption on | Refund |
+|---|---|---|
+| Connecting flight, same operator (stopover up to 24 hours) | Any leg, and the passenger did not reach the final destination | Full fare, even if a leg was flown. If the passenger reached the intermediate stop and, because of the disruption, decided not to continue, also a free ticket back to the origin (3(b)(1)) |
+| Round trip, same operator | Outbound leg | Full fare. If the round trip has a stopover and the passenger reached the intermediate stop and, because of the disruption, decided not to continue, also a free ticket back to the origin (3(b)(2)) |
+| Round trip, same operator | Return leg | Half the fare (3(b)(2)) |
+| Package tour | Any | Ticket price deemed from the Third Schedule unless a different amount is proved (3(b)(3)) |
+
+Subject to 3(b)(1) and (2), there is no refund once the passenger chose an alternative ticket or chose to fly on the disrupted flight. If the accepted alternative departs from a different airport, the transport cost to that airport is reimbursed (3(b)(4)).
+
 The limitation period for a claim under the law is 4 years from when the entitlement arose.

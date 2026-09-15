@@ -689,6 +689,96 @@
         "scripts/compensation_calc.py"
       ],
       "note": "Section 5(a) to (e) read in full on Nevo 2026-09-15 (curl): no 'נסיבות מיוחדות', 'שביתה' or 'שבת' ground appears in section 5; compare section 6(e). Hedged in the skill as a statement about the text only."
+    },
+    {
+      "id": "refund-includes-taxes-s3a2",
+      "claim": "Section 3(a)(2) (סעיף 3(א)(2)): the refund covers everything paid for the ticket, including fees, levies and taxes, within 21 days of a written request",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "השבת תמורה בסכום ששולם בעד כרטיס טיסה, לרבות כל תשלום ששולם בעד כרטיס הטיסה, ובכלל זה אגרות, היטלים, מסים ותשלומי חובה אחרים",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ],
+      "note": "Statute text on Nevo, section 3 read in full 2026-09-15 (curl, UTF-8); verbatim."
+    },
+    {
+      "id": "refund-connecting-s3b1",
+      "claim": "Section 3(b)(1) (סעיף 3(ב)(1)): on a connecting flight with the same operator the passenger gets the full fare even if a leg was flown, provided they did not reach the final destination, plus a free ticket back to origin if they reached the intermediate stop and decided not to continue",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "יהיה הנוסע זכאי לקבל את מלוא התמורה ששולמה בעד כרטיס הטיסה גם אם קטע מהטיסה התקיים בפועל ובלבד שהנוסע לא הגיע ליעד הסופי",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ],
+      "note": "Statute text on Nevo, section 3 read in full 2026-09-15 (curl, UTF-8); verbatim."
+    },
+    {
+      "id": "refund-round-trip-half-s3b2",
+      "claim": "Section 3(b)(2) (סעיף 3(ב)(2)): on a round trip, a disruption on the outbound leg refunds the full fare and a disruption on the return leg refunds half the fare",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "התקיימה עילה מזכה בטיסה בחזרה מהיעד לנקודת המוצא – יהיה הנוסע זכאי לקבל את מחצית התמורה ששולמה בעד כרטיס הטיסה",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ],
+      "note": "Statute text on Nevo, section 3 read in full 2026-09-15 (curl, UTF-8); verbatim."
+    },
+    {
+      "id": "refund-lost-alternative-s3b4",
+      "claim": "Section 3(b)(4) (סעיף 3(ב)(4)): subject to (1) and (2), no refund once the passenger chose an alternative ticket or chose to fly on the disrupted flight; an accepted alternative from a different airport also reimburses transport to that airport",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "נוסע לא יהיה זכאי להשבת תמורה אם בחר לקבל כרטיס טיסה חלופי או אם בחר לטוס בטיסה שהתקיימה בה עילה מזכה",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ],
+      "note": "Statute text on Nevo, section 3 read in full 2026-09-15 (curl, UTF-8); verbatim."
+    },
+    {
+      "id": "refund-definitions-s3c",
+      "claim": "Section 3(c) (סעיף 3(ג)): a stopover is a stay of up to 24 hours at an intermediate point for an onward flight, and a round trip requires both flights to be operated by the same operator",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "שהות ביעד ביניים, במשך 24 שעות לכל היותר, לשם טיסת המשך ליעד הסופי",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ],
+      "note": "Statute text on Nevo, section 3 read in full 2026-09-15 (curl, UTF-8); verbatim."
+    },
+    {
+      "id": "refund-round-trip-stopover-return-ticket-s3b2",
+      "claim": "Section 3(b)(2) (סעיף 3(ב)(2)), second sentence: on a round trip that includes a stopover, if the disruption was on the outbound leg and the passenger reached the intermediate stop and decided not to continue because of it, the passenger also gets a free ticket back to the origin, in addition to the refund",
+      "claim_type": "regulation",
+      "source_url": "https://www.nevo.co.il/law_html/law00/119611.htm",
+      "source_fetched_at": "2026-09-15T00:00:00Z",
+      "raw_snippet": "לעניין כרטיס טיסה כאמור לטיסה הכוללת חניית ביניים – התקיימה העילה המזכה בטיסה הלוך, והנוסע הגיע ליעד הביניים",
+      "confidence": "high",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/compensation-table.md"
+      ],
+      "note": "Statute text on Nevo, section 3(b)(2) read in full 2026-09-15; the first repair dropped this sentence, caught by the Judge."
     }
   ]
 }

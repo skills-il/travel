@@ -27,10 +27,19 @@
         "CARRY (Expert MAJOR, 2nd cycle): accessibility regs 2003 פרק ג', demand-letter template file, organizer/agent liability ss.4, 15. Over discretionary cap.",
         "Deferred discretionary: Sde Dov closed note; foreign airline without Israeli branch; consumer-initiated cancellation row; airspace-closure as extraordinary circumstance (Kol Zchut position).",
         "Deferred (legal gate, low): EN description 'exactly how much' is assertive; soften when the description next changes (eval gate).",
-        "Deferred (Expert MAJOR): s.3(b) refund rules (half fare on a round-trip return leg, full fare plus return ticket on an abandoned connection, refund right lost once an alternative is chosen); not read in full this cycle.",
         "Deferred (Expert MINOR): s.6(f) duty to present alternatives, s.11(b) exemplary-damages factors, s.14(c) airport representative, s.17 no contracting out, s.10/11(a)(2) unapproved flight time.",
-        "Judge round 3: two unsourced phrases fixed (hedged the s.5 no-grounds conclusion with a negative-claim entry; dropped 'Shabbat is the common case'). Applied reviewer residuals: omitted denied-boarding reason now notes the assumption; s.6(d) flag blocks s.5(c) halving; Step 3 lists the new inputs.",
-        "Deferred (Expert MAJOR, carried): s.3(b) refund rules. Deferred: whether 5(c) halving applies inside a 5(e) carve-back (untested; statute routes 5(e) money through 5(b))."
+        "Judge round 3: two unsourced phrases fixed (hedged the s.5 no-grounds conclusion with a negative-claim entry; dropped 'Shabbat is the common case'). Applied reviewer residuals: omitted denied-boarding reason now notes the assumption; s.6(d) flag blocks s.5(c) halving; Step 3 lists the new inputs."
+      ]
+    },
+    {
+      "version": "1.2.2",
+      "date": "2026-09-15",
+      "lessons": [
+        "Resolved (Expert MAJOR, carried from 1.2.1 and escalated by the batch lead): section 3(b) refund scope added to Step 4 EN/HE and the reference table, read verbatim on Nevo. The lead's summary omitted three conditions the statute imposes: the connecting-flight full refund requires that the passenger did not reach the final destination; the free return ticket requires abandoning at the intermediate stop; the airport-transport reimbursement applies only to an ACCEPTED alternative from another airport. Lesson: read the provision, not the summary.",
+        "Judge round 5 caught that my own reading dropped the second sentence of s.3(b)(2): the free return-to-origin ticket also applies to a round trip with a stopover abandoned at the intermediate point on the outbound leg. Fixed in all three files with its own evidence entry. Lesson: when a paragraph has several sentences, map each sentence to a line of the skill before claiming coverage.",
+        "Lesson: a MAJOR deferred in a shipped cycle still forces a patch cycle; under Phase 4.1 MAJORs are applied, not logged, and deferring one cost a second tag.",
+        "Still deferred: whether 5(c) halving applies inside a 5(e) carve-back; ss.6(f), 11(b), 14(c), 17 and 10/11(a)(2); accessibility regulations and demand-letter template; EN description 'exactly' (legal, low).",
+        "Judge round 7 advisory (not applied, to avoid reopening review): the compensation-table package row does not say the Third Schedule deemed price depends on the disrupted flight's distance, flight type and class; the third-schedule-package-prices entry and the Third Schedule table already carry it."
       ]
     }
   ]
