@@ -1,0 +1,15 @@
+# positive
+Is it safe to hike Nahal Arugot this Saturday with my kids?
+How much water should each of us bring for a hike in the Judean Desert tomorrow?
+What time should we start a 12 km hike in the Negev in June so we finish before the heat?
+אפשר לעשות את נחל עמוד ביום שישי? יש אזהרת שיטפונות?
+תכנן לי טיול יום בגולן לארבעה מבוגרים כולל כרטיס מסלול להדפסה
+Can we hike in a firing zone in the Negev on Saturday without coordinating?
+# negative
+Find me a hotel and train to Eilat for the weekend
+Plan a 10-day trip to Portugal for my family
+We want to do the whole Israel National Trail with camping, plan the 50 days
+# edge
+What is the weather in Tel Aviv tomorrow?
+Recommend nice nature spots in the north for a family weekend
+Is Masada's Snake Path open at 11 in the morning in August?

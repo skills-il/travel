@@ -1,0 +1,81 @@
+{
+  "display_name": {
+    "he": "מתכנן טיול יום בישראל",
+    "en": "Israeli Hiking Day Planner"
+  },
+  "display_description": {
+    "he": "לא אישור בטיחות, סגירות ואזהרות רשמיות תמיד גוברות. מתכננים טיול יום בישראל ומקבלים החלטה ברורה (יוצאים, זהירות או לא יוצאים) וכרטיס מסלול להדפסה. הסקיל בודק את תחזית עומס החום השעתית ואת האזהרות של השירות המטאורולוגי, סכנת שיטפונות מגשם במעלה הנחל, מסלולים סגורים ושעות פתיחה של רשות הטבע והגנים, הנחיות פיקוד העורף, אזורי מוקשים ושטחי אש, ומחשב שעת יציאה אחרונה, סיום לפני החשכה וכמות מים לאדם לפי הנתונים הרשמיים של רשות הטבע והגנים ומשרד החינוך. השתמשו כששואלים אם מסלול מתאים בסוף השבוע, כשמתכננים טיול בנגב, במדבר יהודה, בים המלח, בגליל או בגולן, או כששואלים כמה מים לקחת, מתי לצאת או מה עושים במקרה חירום בשטח. אל תשתמשו לתכנון טיול כללי בארץ, לינה או תחבורה (יש israeli-travel-planner), לטיולים בחו\"ל או למסעות של כמה ימים עם לינת שטח.",
+    "en": "Not a safety clearance, official closures and warnings always override it. Plan a day hike in Israel and get a go, caution or no-go call plus a printable route card. Checks the IMS hourly heat-stress forecast and warnings, flash-flood risk from rain upstream, INPA closed trails and site hours, Home Front Command restrictions, mine areas and IDF firing zones, then works out the latest safe start, a finish before dark and water per person from official INPA and Ministry of Education figures. Use when someone asks if a trail is OK this weekend, plans a hike in the Negev, Judean Desert, Dead Sea, Galilee or Golan, or asks how much water to bring, when to start, or what to do in an emergency on the trail. Do NOT use for general domestic trip planning, accommodation or transport (use israeli-travel-planner), trips abroad, or multi-day treks and camping."
+  },
+  "tags": {
+    "he": [
+      "טיולים",
+      "מסלולים",
+      "עומס חום",
+      "שיטפונות",
+      "מים לטיול",
+      "רשות הטבע והגנים",
+      "מדבר",
+      "תכנון טיול"
+    ],
+    "en": [
+      "hiking",
+      "trails",
+      "heat-stress",
+      "flash-floods",
+      "water",
+      "nature-reserves",
+      "desert",
+      "hike-planning"
+    ]
+  },
+  "author": "skills-il",
+  "version": "1.0.0",
+  "category": "travel",
+  "supported_agents": [
+    "claude-code",
+    "cursor",
+    "github-copilot",
+    "windsurf",
+    "opencode",
+    "codex",
+    "antigravity",
+    "gemini-cli",
+    "grok-build",
+    "chatgpt",
+    "claude-ai",
+    "claude-desktop",
+    "manus",
+    "gemini-spark",
+    "grok"
+  ],
+  "volatility": "seasonal",
+  "authoritative_sources": [
+    {
+      "url": "https://ims.gov.il/he/IMSwarnings",
+      "type": "regulator",
+      "language": "he"
+    },
+    {
+      "url": "https://www.parks.org.il/newsflash/maslulim-2/",
+      "type": "regulator",
+      "language": "he"
+    },
+    {
+      "url": "https://www.parks.org.il/new/beticut/",
+      "type": "regulator",
+      "language": "he"
+    },
+    {
+      "url": "https://meyda.education.gov.il/files/Bitachon/teyulim2016.pdf",
+      "type": "regulation",
+      "language": "he"
+    },
+    {
+      "url": "https://www.oref.org.il/heb/articles/info/iron-swords/1100",
+      "type": "regulator",
+      "language": "he"
+    }
+  ],
+  "domain_checklist_version": 1
+}
