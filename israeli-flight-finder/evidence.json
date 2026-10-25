@@ -1,20 +1,8 @@
 {
   "schemaVersion": "1.0",
   "skill": "israeli-flight-finder",
-  "generated_at": "2026-07-29T16:17:51.645381+00:00",
+  "generated_at": "2026-10-25T12:00:00Z",
   "claims": [
-    {
-      "claim_id": "elal-baggage",
-      "claim": "El Al economy carry-on is 1x8kg (56x45x25 cm) plus a personal item; Economy Classic/Flex include 1x23kg checked; since May 2025 Lite fares to Europe/UAE must gate-check the carry-on (free), leaving only a 38x30x18 cm personal item in the cabin; Business carry-on is 16kg.",
-      "source_url": "https://www.elal.com/eng/baggage",
-      "raw_snippet": "Economy carry-on: 8 kg, 56x45x25 cm, plus a personal item. Economy Lite to Europe and the UAE: carry-on must be checked at the gate; only a personal item up to 38x30x18 cm is allowed in the cabin.",
-      "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/airline-baggage-quick-ref.md"
-      ]
-    },
     {
       "claim_id": "elal-matmid",
       "claim": "The El Al Matmid Frequent Flyer Program has four tier statuses above base membership (Silver, Gold, Platinum, Top Platinum); members advance by earning a Diamonds currency, the more Diamonds the faster the climb.",
@@ -24,91 +12,37 @@
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
     },
     {
       "claim_id": "elal-lite-gatecheck",
-      "claim": "On El Al flights to/from Europe, the UAE, and Eilat, Economy Lite passengers must send their carry-on to the hold at the gate (free), except Matmid Frequent Flyer members with Silver status or higher, who may keep the carry-on in the cabin subject to overhead space.",
+      "claim": "Since 21 May 2025, on El Al flights to/from Europe and the UAE, Economy Lite passengers must send their carry-on to the hold at the gate (free), except Matmid members with Silver status or higher; only a personal item stays in the cabin.",
       "source_url": "https://www.elal.com/eng/baggage/hand-baggage",
-      "raw_snippet": "send their carry-on to the aircraft hold at the gate at no cost, except for Matmid program Frequent Flyer members with Silver status or higher on the day of the flight, who will be permitted to bring their carry-on, subject to available space in the overhead storage compartments",
-      "fetched_at": "2026-07-16T00:00:00Z",
+      "raw_snippet": "Starting from May 21, 2025, passengers traveling on a Lite ticket to or from Europe and the United Arab Emirates will be required to send their carry-on to the aircraft hold at the gate at no cost",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/airline-baggage-quick-ref.md"
-      ]
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
     },
     {
       "claim_id": "israir-baggage",
-      "claim": "Israir international baggage prices (advance / at Ben Gurion): carry-on 10kg $30 / $40; 1st checked bag 23kg $65 / $100; 2nd bag $80 / $120; bags 3-5 $120 each / $150; overweight 24-30kg on the first bag +$20 / +$70. Only the small personal item is free.",
+      "claim": "Israir first checked bag (23 kg) costs $65 per direction in advance and $100 at Ben Gurion.",
       "source_url": "https://www.israir.co.il/Passengers_Info/Baggage_Policy.html",
-      "raw_snippet": "כבודת יד (טרולי/תיק גב גדול) | מידות: 55*40*25 ס\"מ, עד 10 ק\"ג : 30 $ לכיוון (ברכישה בנתב\"ג- 40 $ / בתחנות חו\"ל- 35 אירו/ 30 ליש\"ט) מזוודה ראשונה | מידות : 65*45*30 ס\"מ עד 23 ק\"ג : 65 $ לכיוון (ברכישה בנתב\"ג- 100 $/ בתחנות חו\"ל- 85 אירו/ 75 ליש\"ט) מזוודה שנייה | עד 23 ק\"ג: 80 $ לכיוון (ברכישה בנתב\"ג- 120 $ / בתחנות חו\"ל- 102 אירו/ 90 ליש\"ט) מזוודה שלישית עד חמישית | עד 23 ק\"ג: 120 $ לכיוון לכל מזוודה (ברכישה בנתב\"ג- 150 $/ בתחנות חו\"ל- 128 אירו/ 110 ליש\"ט)",
-      "fetched_at": "2026-06-21T00:00:00Z",
+      "raw_snippet": "מזוודה ראשונה | מידות: 30*65*45 עד 23 ק\"ג : 65 $ לכיוון (ברכישה בנתב\"ג- 100 $/ בתחנות חו\"ל- 85 אירו/ 75 ליש\"ט)",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/airline-baggage-quick-ref.md"
-      ]
-    },
-    {
-      "claim_id": "arkia-baggage-personal-item",
-      "claim": "Arkia international fares include only a free under-seat hand bag / backpack up to 20x30x40 cm.",
-      "source_url": "https://www.arkia.co.il/en/luggage-information",
-      "raw_snippet": "You may board the aircraft with a hand bag / backpack whose size does not exceed 20x30x40 cm, and which can be stored under the seat in front of the passenger.",
-      "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/airline-baggage-quick-ref.md"
-      ]
-    },
-    {
-      "claim_id": "arkia-baggage-suitcase",
-      "claim": "Arkia checked bag up to 20 kg costs $50 per passenger per direction booked in advance.",
-      "source_url": "https://www.arkia.co.il/en/luggage-information",
-      "raw_snippet": "In advance booking, baggage weighing up to 20 kg can be added, which will be sent to the aircraft hold, for an additional fee of $50 per passenger per direction at the call center and on the Arkia website.",
-      "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/airline-baggage-quick-ref.md"
-      ]
-    },
-    {
-      "claim_id": "arkia-baggage-counter",
-      "claim": "At airports outside the EU the Arkia checked-bag counter price is $90 per passenger per direction; at EU airports it is 85 Euros.",
-      "source_url": "https://www.arkia.co.il/en/luggage-information",
-      "raw_snippet": "The cost of purchasing baggage at the check-in counters is $90 per passenger per direction. At airports in European Union countries: The cost of purchasing baggage at the counters is 85 Euros per passenger per direction.",
-      "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/airline-baggage-quick-ref.md"
-      ]
-    },
-    {
-      "claim_id": "arkia-baggage-trolley",
-      "claim": "Arkia trolley suitcase up to 8 kg costs $25 per direction in advance and $30 at the counters outside the EU.",
-      "source_url": "https://www.arkia.co.il/en/luggage-information",
-      "raw_snippet": "The cost of purchasing a trolley suitcase in advance booking at the call center and on the Arkia website is $25 per passenger per direction. At airports in Israel and worldwide, except for European countries: The cost of purchasing a trolley suitcase at the counters is $30 per passenger per direction.",
-      "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/airline-baggage-quick-ref.md"
-      ]
-    },
-    {
-      "claim_id": "arkia-baggage-second",
-      "claim": "A second Arkia suitcase up to 20 kg costs $70 per direction booked in advance.",
-      "source_url": "https://www.arkia.co.il/en/luggage-information",
-      "raw_snippet": "Second suitcase for a passenger weighing up to 20 kg for an additional fee of $70 per direction.",
-      "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/airline-baggage-quick-ref.md"
-      ]
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
     },
     {
       "claim_id": "wizz-resumed",
@@ -135,17 +69,6 @@
       ]
     },
     {
-      "claim_id": "etias-ees",
-      "claim": "ETIAS travel authorization is becoming mandatory for visa-exempt nationals (including Israelis) before entering the Schengen area, and EES replaces passport stamping with biometric border registration.",
-      "source_url": "https://travel-europe.europa.eu/etias_en",
-      "raw_snippet": "ETIAS is a travel authorisation for visa-exempt non-EU nationals to travel to Schengen countries; it is linked to the traveller's passport and must be obtained before travel.",
-      "fetched_at": "2026-06-21T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md"
-      ]
-    },
-    {
       "claim_id": "tlv-security-3h",
       "claim": "The Israel Airports Authority advises passengers to arrive 3 hours prior to departure for the security check procedure at Ben Gurion Airport",
       "source_url": "https://www.iaa.gov.il/en/airports/ben-gurion/securitybgn",
@@ -160,89 +83,70 @@
     },
     {
       "claim_id": "booking-day-of-week",
-      "claim": "Recent Expedia data put the cheapest day to fly mid-week (Tuesday, around 14% below the peak day domestically) with weekend departures at a premium; shifting dates by 1-2 days can save 30%+.",
+      "claim": "Expedia's 2026 Air Hacks data: for US domestic flights Tuesday departures cost about 14% less than Sunday; Friday is the cheapest day to book.",
       "source_url": "https://www.afar.com/magazine/expedia-data-shows-new-best-day-to-book-cheaper-flights",
-      "raw_snippet": "It tracked patterns throughout a year of Expedia’s Flight Deals tool, which highlights fares priced at least 20 percent below normal. Fewer business travelers are flying on Friday, and that opens up cheaper inventory for leisure travelers heading into the weekend. Despite this new report, experts still caution against reading too much into any single “best day” finding.",
-      "fetched_at": "2026-08-18",
+      "raw_snippet": "But when it comes to flying domestically within the USA, Tuesday is the cheapest day, with flights costing 14 percent less on average compared to Sunday departures.",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
       ],
-      "verified_via": "cited page fetched; 19 of 25 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"below\"",
-      "verified_at": "2026-08-18"
-    },
-    {
-      "claim_id": "platforms-live",
-      "claim": "Google Flights (Israel), Skyscanner, KAYAK, Issta, and Lametayel are all operating flight-comparison platforms accessible to Israeli users in Hebrew.",
-      "source_url": "https://www.google.com/travel/flights?gl=IL&hl=he",
-      "raw_snippet": "חיפוש טיסות זולות ברחבי העולם והזמנת כרטיס – Google חיפוש טיסות",
-      "fetched_at": "2026-08-18",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md",
-        "references/comparison-platforms.md"
-      ],
-      "verified_via": "navigational claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
-      "verified_at": "2026-08-18"
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
     },
     {
       "claim_id": "deal-sources",
-      "claim": "Israeli travelers track error fares and flash deals through secret-flights sites such as secretflights.co.il and through Telegram/Facebook deal channels, which rarely appear on the big aggregators.",
+      "claim": "secretflights.co.il (\"טיסות סודיות\") is an Israeli deal site for cheap flights.",
       "source_url": "https://www.secretflights.co.il",
       "raw_snippet": "טיסות זולות | השוואת מחירי טיסות לחו\"ל | טיסות סודיות",
       "fetched_at": "2026-08-18",
       "appears_in": [
         "SKILL.md",
-        "SKILL_HE.md"
+        "SKILL_HE.md",
+        "references/booking-extras.md"
       ],
       "verified_via": "navigational claim about the source itself; snippet is the cited page's own title, fetched to confirm the page exists and is what the claim says it is",
       "verified_at": "2026-08-18"
     },
     {
       "claim_id": "tlv-war-reopening-2026",
-      "claim": "The February 2026 Iran war closed Israeli airspace and shut Ben Gurion for roughly 40 days; the airport fully reopened on 9 April 2026 and operates normally, with an uneven foreign-carrier recovery.",
+      "claim": "The war began on 28 February 2026; Israeli airspace was shut to most foreign airlines; Ben Gurion partially reopened in early March for Israeli airlines and was fully reopened after the April ceasefire.",
       "source_url": "https://www.timesofisrael.com/ben-gurion-airport-set-to-reopen-as-israel-eases-flight-restrictions-after-ceasefire/",
-      "raw_snippet": "ening the country’s airspace and resume regular operations at Tel Aviv’s Ben Gurion Airport starting at midnight Wednesday-Thursday, roughly one day after a ceasefire was announced between the US, Israel and Iran. The Transportation Ministry said it was working with the Israel Airports Authority and the Civil Aviation Authority on returning to full operations at Ben Gurion Airport, the country’s main international gateway. Duty-Free shops and all terminal services were also reopening.",
-      "fetched_at": "2026-08-18",
+      "raw_snippet": "Israel’s airspace has been shut to most foreign airline traffic since the war began on February 28. In early March, Ben Gurion Airport partially reopened for limited inbound and outbound flights operated by Israeli airlines",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "appears_in": [
         "SKILL.md",
-        "SKILL_HE.md"
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
       ],
-      "verified_via": "cited page fetched; 42 of 48 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"roughly\"",
-      "verified_at": "2026-08-18"
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
     },
     {
       "claim_id": "elal-network-2026-weekly",
-      "claim": "El Al's summer 2026 schedule includes about 900 weekly flights to more than 50 destinations worldwide.",
+      "claim": "El Al's summer 2026 schedule includes about 900 weekly flights to more than 50 destinations worldwide (a pre-war schedule announcement, December 2025).",
       "source_url": "https://www.ynetnews.com/travel/article/ryuco7enzg",
-      "raw_snippet": "El Al , Israel’s largest airline, on Monday released its summer 2026 schedule, which will include about 900 weekly flights to more than 50 destinations worldwide.",
+      "raw_snippet": "El Al, Israel’s largest airline, on Monday released its summer 2026 schedule, which will include about 900 weekly flights to more than 50 destinations worldwide.",
       "fetched_at": "2026-07-15T00:00:00Z",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
     },
     {
       "claim_id": "elal-network-2026-north-america",
-      "claim": "El Al will operate 55 weekly flights to North America, its most extensive activity ever on the continent.",
+      "claim": "El Al will operate 55 weekly flights to North America, its most extensive activity ever on the continent (a pre-war schedule announcement, December 2025).",
       "source_url": "https://www.ynetnews.com/travel/article/ryuco7enzg",
       "raw_snippet": "For the first time in its history, El Al will operate 55 weekly flights to its destinations in North America — the most extensive activity ever on the continent.",
       "fetched_at": "2026-07-15T00:00:00Z",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
-    },
-    {
-      "claim_id": "lufthansa-group-tlv-2026-resume",
-      "claim": "Lufthansa and SWISS plan to resume Tel Aviv flights from 1 July 2026, Eurowings by mid-July 2026, while Brussels Airlines suspended Tel Aviv operations through 24 October 2026.",
-      "source_url": "https://www.mtm.travel/news/wizz-air-and-the-lufthansa-group-resume-flights-to-tel-aviv/",
-      "raw_snippet": "For the other airlines belonging to the Lufthansa Group, Lufthansa and Swiss plan to resume flights as early as 1 July 2026; Eurowings is expected to return to Tel Aviv by mid-July 2026, while Brussels Airlines confirms to have suspended operations to Tel Aviv through 24 October 2026.",
-      "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md"
-      ]
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
     },
     {
       "claim_id": "lufthansa-group-tlv-2026-austrian",
@@ -251,30 +155,7 @@
       "raw_snippet": "Austrian Airlines, first in the Lufthansa Group to fly to Tel Aviv",
       "fetched_at": "2026-07-15T00:00:00Z",
       "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md"
-      ]
-    },
-    {
-      "claim_id": "turkish-tlv-not-resumed-2026",
-      "claim": "As of July 2026 Turkish Airlines resumed several Middle East routes (Abu Dhabi 1 July, Dammam 10 July, Kuwait 11 July, Bahrain 16 July) but did NOT resume Tel Aviv.",
-      "source_url": "https://openjaw.com/classified/2026/07/03/turkish-airlines-middle-east-flight-resumptions/",
-      "raw_snippet": "resuming flights to Abu Dhabi starting July 1, 2026, Dammam starting July 10, 2026 and Kuwait starting July 11, 2026 and Bahrain starting July 16, 2026",
-      "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md"
-      ]
-    },
-    {
-      "claim_id": "etias-delay-2026",
-      "claim": "As of July 2026 ETIAS is not yet required; the EU targets a launch in late 2026 with mandatory use around 2027, but the rollout has slipped and EU agencies have signalled the late-2026 date may move into 2027.",
-      "source_url": "https://travel-europe.europa.eu/en/etias/about-etias/news-corner/revised-timeline-ees-and-etias",
-      "raw_snippet": "The revised timeline foresees ETIAS starting in the last quarter of 2026 with a transitional period before it becomes mandatory; the date is subject to change and may be pushed further.",
-      "fetched_at": "2026-07-15T00:00:00Z",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md"
+        "references/tlv-carrier-status.md"
       ]
     },
     {
@@ -303,16 +184,16 @@
     },
     {
       "claim_id": "ryanair-tlv-2026",
-      "claim": "Ryanair will not restart Tel Aviv, cancelling 22 low-fare routes and roughly 1 million seats, citing Ben Gurion's refusal to confirm its summer-2026 (S26) slots and to keep the low-cost Terminal 1 open.",
+      "claim": "On 30 September 2025 Ryanair said it would not restart Tel Aviv for winter 2025-26 (about 1 million seats, 22 routes), citing Ben Gurion refusing to confirm S26 slots and low-cost Terminal 1, and would restart only once those were confirmed.",
       "source_url": "https://corporate.ryanair.com/news/ryanair-will-not-restart-tel-aviv-flights-as-ben-gurion-airport-refuses-to-confirm-s26-slots-or-availability-of-low-cost-terminal-1/",
-      "raw_snippet": "However, Tel Aviv Airport keeps closing this facility for its own convenience, forcing Ryanair, and other low-cost airlines, into the more expensive T3 – where we do not want to be – but they refuse to honour the low-cost agreement, which T1 facilities provide.",
-      "fetched_at": "2026-08-18",
+      "raw_snippet": "announced it will not restart low-fare flights this winter to/from Tel Aviv (a loss of 1m seats and 22 routes)",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
       ],
-      "verified_via": "cited page fetched; 28 of 34 of the claim's distinctive terms occur on it, and the snippet is the page's own wording around \"keeps\"",
-      "verified_at": "2026-08-18"
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
     },
     {
       "claim_id": "google-flights-deeplink",
@@ -348,27 +229,28 @@
     },
     {
       "claim_id": "skyscanner-deeplink",
-      "claim": "Skyscanner deep-link templates used by this skill, checked as resolving on 2026-07-15. The consumer site answers automated requests with a captcha, so it cannot be quoted; the partner site is cited instead as the readable Skyscanner property. Templates covered: https://www.skyscanner.co.il/transport/flights/tlv/{dest}/{YYMMDD}/{YYMMDD}/ https://www.skyscanner.co.il/transport/flights/tlv/{dest}/{YYMM}00/ https://www.skyscanner.co.il/transport/flights/tlv/anywhere/{YYMMDD}/",
-      "source_url": "https://partners.skyscanner.net/contact-us",
-      "raw_snippet": "Solutions Your industry Our products Discover our solutions for your sector.",
-      "fetched_at": "2026-08-19",
+      "claim": "Skyscanner Israel result pages use the path /transport/flights/tlv/{dest}/{YYMMDD}/{YYMMDD}/ with a lowercase airport code as {dest}, e.g. an archived Skyscanner-generated page for TLV-Almaty (ala), 30 Dec 2024 to 2 Jan 2025.",
+      "source_url": "https://web.archive.org/web/20241123162425/https://www.skyscanner.co.il/transport/flights/tlv/ala/241230/250102/?adults=1&adultsv2=1&cabinclass=economy&children=0&childrenv2=&inboundaltsenabled=false&infants=0&outboundaltsenabled=false&ref=home&rtn=1&stops=!direct,!twoPlusStops&irclickid=_ylukfd1hv9kfazyfcghhvtpjr22xau0nl9uqwkk300&associateid=AFF_TRA_19354_00001&utm_medium=affiliate&utm_source=4162970-Flight%20Israel&utm_campaign=&campaign_id=4162970&utm_content=Online%20Tracking%20Link&adid=1027991&click_timestamp=1732378991233&irmweb=&irgwc=1",
+      "raw_snippet": "Cheap flights from Tel Aviv to Almaty at Skyscanner",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md",
         "references/comparison-platforms.md",
         "scripts/compare-flights.md"
       ],
-      "verified_via": "partners.skyscanner.net fetched; www.skyscanner.co.il serves a captcha to any automated request, including a real browser",
-      "verified_at": "2026-08-19"
+      "verified_via": "archive",
+      "verified_at": "2026-10-25",
+      "notes": "Live skyscanner.co.il serves a PerimeterX captcha to automation. The Wayback snapshot (HTTP 200, captured 2024-11-23) is a real Skyscanner results page at the YYMMDD path, title as quoted. The month and anywhere variants are not separately evidenced here."
     },
     {
       "claim_id": "soar-mcp-endpoint",
-      "claim": "The Soar Flight Booking MCP server endpoint is https://mcp.flysoar.ai/mcp",
-      "source_url": "https://flysoar.ai/mcp",
-      "raw_snippet": "codex mcp add soar_flights --url https://mcp.flysoar.ai/mcp --oauth-client-id soar-mcp",
-      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "claim": "The Rift (formerly Soar) flight MCP endpoint is https://mcp.rift.co.",
+      "source_url": "https://rift.co/mcp",
+      "raw_snippet": "codex mcp add soar_flights --url https://mcp.rift.co",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "verified_via": "browser",
-      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_at": "2026-10-25",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
@@ -376,12 +258,12 @@
     },
     {
       "claim_id": "soar-search-public-no-key",
-      "claim": "soar_search_flights works anonymously with no API key; booking/account tools require OAuth",
-      "source_url": "https://flysoar.ai/mcp",
-      "raw_snippet": "Public flight and stay search work immediately. Run `codex mcp login soar_flights` to continue into booking and account tools.",
-      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "claim": "soar_search_flights works without signing in; booking and account tools require sign-in.",
+      "source_url": "https://rift.co/mcp",
+      "raw_snippet": "Public flight search already works without signing in.",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "verified_via": "browser",
-      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_at": "2026-10-25",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
@@ -392,63 +274,43 @@
       "claim": "Anonymous Soar flight searches are limited to 5 calls per minute and 30 per hour per source IP",
       "source_url": "https://mcp.flysoar.ai/mcp",
       "raw_snippet": "Anonymous flight searches have a limit of five calls per minute and 30 per hour per source IP.",
-      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "verified_via": "browser",
-      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_at": "2026-10-25",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
+      ],
+      "notes": "Read from the MCP server response at the legacy address mcp.flysoar.ai/mcp, which on 2026-10-25 served the same Rift server as https://mcp.rift.co."
     },
     {
       "claim_id": "soar-usd-only",
-      "claim": "Soar MCP prices flights in USD only and rejects an ILS currency request with code currency_usd_only",
+      "claim": "The Soar/Rift MCP prices flights in USD only and rejects an ILS currency request with code currency_usd_only.",
       "source_url": "https://mcp.flysoar.ai/mcp",
-      "raw_snippet": "Soar MCP prices flights and stays in USD only; omit currency or pass USD",
-      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "raw_snippet": "Rift Flight Booking MCP prices flights and stays in USD only; omit currency or pass USD",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "verified_via": "browser",
-      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_at": "2026-10-25",
       "appears_in": [
         "SKILL.md",
         "SKILL_HE.md"
-      ]
+      ],
+      "notes": "Live tools/call with currency ILS on 2026-10-25 returned this error, code currency_usd_only. Read from the MCP server response at the legacy address mcp.flysoar.ai/mcp, which on 2026-10-25 served the same Rift server as https://mcp.rift.co."
     },
     {
       "claim_id": "soar-book-destructive",
-      "claim": "soar_book_flight is annotated destructiveHint true and performs login, verification and payment in one flow",
-      "source_url": "https://flysoar.ai/mcp",
-      "raw_snippet": "Book a selected offer; Soar handles login, refresh, readiness, verification, and payment in one flow.",
-      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
-      "verified_via": "browser",
-      "verified_at": "2026-07-29T15:55:12.238470+00:00",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md"
-      ]
-    },
-    {
-      "claim_id": "soar-not-agency-of-record",
-      "claim": "Soar states it is not an airline, charter operator, or travel agency of record and sources inventory via third parties including Duffel",
-      "source_url": "https://flysoar.ai/terms",
-      "raw_snippet": "not an airline, charter operator, travel agency of record",
-      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
-      "appears_in": [
-        "SKILL.md",
-        "SKILL_HE.md"
-      ]
-    },
-    {
-      "claim_id": "soar-duffel-source",
-      "claim": "Soar flight search results are sourced from Duffel inventory",
+      "claim": "soar_book_flight is annotated destructiveHint true and handles login, fare refresh and saved-payment readiness through payment in one tool.",
       "source_url": "https://mcp.flysoar.ai/mcp",
-      "raw_snippet": "\"source\": \"duffel\"",
-      "fetched_at": "2026-07-29T15:55:12.238470+00:00",
+      "raw_snippet": "It handles Rift login, fare refresh, profile and saved-payment readiness",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "verified_via": "browser",
-      "verified_at": "2026-07-29T15:55:12.238470+00:00",
+      "verified_at": "2026-10-25",
       "appears_in": [
         "SKILL.md",
-        "SKILL_HE.md"
-      ]
+        "SKILL_HE.md",
+        "references/soar-mcp-usage.md"
+      ],
+      "notes": "Read from the live tools/list response on 2026-10-25 (annotations destructiveHint: true). Read from the MCP server response at the legacy address mcp.flysoar.ai/mcp, which on 2026-10-25 served the same Rift server as https://mcp.rift.co."
     },
     {
       "claim_id": "israeli-card-fx-fee",
@@ -479,16 +341,1466 @@
       ]
     },
     {
-      "claim_id": "soar-advanced-tools",
-      "claim": "Soar's MCP exposes soar_discover_tools and soar_run_advanced_action_tool which load further tools on demand, so the action surface is not fixed",
-      "source_url": "https://flysoar.ai/mcp",
-      "raw_snippet": "Find only the uncommon stay, traveler, add-on, trip, payment, or support tools needed now.",
-      "fetched_at": "2026-07-29T16:17:51.645381+00:00",
-      "verified_via": "browser",
-      "verified_at": "2026-07-29T16:17:51.645381+00:00",
-      "notes": "Page also states: 'Advanced tools load only when discovered.' and '3 tools public; 9 core tools after OAuth.'",
+      "claim_id": "elal-hand-lite-classic",
+      "claim": "El Al Lite and Classic economy fares each include one carry-on of up to 8 kg.",
+      "source_url": "https://www.elal.com/eng/baggage/hand-baggage",
+      "raw_snippet": "Classic - entitled to one carry-on, maximum 8 kg.",
+      "fetched_at": "2026-10-25T12:00:00Z",
       "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-hand-flex",
+      "claim": "El Al Economy Flex includes two carry-ons, 8 kg each, 12 kg total.",
+      "source_url": "https://www.elal.com/eng/baggage/hand-baggage",
+      "raw_snippet": "Flex** *** - entitled to two carry-ons, maximum 8 kg per bag (total weight of both bags up to 12 kg).",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-hand-premium",
+      "claim": "El Al Premium includes two carry-ons, 8 kg each, combined weight up to 12 kg.",
+      "source_url": "https://www.elal.com/eng/baggage/hand-baggage",
+      "raw_snippet": "Premium - entitled to two carry-ons, maximum 8 kg per bag, with a combined weight not exceeding 12 kg.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-hand-business",
+      "claim": "El Al Business includes two carry-ons, 16 kg each, combined weight up to 20 kg.",
+      "source_url": "https://www.elal.com/eng/baggage/hand-baggage",
+      "raw_snippet": "Business - entitled to two carry-ons, maximum 16 kg per bag, with a combined weight not exceeding 20 kg.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-north-america-no-lite",
+      "claim": "On El Al nonstop North America flights only Classic and Flex tickets are sold.",
+      "source_url": "https://www.elal.com/eng/baggage/hand-baggage",
+      "raw_snippet": "On our non-stop flights from/to North America, currently only \"Classic\" and \"Flex\" tickets are available for purchase",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-tsa-one-carryon",
+      "claim": "On flights departing the US, TSA rules allow one carry-on bag and one personal item in the cabin.",
+      "source_url": "https://www.elal.com/eng/baggage/hand-baggage",
+      "raw_snippet": "for flights departing from the U.S, passengers are permitted one carry-on bag and one personal item in the cabin.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-checked-premium",
+      "claim": "El Al Premium includes two checked bags of up to 23 kg each.",
+      "source_url": "https://www.elal.com/eng/baggage/baggage-allowance",
+      "raw_snippet": "Premium class tickets include up to two pieces of checked baggage weighing up to 23 kg each.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-checked-business",
+      "claim": "El Al Business includes two checked bags of up to 32 kg each.",
+      "source_url": "https://www.elal.com/eng/baggage/baggage-allowance",
+      "raw_snippet": "Business class tickets include up to two pieces of checked baggage weighing up to 32 kg each.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-checked-fareast",
+      "claim": "El Al offers three economy ticket types on Far East and Africa flights, where Flex includes two 23 kg bags.",
+      "source_url": "https://www.elal.com/eng/baggage/baggage-allowance",
+      "raw_snippet": "EL AL offers three types of tickets in economy class on flights to the Far East and Africa.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-extra-bag-online-discount",
+      "claim": "Buying El Al extra bags online up to 3 hours before the flight gives up to 50% off the airport fee.",
+      "source_url": "https://www.elal.com/eng/baggage/baggage-allowance",
+      "raw_snippet": "Purchase online up to 3 hours before your flight, enjoy up to 50% discount on the fee charged at the airport",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-winter-us-45",
+      "claim": "For winter 2026-27 El Al operates 45 weekly flights to six US destinations including San Francisco.",
+      "source_url": "https://www.traveldailynews.com/aviation/el-al-launches-nonstop-san-francisco-route/",
+      "raw_snippet": "EL AL will operate 45 weekly flights during the upcoming winter season to six destinations in the United States",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-personal-carryon-dims",
+      "claim": "Israir personal item 40x30x20 cm free; carry-on 55x40x25 cm up to 10 kg, $30 per direction or $40 at Ben Gurion.",
+      "source_url": "https://www.israir.co.il/Passengers_Info/Baggage_Policy.html",
+      "raw_snippet": "מידות: 55*40*25 ס\"מ, עד 10 ק\"ג : 30 $  לכיוון (ברכישה בנתב\"ג- 40 $",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-second-bag-airport",
+      "claim": "Israir second bag $80 per direction in advance, $120 at Ben Gurion.",
+      "source_url": "https://www.israir.co.il/Passengers_Info/Baggage_Policy.html",
+      "raw_snippet": "מזוודה שנייה | עד 23 ק\"ג: 80 $ לכיוון (ברכישה בנתב\"ג- 120 $",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-bags-3-5-airport",
+      "claim": "Israir bags 3-5 $120 each per direction in advance, $150 at Ben Gurion.",
+      "source_url": "https://www.israir.co.il/Passengers_Info/Baggage_Policy.html",
+      "raw_snippet": "מזוודה שלישית עד חמישית | עד 23 ק\"ג: 120 $ לכיוון לכל מזוודה (ברכישה בנתב\"ג- 150 $",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-ny-bags-included",
+      "claim": "On Israir New York flights checked bags are included: economy one 23 kg bag, premium two 23 kg, business two 32 kg.",
+      "source_url": "https://www.israir.co.il/Passengers_Info/Baggage_Policy.html",
+      "raw_snippet": "במחלקת תיירים: כבודת מטען אחת במשקל מירבי של 23 ק\"ג",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-ny-carryon-included",
+      "claim": "On Israir New York flights a carry-on is included in the ticket price.",
+      "source_url": "https://www.israir.co.il/Passengers_Info/Baggage_Policy.html",
+      "raw_snippet": "בטיסות לניו יורק- כבודת יד כלולה במחיר הכרטיס",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-advance-6h",
+      "claim": "Israir advance baggage prices apply on the Israir site or personal area up to 6 hours before take-off.",
+      "source_url": "https://www.israir.co.il/Passengers_Info/Baggage_Policy.html",
+      "raw_snippet": "באתר ישראייר, או באזור האישי עד 6 שעות לפני מועד ההמראה",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-jfk-2026",
+      "claim": "Israir scheduled a new Tel Aviv-New York JFK route for autumn 2026 (inaugural planned 16 September per AeroRoutes; an October guide gives 19 October).",
+      "source_url": "https://www.aeroroutes.com/eng/260911-6hsep26jfk",
+      "raw_snippet": "schedules Tel Aviv – New York JFK inaugural on 16SEP26",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-arkia-fly-shabbat",
+      "claim": "As of May 2026 El Al is the only Israeli airline that does not fly on Shabbat; Israir and Arkia operate on Shabbat, and Haredi leaders threatened an Israir boycott unless it stops.",
+      "source_url": "https://www.jpost.com/israel-news/article-895251",
+      "raw_snippet": "Of the four Israeli airlines, only El Al does not currently operate flights on Shabbat, while Israir, Arkia, and Air Haifa all operate on the Jewish Sabbath",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-boycott-threat",
+      "claim": "Haredi leaders threatened a consumer boycott of Israir unless it stops Shabbat flights.",
+      "source_url": "https://www.jpost.com/israel-news/article-895251",
+      "raw_snippet": "threatened a general consumer boycott of the Israeli airline Israir unless the carrier ceases operating on Shabbat",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "arkia-summer-only-routes",
+      "claim": "Pre-war (February 2026) Arkia route announcement: business class to launch first on the Paris route; Malaga and Ibiza planned as summer-only.",
+      "source_url": "https://en.globes.co.il/en/article-arkia-to-launch-four-new-routes-1001535143",
+      "raw_snippet": "In the first stage, business class will be launched on the Paris route",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "references/domain-checklist.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "arkia-40-destinations-summer",
+      "claim": "Before the war (February 2026) Arkia announced it would fly to about 40 destinations in summer 2026.",
+      "source_url": "https://www.jns.org/israel-news/arkia-expands-service-to-40-destinations",
+      "raw_snippet": "it would be flying to 40 destinations around the world this summer",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "wizz-sep-2026-routes",
+      "claim": "In September 2026 Wizz Air added London Gatwick, Catania, Venice, Cluj and Iasi from Tel Aviv.",
+      "source_url": "https://en.globes.co.il/en/article-wizz-air-renews-five-tel-aviv-routes-1001554743",
+      "raw_snippet": "The company will operate five weekly flights to London Gatwick, four weekly flights to Catania in Sicily, three weekly flights to Venice, two weekly flights to Cluj in Romania and two weekly flights to Iasi in Romania.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "wizz-checked-weights",
+      "claim": "Wizz Air checked bags are sold at 10, 20, 26 or 32 kg.",
+      "source_url": "https://www.wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance",
+      "raw_snippet": "MAX. 10KG, 20KG, 26KG OR 32KG",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "wizz-trolley-priority",
+      "claim": "Wizz Air 55x40x23 cm trolley bag requires WIZZ Priority.",
+      "source_url": "https://www.wizzair.com/en-gb/help-centre/booking-information-and-services/baggage/baggage-allowance",
+      "raw_snippet": "FOR PURCHASE WITH WIZZ PRIORITY",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "ryanair-no-return-oct-2026",
+      "claim": "As of October 2026 Ryanair has announced no Tel Aviv return.",
+      "source_url": "https://www.masaisrael.org/airlines-flying-to-israel/",
+      "raw_snippet": "Ryanair: no confirmed return date",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "tlv-open-normally-oct-2026",
+      "claim": "Ben Gurion is open and operating normally in October 2026.",
+      "source_url": "https://www.touristisrael.com/flights-to-ben-gurion-airport/12331/",
+      "raw_snippet": "Ben Gurion Airport is open and running normally",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "flydubai-suspended-2026-09-30",
+      "claim": "flydubai suspended flights to and from Israel after the FZ1073 security incident (30 September 2026).",
+      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/01/flydubai-fz-1073-suspends-israel-flights/",
+      "raw_snippet": "Flydubai has suspended flights to and from Israel while the UAE investigates a security incident that forced flight FZ 1073",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "emirates-codeshare-suspended",
+      "claim": "Emirates also suspended its flydubai codeshare to Tel Aviv.",
+      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/01/flydubai-fz-1073-suspends-israel-flights/",
+      "raw_snippet": "Emirates airline has also suspended its codeshare operations with flydubai between the UAE and Tel Aviv.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "etihad-up-to-3-daily",
+      "claim": "Etihad usually operates up to three direct flights per day from Abu Dhabi to Tel Aviv.",
+      "source_url": "https://www.thenationalnews.com/news/uae/2026/10/01/flydubai-fz-1073-suspends-israel-flights/",
+      "raw_snippet": "there are usually up to three direct flights per day from Abu Dhabi to Tel Aviv",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israeli-carriers-no-uae",
+      "claim": "Israeli airlines have not flown to the UAE since security authorities halted them at the start of the February 2026 war; El Al plans two daily from November subject to approval.",
+      "source_url": "https://www.al-monitor.com/originals/2026/10/israeli-airlines-plan-resume-dubai-flights-after-flydubai-incident",
+      "raw_snippet": "Security authorities halted Israeli airlines' flights to the UAE at the outset of the war with Iran in late February.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "swiss-1-aug",
+      "claim": "SWISS resumed Zurich-Tel Aviv on 1 August 2026 (restart date only; the page is no longer updated).",
+      "source_url": "https://irreg.lufthansaexperts.com/en/news/lufthansa-group-to-gradually-resume-flights-to-from-tel-aviv-starting-in-june-2026-flight-offer-to-from-the-middle-east.html",
+      "raw_snippet": "SWISS resumed its service between Zurich and Tel Aviv on 1 August",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "brussels-resume",
+      "claim": "Brussels Airlines restart reports conflict: the Lufthansa Group page said 5 August weekly; a 1 October guide said the suspension ends 24 October; a 15 October guide lists Brussels Airlines as flying.",
+      "source_url": "https://irreg.lufthansaexperts.com/en/news/lufthansa-group-to-gradually-resume-flights-to-from-tel-aviv-starting-in-june-2026-flight-offer-to-from-the-middle-east.html",
+      "raw_snippet": "Brussels Airlines will resume service from Brussels to Tel Aviv on 5 August",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "ita-aegean-airfrance-flying",
+      "claim": "ITA Airways, Air France and Aegean are among the European carriers operating to Tel Aviv.",
+      "source_url": "https://www.masaisrael.org/airlines-flying-to-israel/",
+      "raw_snippet": "Most European carriers are operating, including Lufthansa, SWISS, ITA Airways, Austrian, Eurowings, Air France, Wizz Air, and Aegean",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "united-newark-chicago-dc",
+      "claim": "United resumed Newark on 8 September 2026; Chicago from 24 October and Washington from 25 October 2026.",
+      "source_url": "https://www.touristisrael.com/flights-to-ben-gurion-airport/12331/",
+      "raw_snippet": "Chicago - United Airlines (from 24 October, 2026)",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "united-newark-resumed",
+      "claim": "United operates two daily Newark-Tel Aviv flights, resumed 8 September 2026.",
+      "source_url": "https://www.masaisrael.org/airlines-flying-to-israel/",
+      "raw_snippet": "two daily Newark–Tel Aviv flights, resumed September 8",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "delta-jfk-atlanta",
+      "claim": "Delta resumed JFK on 6 September 2026; Atlanta suspended until 18 December; Boston delayed.",
+      "source_url": "https://www.thenationalnews.com/travel/2026/10/08/uae-dubai-abu-dhabi-flights-status/",
+      "raw_snippet": "Delta has extended the suspension of flights between Atlanta and Tel Aviv until December 18.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "ba-25-oct",
+      "claim": "British Airways resumes Tel Aviv on 25 October 2026 with one daily London flight.",
+      "source_url": "https://www.timesofisrael.com/british-airways-planning-to-resume-flights-to-tel-aviv-on-october-25/",
+      "raw_snippet": "The UK carrier will operate one daily flight on the London-Tel Aviv route, down from its previous double-daily service.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "american-through-mar-2027",
+      "claim": "American Airlines has suspended its New York-Tel Aviv route through 27 March 2027.",
+      "source_url": "https://www.timesofisrael.com/british-airways-planning-to-resume-flights-to-tel-aviv-on-october-25/",
+      "raw_snippet": "American Airlines has suspended its New York route through March 27, 2027",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "iberia-25-oct",
+      "claim": "Iberia restarts Tel Aviv-Madrid on 25 October 2026 via Iberia Express, seven weekly.",
+      "source_url": "https://www.ynetnews.com/travel/article/r1ek1ssifl",
+      "raw_snippet": "Iberia will operate the Tel Aviv-Madrid route through its low-cost subsidiary Iberia Express, with seven weekly flights planned.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "easyjet-suspended-oct",
+      "claim": "easyJet is still suspended with no confirmed restart date.",
+      "source_url": "https://www.touristisrael.com/flights-to-ben-gurion-airport/12331/",
+      "raw_snippet": "Easyjet (currently suspended)",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "aircanada-toronto-30-nov",
+      "claim": "Air Canada plans to resume Toronto-Tel Aviv on 30 November 2026 (other reports say 2027).",
+      "source_url": "https://www.touristisrael.com/flights-to-ben-gurion-airport/12331/",
+      "raw_snippet": "Toronto - Air Canada (to resume 30 Nov 2026)",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "turkish-slots-2025",
+      "claim": "Turkish Airlines and Pegasus gave up their Ben Gurion slots in late April 2025.",
+      "source_url": "https://www.jpost.com/middle-east/article-869553",
+      "raw_snippet": "In late April, Turkish Airlines and Pegasus gave up their Ben-Gurion slots",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "etias-not-operating",
+      "claim": "ETIAS is not in operation; the EU will announce the start date several months before launch.",
+      "source_url": "https://travel-europe.europa.eu/en/etias",
+      "raw_snippet": "ETIAS is currently not in operation and no applications for travel authorisations are collected at this point.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "etias-notice-months",
+      "claim": "The EU will announce the ETIAS start date several months prior to launch.",
+      "source_url": "https://travel-europe.europa.eu/en/etias",
+      "raw_snippet": "The European Union will inform about the specific date for the start of ETIAS several months prior to its launch.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "etias-grace-12-months",
+      "claim": "ETIAS start will be followed by transitional and grace periods lasting at least 12 months.",
+      "source_url": "https://travel-europe.europa.eu/en/etias/about-etias/news-corner/revised-timeline-ees-and-etias",
+      "raw_snippet": "The start of ETIAS will be followed by transitional and grace periods, which will last for at least 12 months.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "etias-30-days-3-years",
+      "claim": "ETIAS processing may take up to 30 days; approval valid three years or until passport expiry.",
+      "source_url": "https://travel-europe.europa.eu/etias/ltr/about-etias/news-corner/5-things-travel-agents-should-know-about-ETIAS",
+      "raw_snippet": "in some cases, the processing of the application may take up to 30 days",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "etias-validity-3-years",
+      "claim": "ETIAS valid for three years or until the passport expires.",
+      "source_url": "https://travel-europe.europa.eu/etias/ltr/about-etias/news-corner/5-things-travel-agents-should-know-about-ETIAS",
+      "raw_snippet": "Once approved, ETIAS will be valid for three years or until the passport used in the application expires, whichever comes first.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "ees-fully-operational",
+      "claim": "EES is fully operational at all external border crossing points from 10 April 2026, after a roll-out from October 2025.",
+      "source_url": "https://travel-europe.europa.eu/ees/faq",
+      "raw_snippet": "From 10 April 2026, the EES is fully operational at all external border crossing points",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "ees-cyprus-ireland-stamp",
+      "claim": "In Cyprus and Ireland passports are still stamped manually.",
+      "source_url": "https://travel-europe.europa.eu/ees/what-is-the-ees",
+      "raw_snippet": "In Cyprus and Ireland, despite being countries of the European Union, passports will still be stamped manually.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "schengen-passport-rule",
+      "claim": "Schengen requires a passport valid at least three months after departure and issued within the previous 10 years.",
+      "source_url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0399",
+      "raw_snippet": "its validity shall extend at least three months after the intended date of departure from the territory of the Member States. In a justified case of emergency, this obligation may be waived;\n (ii)\n it shall have been issued within the previous 10 years;",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "uk-eta-israel-2025",
+      "claim": "Israeli nationals need a UK ETA for travel on or after 8 January 2025.",
+      "source_url": "https://www.gov.uk/guidance/immigration-rules/immigration-rules-appendix-eta-national-list",
+      "raw_snippet": "for travel to the UK on or after 8 January 2025",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "uk-eta-per-person",
+      "claim": "Each person travelling needs a UK ETA, including babies and children.",
+      "source_url": "https://www.gov.uk/eta",
+      "raw_snippet": "Each person travelling needs an ETA, including babies and children.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "uk-eta-transit",
+      "claim": "A UK ETA is needed when passing through UK border control in transit.",
+      "source_url": "https://www.gov.uk/eta",
+      "raw_snippet": "passing through border control at a UK airport",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "uk-eta-validity-decision",
+      "claim": "A UK ETA lasts 2 years or until the passport expires; a decision usually comes within a day, up to 3 working days.",
+      "source_url": "https://www.gov.uk/eta",
+      "raw_snippet": "An ETA lasts for 2 years or until your passport expires, whichever is sooner.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "uk-eta-decision-time",
+      "claim": "UK ETA decision usually within a day, up to 3 working days.",
+      "source_url": "https://www.gov.uk/eta",
+      "raw_snippet": "usually get a decision by email within a day, but it can take up to 3 working days.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "esta-epassport",
+      "claim": "An e-Passport is required to use the Visa Waiver Program.",
+      "source_url": "https://www.cbp.gov/travel/international-visitors/esta",
+      "raw_snippet": "You must have an e-Passport to use the VWP.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "esta-apply-before-tickets",
+      "claim": "CBP recommends applying for ESTA prior to purchasing airline tickets.",
+      "source_url": "https://www.cbp.gov/travel/international-visitors/esta",
+      "raw_snippet": "prior to purchasing airline tickets",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "canada-eta-israel",
+      "claim": "Israelis with a national Israeli passport are eTA-eligible for Canada; holders of a travel document in lieu of passport need a visa.",
+      "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-country.html",
+      "raw_snippet": "Israel (must have a national Israeli passport)",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "canada-visa-travel-doc",
+      "claim": "Israeli travel document in lieu of national passport holders need a Canadian visa.",
+      "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada/entry-requirements-country.html",
+      "raw_snippet": "Travel Document in Lieu of National Passport",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "passport-6-weeks",
+      "claim": "An Israeli biometric passport is issued about 6 weeks after application, by appointment only.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%95%D7%A6%D7%90%D7%AA_%D7%93%D7%A8%D7%9B%D7%95%D7%9F_%D7%91%D7%99%D7%95%D7%9E%D7%98%D7%A8%D7%99",
+      "raw_snippet": "הדרכון יונפק תוך כ-6 שבועות מיום הגשת הבקשה.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "passport-temp-48h",
+      "claim": "Within 48 hours before a flight a temporary passport can be issued only at Ben Gurion airport.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%95%D7%A6%D7%90%D7%AA_%D7%93%D7%A8%D7%9B%D7%95%D7%9F_%D7%91%D7%99%D7%95%D7%9E%D7%98%D7%A8%D7%99",
+      "raw_snippet": "במהלך 48 השעות שלפני הטיסה ניתן להוציא דרכון זמני רק בנמל התעופה בן גוריון.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "passport-minor-5-years",
+      "claim": "An Israeli passport for a minor under 16 is valid for 5 years; adult passports 10 years.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%95%D7%A6%D7%90%D7%AA_%D7%93%D7%A8%D7%9B%D7%95%D7%9F_%D7%91%D7%99%D7%95%D7%9E%D7%98%D7%A8%D7%99",
+      "raw_snippet": "תוקף דרכון של קטין מתחת לגיל 16 הוא ל-5 שנים",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "passport-6-months-common",
+      "claim": "Many countries require at least six months of remaining passport validity.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%95%D7%A6%D7%90%D7%AA_%D7%93%D7%A8%D7%9B%D7%95%D7%9F_%D7%91%D7%99%D7%95%D7%9E%D7%98%D7%A8%D7%99",
+      "raw_snippet": "מדינות רבות דורשות שתהיה לדרכון יתרת תוקף של חצי שנה לפחות.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "nsc-travel-warnings-phone",
+      "claim": "The National Security Council travel-warning phone line is 02-666-7444, answered 24/7.",
+      "source_url": "https://www.gov.il/he/departments/dynamiccollectors/travel-warnings-nsc",
+      "raw_snippet": "טלפון לבירורים בנושא אזהרות מסע:\n02-666-7444",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "nsc-24-7",
+      "claim": "NSC travel-warning phone answered 24/7.",
+      "source_url": "https://www.gov.il/he/departments/dynamiccollectors/travel-warnings-nsc",
+      "raw_snippet": "מענה טלפוני בנושא אזהרות מסע יינתן 24/7 בכל שעות היממה.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "aviation-law-agency-forward",
+      "claim": "Under Israeli law a passenger can claim through the travel agency that sold the ticket, which must approach the airline; the law covers international flights departing or arriving Israel.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A4%D7%99%D7%A6%D7%95%D7%99_%D7%91%D7%9E%D7%A7%D7%A8%D7%94_%D7%A9%D7%9C_%D7%98%D7%99%D7%A1%D7%94_%D7%A9%D7%94%D7%AA%D7%91%D7%98%D7%9C%D7%94",
+      "raw_snippet": "הנוסע יכול לפנות לחברת התעופה באמצעות סוכנות הנסיעות שבאמצעותה קנה את הכרטיס, והיא מחוייבת לסייע לו ולפנות בעצמה אל החברה.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "aviation-law-scope",
+      "claim": "The Israeli Aviation Services Law applies to all international flights departing or arriving Israel, including connections.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A4%D7%99%D7%A6%D7%95%D7%99_%D7%91%D7%9E%D7%A7%D7%A8%D7%94_%D7%A9%D7%9C_%D7%98%D7%99%D7%A1%D7%94_%D7%A9%D7%94%D7%AA%D7%91%D7%98%D7%9C%D7%94",
+      "raw_snippet": "החוק הישראלי - חל על כל הטיסות הבינלאומיות שיוצאות או נכנסות לישראל",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "aviation-law-segment-refund",
+      "claim": "When flight segments are operated by different airlines, the refund covers only the cancelled segment.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%A4%D7%99%D7%A6%D7%95%D7%99_%D7%91%D7%9E%D7%A7%D7%A8%D7%94_%D7%A9%D7%9C_%D7%98%D7%99%D7%A1%D7%94_%D7%A9%D7%94%D7%AA%D7%91%D7%98%D7%9C%D7%94",
+      "raw_snippet": "אם קטעי הטיסה מבוצעים על ידי חברות תעופה שונות - ההחזר יינתן רק על קטע הטיסה שבוטל.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-carryon-dims",
+      "claim": "El Al carry-on maximum dimensions are 56 x 45 x 25 cm including handles and wheels; personal item 38x30x18 cm (shown in the page drawing).",
+      "source_url": "https://www.elal.com/eng/baggage/hand-baggage",
+      "raw_snippet": "Height: 56 cm\n2.    Width: 45 cm\n3.    Depth: 25 cm",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25",
+      "notes": "Personal-item 38x30x18 cm read from the page image personal.svg; its alt text has a typo (18 for height)."
+    },
+    {
+      "claim_id": "esta-official-site",
+      "claim": "esta.cbp.dhs.gov is the official US ESTA application site (Department of Homeland Security).",
+      "source_url": "https://esta.cbp.dhs.gov/",
+      "raw_snippet": "Welcome to the Electronic System for Travel Authorization",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25",
+      "notes": "Text served from the site i18n bundle https://esta.cbp.dhs.gov/assets/i18n/en.json (the page is a JS app)."
+    },
+    {
+      "claim_id": "hebcal-holidays-page",
+      "claim": "Hebcal publishes Jewish holiday dates, with an Israel schedule option.",
+      "source_url": "https://www.hebcal.com/holidays/",
+      "raw_snippet": "Jewish Holidays - Hebcal",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "rift-rebrand-endpoint",
+      "claim": "The Soar MCP endpoint mcp.flysoar.ai now identifies itself as the Rift Flight Booking MCP; the public search tier uses soar_search_flights.",
+      "source_url": "https://mcp.flysoar.ai/mcp",
+      "raw_snippet": "This is the public Rift Flight Booking MCP search tier. Use soar_search_flights for live airfare.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
         "references/soar-mcp-usage.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25",
+      "notes": "MCP initialize response, instructions field, 2026-10-25. Read from the MCP server response at the legacy address mcp.flysoar.ai/mcp, which on 2026-10-25 served the same Rift server as https://mcp.rift.co."
+    },
+    {
+      "claim_id": "rift-booking-agent",
+      "claim": "Under Rift terms, Rift acts as the agent that books, pays for and services the reservation, and refund and dispute support runs through Rift rather than the airline.",
+      "source_url": "https://rift.co/terms",
+      "raw_snippet": "Rift does act as the agent that books, pays for and services your reservation.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/soar-mcp-usage.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25",
+      "notes": "flysoar.ai/terms redirects to rift.co/terms."
+    },
+    {
+      "claim_id": "rift-refunds-through-rift",
+      "claim": "Refund and dispute support runs through Rift rather than the airline.",
+      "source_url": "https://rift.co/terms",
+      "raw_snippet": "why refund and dispute support runs through Rift rather than the airline",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/soar-mcp-usage.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "rift-delaware-law",
+      "claim": "Rift terms are governed by Delaware law.",
+      "source_url": "https://rift.co/terms",
+      "raw_snippet": "These Terms are governed by the laws of the State of Delaware, USA",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/soar-mcp-usage.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "rift-jams-arbitration",
+      "claim": "Disputes with Rift go to binding individual JAMS arbitration seated in Wilmington, Delaware.",
+      "source_url": "https://rift.co/terms",
+      "raw_snippet": "shall be resolved exclusively by final and binding individual arbitration administered by JAMS under its applicable rules, seated in Wilmington, Delaware",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/soar-mcp-usage.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "rift-power-of-attorney",
+      "claim": "Rift terms appoint Rift as the buyer agent with a limited power of attorney to change (cancel and rebook) the ticket when the fare drops, without asking each time.",
+      "source_url": "https://rift.co/terms",
+      "raw_snippet": "You appoint Rift as your agent, and grant Rift a limited power of attorney",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/soar-mcp-usage.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "rift-passengers-detail",
+      "claim": "soar_search_flights accepts passengers_detail with passenger type (adult, child, infant_without_seat) and age or birth date.",
+      "source_url": "https://mcp.flysoar.ai/mcp",
+      "raw_snippet": "Passenger types, birth dates, or ages for accurate fare search.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/soar-mcp-usage.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25",
+      "notes": "tools/list inputSchema, 2026-10-25. Read from the MCP server response at the legacy address mcp.flysoar.ai/mcp, which on 2026-10-25 served the same Rift server as https://mcp.rift.co."
+    },
+    {
+      "claim_id": "israir-overweight",
+      "claim": "Israir overweight 24-30 kg on the first bag only: +$20 per direction in advance, +$70 at Ben Gurion.",
+      "raw_snippet": "חריגה במשקל מ-24 ק\"ג עד 30 ק\"ג (במזוודה ראשונה בלבד)- תוספת בסך 20 $ לכיוון (ברכישה בנתב\"ג בתוספת 70 $ / בתחנות חו\"ל- 60 אירו/53 ליש\"ט)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25",
+      "source_url": "https://www.israir.co.il/Passengers_Info/Baggage_Policy.html"
+    },
+    {
+      "claim_id": "israir-ny-premium-business",
+      "claim": "Israir New York: premium includes two 23 kg bags, business two 32 kg bags.",
+      "raw_snippet": "במחלקת עסקים: 2 כבודות מטען במשקל מירבי של עד 32 ק\"ג כל אחת.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25",
+      "source_url": "https://www.israir.co.il/Passengers_Info/Baggage_Policy.html"
+    },
+    {
+      "claim_id": "elal-no-shabbat-kosher-only",
+      "claim": "El Al offers only kosher in-flight meals and does not fly passengers on Shabbat or Jewish religious holidays.",
+      "source_url": "https://en.wikipedia.org/wiki/El_Al",
+      "raw_snippet": "El Al offers only kosher in-flight meals, and does not fly passengers on the Jewish Shabbat or religious holidays.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/booking-extras.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "tlv-fully-open-april-9",
+      "claim": "Ben Gurion has been fully open since 9 April 2026.",
+      "source_url": "https://www.masaisrael.org/airlines-flying-to-israel/",
+      "raw_snippet": "Ben Gurion Airport has been fully open since April 9, 2026",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "ba-london-ti",
+      "claim": "British Airways serves London-Tel Aviv from 25 October 2026.",
+      "source_url": "https://www.touristisrael.com/flights-to-ben-gurion-airport/12331/",
+      "raw_snippet": "London - British Airways (from 25 October, 2026)",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "brussels-listed-ti",
+      "claim": "A 15 October 2026 guide lists Brussels Airlines as serving Brussels-Tel Aviv.",
+      "source_url": "https://www.touristisrael.com/flights-to-ben-gurion-airport/12331/",
+      "raw_snippet": "Brussels - Brussels Airlines",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "brussels-suspension-ends-oct24",
+      "claim": "A 1 October 2026 guide said the Brussels Airlines suspension ends 24 October.",
+      "source_url": "https://www.masaisrael.org/airlines-flying-to-israel/",
+      "raw_snippet": "Brussels Airlines: suspension ends October 24",
+      "appears_in": [
+        "references/tlv-carrier-status.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "aircanada-march-2027",
+      "claim": "One report (8 October 2026) says Air Canada extended its Tel Aviv suspension until the end of March 2027.",
+      "source_url": "https://www.thenationalnews.com/travel/2026/10/08/uae-dubai-abu-dhabi-flights-status/",
+      "raw_snippet": "Air Canada has extended the suspension of its flights to Tel Aviv and Dubai until the end of March 2027.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "lh-swiss-flying-ti",
+      "claim": "Lufthansa (Frankfurt, Munich), SWISS (Zurich) and Eurowings (Dusseldorf, Hamburg) are listed as serving Tel Aviv in a 15 October 2026 guide.",
+      "source_url": "https://www.touristisrael.com/flights-to-ben-gurion-airport/12331/",
+      "raw_snippet": "Munich - El Al, Lufthansa",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/tlv-carrier-status.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "etias-q4-2026-target",
+      "claim": "The EU last stated (April 2026) that ETIAS would start from the last quarter of 2026.",
+      "source_url": "https://travel-europe.europa.eu/etias/ltr/about-etias/news-corner/UK-nationals-and-ETIAS",
+      "raw_snippet": "Starting from the last quarter of this year, nationals of the United Kingdom will be required to have an ETIAS travel authorisation",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "etias-israel-on-list",
+      "claim": "Israel is on the official list of visa-exempt countries whose nationals will need ETIAS.",
+      "source_url": "https://travel-europe.europa.eu/etias/about-etias/who-should-apply",
+      "raw_snippet": "Hong Kong\nIsrael\nJapan",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "etias-grace-no-refusal",
+      "claim": "During the ETIAS transitional period, travelers without ETIAS are not refused entry if they meet the remaining entry conditions.",
+      "source_url": "https://travel-europe.europa.eu/etias/ltr/about-etias/news-corner/etias-timeline-explained",
+      "raw_snippet": "those without one will not be refused entry as long as they fulfil all remaining entry conditions",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "esta-new-passport",
+      "claim": "A traveler who obtains a new passport must submit a new ESTA application.",
+      "source_url": "https://esta.cbp.dhs.gov/assets/i18n/en.json",
+      "raw_snippet": "If a traveler obtains a new passport, they must submit a new travel authorization application in ESTA using the new passport.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "notes": "From the ESTA FAQ strings served at https://esta.cbp.dhs.gov/assets/i18n/en.json.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "esta-us-citizens",
+      "claim": "US citizens who also hold a VWP nationality should not apply for ESTA; CBP expects them to use their US passport.",
+      "source_url": "https://esta.cbp.dhs.gov/assets/i18n/en.json",
+      "raw_snippet": "If you are a citizen of the U.S., and also of a VWP country, you should not be applying for ESTA.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "notes": "ESTA FAQ strings, i18n bundle.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "esta-validity",
+      "claim": "ESTA authorizations are valid for two years or until the passport expires.",
+      "source_url": "https://esta.cbp.dhs.gov/assets/i18n/en.json",
+      "raw_snippet": "Unless revoked, travel authorizations are valid for two years from the date of authorization, or until your passport expires, whichever comes first.",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "notes": "ESTA FAQ strings, i18n bundle.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "esta-fee-change-oct-16",
+      "claim": "The ESTA fee changed with CBP system updates effective 16 October 2026.",
+      "source_url": "https://esta.cbp.dhs.gov/assets/i18n/en.json",
+      "raw_snippet": "effective on October 16, 2026",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "notes": "ESTA site announcement string, i18n bundle.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "uk-eta-linked-passport",
+      "claim": "A UK ETA is linked to the passport used to apply.",
+      "source_url": "https://www.gov.uk/eta",
+      "raw_snippet": "Your ETA will be linked to the passport you applied with.",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "passport-keep-old",
+      "claim": "If a flight is due before the new passport arrives, the applicant can ask to keep the old passport.",
+      "source_url": "https://www.kolzchut.org.il/he/%D7%94%D7%95%D7%A6%D7%90%D7%AA_%D7%93%D7%A8%D7%9B%D7%95%D7%9F_%D7%91%D7%99%D7%95%D7%9E%D7%98%D7%A8%D7%99",
+      "raw_snippet": "אם מתוכננת טיסה במועד שלפני צפי קבלת הדרכון החדש, ניתן לבקש מהפקיד בלשכה אופציה להשארת הדרכון הישן.",
+      "appears_in": [
+        "references/entry-documents.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-oversize-158",
+      "claim": "El Al treats baggage with total dimensions over 158 cm as oversized.",
+      "source_url": "https://www.elal.com/eng/baggage/excess-baggage",
+      "raw_snippet": "with total dimensions over 158 cm and up to 277 cm",
+      "appears_in": [
+        "references/airline-baggage-quick-ref.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "arkia-sale-talks",
+      "claim": "In February 2026 the Nakash brothers were negotiating to sell control of Arkia to Elliot Zemel; no closed deal found.",
+      "source_url": "https://en.globes.co.il/en/article-us-investor-in-advanced-talks-to-buy-arkia-1001534116",
+      "raw_snippet": "The Nakash brothers are negotiating to sell control of the Israeli airline to Elliot Zemel.",
+      "appears_in": [
+        "references/domain-checklist.md"
+      ],
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "elal-europe-checked",
+      "claim": "On El Al flights to Europe and the Middle East, one 23 kg checked bag is a paid pre-order on Lite and included in the ticket price on Classic and Flex.",
+      "source_url": "https://www.elal.com/eng/baggage/baggage-allowance",
+      "raw_snippet": "One piece of checked baggage (23 kg)\n\n\t\n\nPre-order:\nThe fee varies\n\n\t\n\nIncluded in the ticket price",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/airline-baggage-quick-ref.md",
+        "scripts/compare-flights.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25",
+      "notes": "Europe, Dubai and Morocco tab, rendered in headed Chrome; table cells Lite / Classic / Flex in that order."
+    },
+    {
+      "claim_id": "elal-matmid-baggage-benefits",
+      "claim": "El Al lists baggage benefits for Matmid members.",
+      "source_url": "https://www.elal.com/eng/baggage",
+      "raw_snippet": "We have compiled the information about the baggage benefits you are entitled to as a member of the Matmid Frequent Flyer Program.",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "references/booking-extras.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "hebcal-hanukkah-2026",
+      "claim": "Hanukkah 2026 begins at sundown Friday 4 December and ends at nightfall Saturday 12 December 2026.",
+      "source_url": "https://www.hebcal.com/holidays/chanukah-2026",
+      "raw_snippet": "begins at sundown on Friday, 4 December 2026 and ends at nightfall on Saturday, 12 December 2026",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "hebcal-purim-2027",
+      "claim": "Purim 2027 begins at sundown 22 March and ends at nightfall 23 March 2027.",
+      "source_url": "https://www.hebcal.com/holidays/purim-2027",
+      "raw_snippet": "begins at sundown on Monday, 22 March 2027 and ends at nightfall on Tuesday, 23 March 2027",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "hebcal-pesach-2027",
+      "claim": "Pesach 2027 in Israel begins at sundown 21 April and ends at nightfall 28 April 2027.",
+      "source_url": "https://www.hebcal.com/holidays/pesach-2027?i=on",
+      "raw_snippet": "at sundown on Wednesday, 21 April 2027 and ends at nightfall on Wednesday, 28 April 2027",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ]
+    },
+    {
+      "claim_id": "uk-eta-british-exempt",
+      "claim": "British (and Irish) citizens do not need a UK ETA.",
+      "source_url": "https://www.gov.uk/eta",
+      "raw_snippet": "you’re a British or Irish citizen",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/entry-documents.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "israir-jfk-masa",
+      "claim": "An October 2026 guide says Israir launches New York service on 19 October.",
+      "source_url": "https://www.masaisrael.org/airlines-flying-to-israel/",
+      "raw_snippet": "Israir launches new New York service on October 19",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md"
+      ],
+      "verified_via": "browser",
+      "verified_at": "2026-10-25"
+    },
+    {
+      "claim_id": "skyscanner-whole-month",
+      "claim": "Skyscanner lets you search a full month via the \"Whole month\" option when selecting dates.",
+      "raw_snippet": "To search a full month, just choose the “Whole month” option in the drop-down menu when you’re selecting dates.",
+      "source_url": "https://www.going.com/guides/how-to-use-skyscanner-to-find-cheap-flights",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/comparison-platforms.md",
+        "scripts/compare-flights.md"
+      ]
+    },
+    {
+      "claim_id": "skyscanner-everywhere",
+      "claim": "Skyscanner has an \"Everywhere\" destination search for flexible destinations.",
+      "raw_snippet": "Their search “Everywhere” button is an exceptionally powerful tool if you’re flexible with your destination.",
+      "source_url": "https://www.going.com/guides/how-to-use-skyscanner-to-find-cheap-flights",
+      "fetched_at": "2026-10-25T12:00:00Z",
+      "appears_in": [
+        "SKILL.md",
+        "SKILL_HE.md",
+        "references/comparison-platforms.md",
+        "scripts/compare-flights.md"
       ]
     }
   ]

@@ -61,6 +61,34 @@
         "CARRY: add one sentence that Aviation Services Law compensation for a TLV departure runs against the operating carrier regardless of who sold the ticket, so the foreign-seller warning is not read as 'no rights at all'.",
         "Lesson: a new references/ file is NOT exempt from the evidence gate. The judge caught 5 unevidenced claims introduced only in references/soar-mcp-usage.md; hedge or evidence corporate/legal assertions rather than asserting them."
       ]
+    },
+    {
+      "version": "1.7.0",
+      "date": "2026-10-25",
+      "holdout_before": 1.0,
+      "holdout_after": 1.0,
+      "buckets": {
+        "improved": [],
+        "regressed": [],
+        "persistent_fail": [],
+        "stable_success": [
+          "Compare El Al vs Arkia baggage fees",
+          "How much does checked luggage cost on Israir?",
+          "Find me a hotel in Eilat",
+          "What airlines fly from Israel?",
+          "מצאתי טיסה לאתונה הכי זולה באתר בשם Rift, כדאי לקנות שם או ישר מחברת התעופה?"
+        ]
+      },
+      "lessons": [
+        "CARRY resolved: 9 stale news-anchored evidence claims re-sourced or replaced; LH-group frequencies dropped (source page marked no longer updated); Hebrew Latin-start bullets fixed; Aviation Services Law now a routing pointer to israeli-flight-compensation (no claim mechanics); quick-ref USD warning, host names and dates fixed; comparison-platforms fetchability contradiction fixed.",
+        "Soar rebranded to Rift (rift.co); endpoint now https://mcp.rift.co (legacy mcp.flysoar.ai still answered 2026-10-25). Rift terms now say it IS the booking agent (refunds/disputes through Rift), Delaware law + JAMS arbitration, power of attorney to cancel/rebook. The old 'no billing entity named' rationale was false; recheck rift.co/terms every cycle.",
+        "Arkia fee table REMOVED: arkia.co.il serves a Cloudflare challenge to headless and headed Playwright and to WebFetch; a third-party guide suggested Arkia USA/Far East fares may include bags, contradicting the old 'charges for all bags' line. CARRY: re-add an Arkia table only after reading the live page in a real browser session (claude-in-chrome or a human).",
+        "Ramon (Eilat) departure lever REMOVED: no post-war source for Ramon international/charter operations. CARRY (Expert MAJOR deferred): re-add with an IAA or airline source.",
+        "Skyscanner deep links: verified only the round-trip /tlv/{airport}/{YYMMDD}/{YYMMDD}/ shape (Wayback snapshot of a Skyscanner-generated URL). Skyscanner uses airport/own city codes (ala, amst), not plain city names. Month ({YYMM}00) and 'anywhere' URL shapes could not be evidenced and were replaced by search-form options. Archived URLs show adultsv2/childrenv2 params exist but the children format is unverified, so passengers are set on the form.",
+        "Value-add gate (first suite, 4 workflow cases, WebSearch baseline): run 1-2 BLOCK with=0.62/0.75 vs without=0.28/0.33; the Rift 'should I buy there' case never loaded the skill, so a where-to-buy trigger was added to the description (holdout 1.0 -> 1.0, overlap clear). London Friday/ETA case has zero delta (plain Claude knows it): keep as data.",
+        "Expert MINOR/judge items deferred: Turkish Airlines status rests on an October 2025 source (no 2026 source found either way); temporary-passport e-Passport status unsourced so the line stays hedged; Brussels Airlines restart date sources conflict.",
+        "Lesson: three judge rounds each surfaced NEW pre-existing unsourced lines (platform stats, troubleshooting rows, Gotchas 4/5) that earlier cycles never flagged. A full-file unjustified scan in round 1 should explicitly include Gotchas and Troubleshooting, not just numbers."
+      ]
     }
   ]
 }
